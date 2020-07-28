@@ -26,7 +26,6 @@ tresh_3_df = df.groupby(by=['barcode']).size().reset_index().rename(columns={0: 
 tresh_3_df = tresh_3_df[~(tresh_3_df['count_reads'] > 3)]
 tresh_3_df.drop(columns=['count_reads'], inplace=True)
 tresh_3_df.reset_index(drop=True, inplace=True)
-
 tresh_3_df = tresh_3_df.set_index('barcode').join(
     df.set_index('barcode')).reset_index()
 

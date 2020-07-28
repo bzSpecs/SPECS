@@ -4,29 +4,42 @@ import matplotlib.pyplot as plt
 import sys
 import os
 
-second_exp_barcode_results_csv_path = sys.argv[1]
-distinct_paired_mapping_path = sys.argv[2]
-output_highlighted_barcodes_promoter_path = sys.argv[3]
-highlight_minimum_value = int(sys.argv[4])
+barcodes_results_csv_path = sys.argv[1]
+paired_mapping_path = sys.argv[2]
+output_barcodes_path = sys.argv[3]
+output_promoters_path = sys.argv[4]
 
-df_sec_exp_results = pd.read_csv(second_exp_barcode_results_csv_path)
-df_grouped = df_sec_exp_results.groupby(
+barcodes_results_df = pd.read_csv(barcodes_results_csv_path)
+barcodes_results_df_grouped = barcodes_results_df.groupby(
     ['barcode']).size().reset_index().rename(columns={0: 'count'})
-df_grouped.sort_values(by=['count'], ascending=False, inplace=True)
+barcodes_results_df_grouped.sort_values(
+    by=['count'], ascending=False, inplace=True)
 
-# first experiment distincts
-df_paired = pd.read_csv(distinct_paired_mapping_path)
+# promoter-barcode paired
+paired_df = pd.read_csv(paired_mapping_path)
 
-# join
-merged = df_paired.set_index('barcode').join(df_grouped.set_index('barcode'))
-merged.sort_values(by=['count'], ascending=False, inplace=True)
-merged.dropna(axis=0, subset=['count'], inplace=True)
-merged.reset_index(inplace=True)
-merged = merged.astype({'count': 'int64'})
-merged = merged.head(10)
+
+# help us map the promoters back
+merged_by_barcode = barcodes_results_df_grouped.set_index('barcode').join(
+    paired_df.set_index('barcode'))
+merged_by_barcode.sort_values(by=['count'], ascending=False, inplace=True)
+merged_by_barcode.dropna(axis=0, subset=['promoter'], inplace=True)
+merged_by_barcode.reset_index(inplace=True)
+
+merged_by_promoter = merged_by_barcode.groupby(
+    ['promoter']).sum().reset_index().sort_values(by=['count'], ascending=False)
+
+merged_by_barcode = merged_by_barcode.head(10)
+merged_by_promoter = merged_by_promoter.head(10)
 
 # create the folder if not exists yet
-if not os.path.exists(os.path.dirname(output_highlighted_barcodes_promoter_path)):
-    os.makedirs(os.path.dirname(output_highlighted_barcodes_promoter_path))
+if not os.path.exists(os.path.dirname(output_barcodes_path)):
+    os.makedirs(os.path.dirname(output_barcodes_path))
 
-merged.to_csv(output_highlighted_barcodes_promoter_path, index=False)
+merged_by_barcode.to_csv(output_barcodes_path, index=False)
+
+# create the folder if not exists yet
+if not os.path.exists(os.path.dirname(output_promoters_path)):
+    os.makedirs(os.path.dirname(output_promoters_path))
+
+merged_by_promoter.to_csv(output_promoters_path, index=False)
