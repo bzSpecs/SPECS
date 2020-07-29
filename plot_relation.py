@@ -7,12 +7,19 @@ barcodes_csv_1 = sys.argv[1]
 x_label = sys.argv[2]
 barcodes_csv_2 = sys.argv[3]
 y_label = sys.argv[4]
+by_which_parameter = sys.argv[5]
+
+by_promoter = by_which_parameter == "promoter"
 
 barcodes_df_1 = pd.read_csv(barcodes_csv_1)
 barcodes_df_2 = pd.read_csv(barcodes_csv_2)
 
-merged_df = barcodes_df_1.merge(
-    barcodes_df_2, on="barcode", how="inner")
+if by_promoter:
+    merged_df = barcodes_df_1.merge(
+        barcodes_df_2, on="promoter", how="inner")
+else:
+    merged_df = barcodes_df_1.merge(
+        barcodes_df_2, on="barcode", how="inner")
 
 
 fig, ax = plt.subplots()
@@ -33,8 +40,12 @@ def update_annot(ind):
     index = ind["ind"][0]
     pos = sc.get_offsets()[ind["ind"][0]]
     annot.xy = pos
-    text = "bc: {}, prmtr: {}".format(
-        merged_df.iloc[index]["barcode"], merged_df.iloc[index]["promoter_x"])
+    if by_promoter:
+        text = "prmtr: {}".format(
+            merged_df.iloc[index]["promoter"])
+    else:
+        text = "bc: {}, prmtr: {}".format(
+            merged_df.iloc[index]["barcode"], merged_df.iloc[index]["promoter_x"])
     annot.set_text(text)
 
 
