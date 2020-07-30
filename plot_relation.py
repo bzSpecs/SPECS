@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import matplotlib as mpl
 import pandas as pd
 import sys
 import ipdb
@@ -7,7 +8,8 @@ barcodes_csv_1 = sys.argv[1]
 x_label = sys.argv[2]
 barcodes_csv_2 = sys.argv[3]
 y_label = sys.argv[4]
-by_which_parameter = sys.argv[5]
+title_label = sys.argv[5]
+by_which_parameter = sys.argv[6]
 
 by_promoter = by_which_parameter == "promoter"
 
@@ -28,8 +30,9 @@ sc = plt.scatter(merged_df["count_x"], merged_df["count_y"])
 plt.xscale('log')
 plt.yscale('log')
 
-plt.xlabel(x_label)
-plt.ylabel(y_label)
+plt.xlabel(x_label, fontfamily='Arial', fontsize=12, fontweight="bold")
+plt.ylabel(y_label, fontfamily='Arial', fontsize=12, fontweight="bold")
+plt.title(title_label, fontfamily='Arial', fontsize=16, fontweight="bold")
 
 annot = ax.annotate("", xy=(0, 0), xytext=(
     0, 10), textcoords="offset points", bbox=dict(boxstyle="round", fc="w"), ha='center')
