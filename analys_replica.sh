@@ -60,7 +60,8 @@ only_top_10_threshold_paired_path=${thresh_replication_folder_path}/${threshold_
 python3 find_highlights_in_duplicated_barcodes.py ${thresh_paired_path} ${unique_top_10_by_promoter} ${only_top_10_threshold_paired_path}
 
 rna_seq_threshold_path=${thresh_replication_folder_path}/${threshold_and_number}_${cell_line}_${replication}_rna_seq_barcodes.csv
-python3 extract_barcodes_from_raw_data.py ${only_top_10_threshold_paired_path} ${rna_seq_barcodes_csv_path} ${rna_seq_threshold_path}
+top_10_unique_promoter_after_thresh_path=${thresh_replication_folder_path}/${threshold_and_number}_${cell_line}_${replication}_top_10_unique_promoters.csv
+python3 extract_barcodes_from_raw_data.py ${only_top_10_threshold_paired_path} ${rna_seq_barcodes_csv_path} ${rna_seq_threshold_path} ${top_10_unique_promoter_after_thresh_path}
 
 # highlighted barcodes by number of reads
 thresh_highlight_by_barcode=${thresh_replication_folder_path}/highlights/by_barcode/${threshold_and_number}_${cell_line}_${replication}_highlights.csv
