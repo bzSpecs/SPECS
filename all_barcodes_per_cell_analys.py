@@ -1,6 +1,5 @@
 import pandas as pd
 import ipdb
-import matplotlib.pyplot as plt
 import sys
 import os
 

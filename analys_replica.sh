@@ -2,57 +2,79 @@
 
 paired_path=$1 # promoter-barcode mapping
 rna_seq_fastq_path=$2 # RNA-seq fastq file
-replication=$3 # replication name
-highlight_value=$4 # highlight minimum value
+root_dir_path=$3 # the root folder to all the outputs files
+cell_line=$4 # the name of the cell line
+replication=$5 # replication name
+highlight_value=$6 # highlight minimum value
+threshold_value=$7 # threshold value
 
-arrIN=(${rna_seq_fastq_path//\// })
-folder_name_index=$((${#arrIN[@]}-2))
-folder_name=${arrIN[${folder_name_index}]}
+threshold_and_number=threshold_${threshold_value}
 
-full_folder_name=results/${folder_name}
+cell_line_folder_path=${root_dir_path}/${cell_line}
+unique_replication_folder_path=${cell_line_folder_path}/unique/${replication}
+thresh_replication_folder_path=${cell_line_folder_path}/${threshold_and_number}/${replication}
+# unique_replication_folder_path=${cell_line_folder_path}/${replication}/unique
+# thresh_replication_folder_path=${cell_line_folder_path}/${replication}/${threshold_and_number}
 
-mkdir -p results
-mkdir -p ${full_folder_name}
+mkdir -p ${cell_line_folder_path}
+# mkdir -p ${replication_folder_path}
 
-if [ -f "results/distinct_PAIRED.csv" ]; then
-        echo "distinct_PAIRED.csv exists."
+unique_paired_path=${root_dir_path}/unique_PAIRED.csv
+if [ -f ${unique_paired_path} ]; then
+        echo ${unique_paired_path} exists.
 else
-        python3 barcodes_promotors_mapping_distinct.py ${paired_path} results/distinct_PAIRED.csv
+        python3 barcodes_promotors_mapping_unique.py ${paired_path} ${unique_paired_path}
 fi
 
-python3 second_exp_extract_barcodes.py ${rna_seq_fastq_path} ${full_folder_name}/raw_barcodes_csv/${replication}_${folder_name}_barcodes.csv
+
+
+rna_seq_barcodes_csv_path=${unique_replication_folder_path}/${cell_line}_${replication}_rna_seq_barcodes.csv
+python3 rna_seq_extract_barcodes.py ${rna_seq_fastq_path} ${rna_seq_barcodes_csv_path}
 
 # highlighted barcodes by number of reads
-python3 highlights_by_min_barcodes_representations.py ${full_folder_name}/raw_barcodes_csv/${replication}_${folder_name}_barcodes.csv results/distinct_PAIRED.csv ${full_folder_name}/distincts/by_barcode/highlights_results/${replication}_${folder_name}_highlights.csv ${full_folder_name}/distincts/by_promoter/highlights_results/${replication}_${folder_name}_highlights.csv ${highlight_value}
+unique_highlight_by_barcode=${unique_replication_folder_path}/highlights/by_barcode/unique_${cell_line}_${replication}_highlights.csv
+unique_highlight_by_promoter=${unique_replication_folder_path}/highlights/by_promoter/unique_${cell_line}_${replication}_highlights.csv
+python3 highlights_by_min_barcodes_representations.py ${rna_seq_barcodes_csv_path} ${unique_paired_path} ${unique_highlight_by_barcode} ${unique_highlight_by_promoter} ${highlight_value}
 
 # top 10 barcodes for replica
-python3 top_10_analys.py ${full_folder_name}/raw_barcodes_csv/${replication}_${folder_name}_barcodes.csv results/distinct_PAIRED.csv ${full_folder_name}/distincts/by_barcode/top_10/${replication}_${folder_name}_top_10.csv ${full_folder_name}/distincts/by_promoter/top_10/${replication}_${folder_name}_top_10.csv
+unique_top_10_by_barcode=${unique_replication_folder_path}/top_10/by_barcode/unique_${cell_line}_${replication}_top_10.csv
+unique_top_10_by_promoter=${unique_replication_folder_path}/top_10/by_promoter/unique_${cell_line}_${replication}_top_10.csv
+python3 top_10_analys.py ${rna_seq_barcodes_csv_path} ${unique_paired_path} ${unique_top_10_by_barcode} ${unique_top_10_by_promoter}
 
 # all barcodes
-python3 all_barcodes_per_cell_analys.py ${full_folder_name}/raw_barcodes_csv/${replication}_${folder_name}_barcodes.csv results/distinct_PAIRED.csv ${full_folder_name}/distincts/by_barcode/all/${replication}_${folder_name}_all.csv ${full_folder_name}/distincts/by_promoter/all/${replication}_${folder_name}_all.csv
+unique_all_by_barcode=${unique_replication_folder_path}/all/by_barcode/unique_${cell_line}_${replication}_all.csv
+unique_all_by_promoter=${unique_replication_folder_path}/all/by_promoter/unique_${cell_line}_${replication}_all.csv
+python3 all_barcodes_per_cell_analys.py ${rna_seq_barcodes_csv_path} ${unique_paired_path} ${unique_all_by_barcode} ${unique_all_by_promoter}
 
 
 ################################################
 
-if [ -f "results/tresh_3_PAIRED.csv" ]; then
-        echo "tresh_3_PAIRED.csv exists."
+thresh_paired_path=${root_dir_path}/${threshold_and_number}_PAIRED.csv
+if [ -f ${thresh_paired_path} ]; then
+        echo ${thresh_paired_path} exists.
 else
-        python3 barcodes_promotors_mapping_tresh_3.py ${paired_path} results/tresh_3_PAIRED.csv
+        python3 barcodes_promotors_mapping_threshold.py ${paired_path} ${threshold_value} ${thresh_paired_path}
 fi
 
-python3 find_highlights_in_duplicated_barcodes.py results/tresh_3_PAIRED.csv ${full_folder_name}/distincts/by_barcode/top_10/${replication}_${folder_name}_top_10.csv ${full_folder_name}/tresh_3/${replication}_${folder_name}_tresh_3.csv
+only_top_10_threshold_paired_path=${thresh_replication_folder_path}/${threshold_and_number}_${cell_line}_${replication}_paired.csv
+python3 find_highlights_in_duplicated_barcodes.py ${thresh_paired_path} ${unique_top_10_by_promoter} ${only_top_10_threshold_paired_path}
 
-python3 extract_barcodes_from_raw_data.py ${full_folder_name}/tresh_3/${replication}_${folder_name}_tresh_3.csv ${full_folder_name}/raw_barcodes_csv/${replication}_${folder_name}_barcodes.csv ${full_folder_name}/tresh_3/${replication}_${folder_name}_tresh_3.csv
+rna_seq_threshold_path=${thresh_replication_folder_path}/${threshold_and_number}_${cell_line}_${replication}_rna_seq_barcodes.csv
+python3 extract_barcodes_from_raw_data.py ${only_top_10_threshold_paired_path} ${rna_seq_barcodes_csv_path} ${rna_seq_threshold_path}
 
 # highlighted barcodes by number of reads
-python3 highlights_by_min_barcodes_representations.py ${full_folder_name}/tresh_3/${replication}_${folder_name}_tresh_3.csv results/tresh_3_PAIRED.csv ${full_folder_name}/tresh_3/by_barcode/highlights_results/${replication}_${folder_name}_highlights.csv ${full_folder_name}/tresh_3/by_promoter/highlights_results/${replication}_${folder_name}_highlights.csv ${highlight_value}
+thresh_highlight_by_barcode=${thresh_replication_folder_path}/highlights/by_barcode/${threshold_and_number}_${cell_line}_${replication}_highlights.csv
+thresh_highlight_by_promoter=${thresh_replication_folder_path}/highlights/by_promoter/${threshold_and_number}_${cell_line}_${replication}_highlights.csv
+python3 highlights_by_min_barcodes_representations.py ${rna_seq_threshold_path} ${thresh_paired_path} ${thresh_highlight_by_barcode} ${thresh_highlight_by_promoter} ${highlight_value}
 
 # top 10 barcodes for replica
-python3 top_10_analys.py ${full_folder_name}/tresh_3/${replication}_${folder_name}_tresh_3.csv results/tresh_3_PAIRED.csv ${full_folder_name}/tresh_3/by_barcode/top_10/${replication}_${folder_name}_top_10.csv ${full_folder_name}/tresh_3/by_promoter/top_10/${replication}_${folder_name}_top_10.csv
+thresh_top_10_by_barcode=${thresh_replication_folder_path}/top_10/by_barcode/${threshold_and_number}_${cell_line}_${replication}_top_10.csv
+thresh_top_10_by_promoter=${thresh_replication_folder_path}/top_10/by_promoter/${threshold_and_number}_${cell_line}_${replication}_top_10.csv
+python3 top_10_analys.py ${rna_seq_threshold_path} ${thresh_paired_path} ${thresh_top_10_by_barcode} ${thresh_top_10_by_promoter}
 
 # all barcodes
-python3 all_barcodes_per_cell_analys.py ${full_folder_name}/tresh_3/${replication}_${folder_name}_tresh_3.csv results/tresh_3_PAIRED.csv ${full_folder_name}/tresh_3/by_barcode/all/${replication}_${folder_name}_all.csv ${full_folder_name}/tresh_3/by_promoter/all/${replication}_${folder_name}_all.csv
+thresh_all_by_barcode=${thresh_replication_folder_path}/all/by_barcode/${threshold_and_number}_${cell_line}_${replication}_all.csv
+thresh_all_by_promoter=${thresh_replication_folder_path}/all/by_promoter/${threshold_and_number}_${cell_line}_${replication}_all.csv
+python3 all_barcodes_per_cell_analys.py ${rna_seq_threshold_path} ${thresh_paired_path} ${thresh_all_by_barcode} ${thresh_all_by_promoter}
 
-
-
-# example of running - ./analys_replica.sh ../scripts/library_preparation/barcodes/asdasd_PAIRED.csv ../RNA-seq/XEN/clipped_rep3_XEN.fastq rep3 100
+# example of running - ./analys_replica.sh ../scripts/library_preparation/barcodes/asdasd_PAIRED.csv ../RNA-seq/HEK293T/clipped_rep3_HEK293T.fastq results HEK293T rep3 100 3
