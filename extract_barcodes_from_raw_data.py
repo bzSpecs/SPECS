@@ -24,10 +24,10 @@ if not os.path.exists(os.path.dirname(top_10_unique_promoters_path)):
 
 top_10_unique_promoters_after_thresh_df.to_csv(top_10_unique_promoters_path, index=False)
 
-# merged.drop(columns=['promoter'], inplace=True)
+merged.drop(columns=['promoter'], inplace=True)
 
-# # create the folder if not exists yet
-# if not os.path.exists(os.path.dirname(output_csv_path)):
-#     os.makedirs(os.path.dirname(output_csv_path))
+# create the folder if not exists yet
+if not os.path.exists(os.path.dirname(output_csv_path)):
+    os.makedirs(os.path.dirname(output_csv_path))
 
-# merged.to_csv(output_csv_path, index=False)
+merged.to_csv(output_csv_path, index=False)
