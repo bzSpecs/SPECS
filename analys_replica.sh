@@ -28,55 +28,60 @@ else
 fi
 
 
-
+# extract barcodes from fastq file to csv
 rna_seq_barcodes_csv_path=${unique_tech_rep}/${cell_line}_bio_${bio_rep}_tech_${tech_rep}_rna_seq_barcodes.csv
 python3 rna_seq_extract_barcodes.py ${rna_seq_fastq_path} ${rna_seq_barcodes_csv_path}
 
-# highlighted barcodes by number of reads
+# make barcode-count csv
+unique_all_by_barcode=${unique_tech_rep}/all/by_barcode/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
+python3 barcodes_counts.py ${rna_seq_barcodes_csv_path} ${unique_all_by_barcode}
+
+# make promoter-count csv
+unique_all_by_promoter=${unique_tech_rep}/all/by_promoter/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
+python3 promoter_counts.py ${unique_all_by_barcode} ${unique_paired_path} ${unique_all_by_promoter}
+
+# highlighted barcodes and promoters by number of reads
 unique_highlight_by_barcode=${unique_tech_rep}/highlights/by_barcode/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_highlights.csv
 unique_highlight_by_promoter=${unique_tech_rep}/highlights/by_promoter/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_highlights.csv
-python3 highlights_by_min_barcodes_representations.py ${rna_seq_barcodes_csv_path} ${unique_paired_path} ${unique_highlight_by_barcode} ${unique_highlight_by_promoter} ${highlight_value}
+python3 highlights_by_count.py ${unique_all_by_barcode} ${unique_highlight_by_barcode} ${highlight_value}
+python3 highlights_by_count.py ${unique_all_by_promoter} ${unique_highlight_by_promoter} ${highlight_value}
 
-# top 10 barcodes for replica
+# top 10 barcodes and promoters for replica
 unique_top_10_by_barcode=${unique_tech_rep}/top_10/by_barcode/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_top_10.csv
 unique_top_10_by_promoter=${unique_tech_rep}/top_10/by_promoter/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_top_10.csv
-python3 top_10_analys.py ${rna_seq_barcodes_csv_path} ${unique_paired_path} ${unique_top_10_by_barcode} ${unique_top_10_by_promoter}
-
-# all barcodes
-unique_all_by_barcode=${unique_tech_rep}/all/by_barcode/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
-unique_all_by_promoter=${unique_tech_rep}/all/by_promoter/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
-python3 all_barcodes_per_cell_analys.py ${rna_seq_barcodes_csv_path} ${unique_paired_path} ${unique_all_by_barcode} ${unique_all_by_promoter}
+python3 top_10_by_count.py ${unique_all_by_barcode} ${unique_top_10_by_barcode}
+python3 top_10_by_count.py ${unique_all_by_promoter} ${unique_top_10_by_promoter}
 
 
 ################################################
 
-thresh_paired_path=${root_dir_path}/${threshold_and_number}_PAIRED.csv
-if [ -f ${thresh_paired_path} ]; then
-        echo ${thresh_paired_path} exists.
-else
-        python3 barcodes_promotors_mapping_threshold.py ${paired_path} ${threshold_value} ${thresh_paired_path}
-fi
+# thresh_paired_path=${root_dir_path}/${threshold_and_number}_PAIRED.csv
+# if [ -f ${thresh_paired_path} ]; then
+#         echo ${thresh_paired_path} exists.
+# else
+#         python3 barcodes_promotors_mapping_threshold.py ${paired_path} ${threshold_value} ${thresh_paired_path}
+# fi
 
-only_top_10_threshold_paired_path=${thresh_tech_rep}/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_paired.csv
-python3 find_highlights_in_duplicated_barcodes.py ${thresh_paired_path} ${unique_top_10_by_promoter} ${only_top_10_threshold_paired_path}
+# only_top_10_threshold_paired_path=${thresh_tech_rep}/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_paired.csv
+# python3 find_highlights_in_duplicated_barcodes.py ${thresh_paired_path} ${unique_top_10_by_promoter} ${only_top_10_threshold_paired_path}
 
-rna_seq_threshold_path=${thresh_tech_rep}/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_rna_seq_barcodes.csv
-top_10_unique_promoter_after_thresh_path=${thresh_tech_rep}/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_top_10_unique_promoters.csv
-python3 extract_barcodes_from_raw_data.py ${only_top_10_threshold_paired_path} ${rna_seq_barcodes_csv_path} ${rna_seq_threshold_path} ${top_10_unique_promoter_after_thresh_path}
+# rna_seq_threshold_path=${thresh_tech_rep}/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_rna_seq_barcodes.csv
+# top_10_unique_promoter_after_thresh_path=${thresh_tech_rep}/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_top_10_unique_promoters.csv
+# python3 extract_barcodes_from_raw_data.py ${only_top_10_threshold_paired_path} ${rna_seq_barcodes_csv_path} ${rna_seq_threshold_path} ${top_10_unique_promoter_after_thresh_path}
 
-# highlighted barcodes by number of reads
-thresh_highlight_by_barcode=${thresh_tech_rep}/highlights/by_barcode/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_highlights.csv
-thresh_highlight_by_promoter=${thresh_tech_rep}/highlights/by_promoter/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_highlights.csv
-python3 highlights_by_min_barcodes_representations.py ${rna_seq_threshold_path} ${thresh_paired_path} ${thresh_highlight_by_barcode} ${thresh_highlight_by_promoter} ${highlight_value}
+# # highlighted barcodes by number of reads
+# thresh_highlight_by_barcode=${thresh_tech_rep}/highlights/by_barcode/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_highlights.csv
+# thresh_highlight_by_promoter=${thresh_tech_rep}/highlights/by_promoter/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_highlights.csv
+# python3 highlights_by_min_barcodes_representations.py ${rna_seq_threshold_path} ${thresh_paired_path} ${thresh_highlight_by_barcode} ${thresh_highlight_by_promoter} ${highlight_value}
 
-# top 10 barcodes for replica
-thresh_top_10_by_barcode=${thresh_tech_rep}/top_10/by_barcode/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_top_10.csv
-thresh_top_10_by_promoter=${thresh_tech_rep}/top_10/by_promoter/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_top_10.csv
-python3 top_10_analys.py ${rna_seq_threshold_path} ${thresh_paired_path} ${thresh_top_10_by_barcode} ${thresh_top_10_by_promoter}
+# # top 10 barcodes for replica
+# thresh_top_10_by_barcode=${thresh_tech_rep}/top_10/by_barcode/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_top_10.csv
+# thresh_top_10_by_promoter=${thresh_tech_rep}/top_10/by_promoter/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_top_10.csv
+# python3 top_10_analys.py ${rna_seq_threshold_path} ${thresh_paired_path} ${thresh_top_10_by_barcode} ${thresh_top_10_by_promoter}
 
-# all barcodes
-thresh_all_by_barcode=${thresh_tech_rep}/all/by_barcode/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
-thresh_all_by_promoter=${thresh_tech_rep}/all/by_promoter/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
-python3 all_barcodes_per_cell_analys.py ${rna_seq_threshold_path} ${thresh_paired_path} ${thresh_all_by_barcode} ${thresh_all_by_promoter}
+# # all barcodes
+# thresh_all_by_barcode=${thresh_tech_rep}/all/by_barcode/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
+# thresh_all_by_promoter=${thresh_tech_rep}/all/by_promoter/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
+# python3 all_barcodes_per_cell_analys.py ${rna_seq_threshold_path} ${thresh_paired_path} ${thresh_all_by_barcode} ${thresh_all_by_promoter}
 
-# example of running - ./analys_replica.sh ../scripts/library_preparation/barcodes/asdasd_PAIRED.csv ../RNA-seq/HEK293T/clipped_rep3_HEK293T.fastq results HEK293T rep3 100 3
+# # example of running - ./analys_replica.sh ../scripts/library_preparation/barcodes/asdasd_PAIRED.csv ../RNA-seq/HEK293T/clipped_rep3_HEK293T.fastq results HEK293T rep3 100 3

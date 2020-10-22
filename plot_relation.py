@@ -25,14 +25,25 @@ else:
 
 
 fig, ax = plt.subplots()
-sc = plt.scatter(merged_df["count_x"], merged_df["count_y"])
+sc = plt.scatter(merged_df["count_x"], merged_df["count_y"], s=60)
+
+fig.set_size_inches(800/fig.dpi, 800/fig.dpi,forward=True)
 
 plt.xscale('log')
 plt.yscale('log')
 
-plt.xlabel(x_label, fontfamily='Arial', fontsize=12, fontweight="bold")
-plt.ylabel(y_label, fontfamily='Arial', fontsize=12, fontweight="bold")
-plt.title(title_label, fontfamily='Arial', fontsize=16, fontweight="bold")
+
+all_values_from_the_two_columns = merged_df['count_x'].append(merged_df['count_y']).reset_index(drop=True)
+max_value = all_values_from_the_two_columns.max()
+
+plt.xlim(1,max_value + 1000)
+plt.ylim(1,max_value + 1000)
+
+plt.xlabel(x_label, fontfamily='Arial', fontsize=36, fontweight="bold")
+plt.ylabel(y_label, fontfamily='Arial', fontsize=36, fontweight="bold")
+plt.xticks(fontsize=36)
+plt.yticks(fontsize=36)
+plt.title(title_label, fontfamily='Arial', fontsize=42, fontweight="bold")
 
 annot = ax.annotate("", xy=(0, 0), xytext=(
     0, 10), textcoords="offset points", bbox=dict(boxstyle="round", fc="w"), ha='center')
@@ -67,7 +78,6 @@ def hover(event):
 
 
 fig.canvas.mpl_connect("motion_notify_event", hover)
-
+plt.tight_layout()
+plt.savefig('sampleFileName.png')
 plt.show()
-
-ipdb.set_trace()
