@@ -66,8 +66,6 @@ fastq_name=$(basename -- $read2)
 fastq_name=${fastq_name%%.*}
 python3 stats.py $sample_name $fastq_name
 
-barcodes
-
 # pre-clipped: CGCCCTTAGACACCATGGTGGCCAGCGCAACATCCAACCATGGGATCCGAGCTGGTTTACCAACAGTACCGGAATGCCAAGCTTACTTAGATCGCAGATCTAGAGTGAGGACGAACGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 # post-clipped: CAGCGCAACATCCAACCATG
 #clip barcodes:
