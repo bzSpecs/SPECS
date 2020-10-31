@@ -52,7 +52,7 @@ unique_top_10_by_promoter=${unique_tech_rep}/top_10/by_promoter/unique_${cell_li
 python3 top_10_by_count.py ${unique_all_by_barcode} ${unique_top_10_by_barcode}
 python3 top_10_by_count.py ${unique_all_by_promoter} ${unique_top_10_by_promoter}
 
-################################################
+###############################################
 
 # thresh_paired_path=${root_dir_path}/${threshold_and_number}_PAIRED.csv
 # if [ -f ${thresh_paired_path} ]; then
