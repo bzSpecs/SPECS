@@ -42,7 +42,9 @@ ${cutadapt} -g CGGCCGCCCTGCAGG \
             -a GGCGCGCCAGACGCT \
             -O 3 -n 2 \
             -o library_preparation/02_Fastq_clip/clipped_$sample_name.fastq -m 30 \
-            --untrimmed-output library_preparation/02_Fastq_clip/unclipped_$sample_name.fastq  ${read_promoter} \
+            --untrimmed-output library_preparation/02_Fastq_clip/unclipped_$sample_name.fastq  \
+	    --too-short-output library_preparation/02_Fastq_clip/too_short_$sample_name.fastq  \
+	    --too-long-output  library_preparation/02_Fastq_clip/too_long_$sample_name.fastq  ${read_promoter} \
             1>>logs/clip/$sample_name.log 2>&1
 #----------------------
 # From word doc:
@@ -140,7 +142,9 @@ ${cutadapt} -g GACACCATGGTGGC      \
             -a GGATCCGAGCTGGTT     \
             -O 3 -n 2 -m 15 -M 25  \
             -o library_preparation/06_barcodes/clipped_R1_$sample_name.fastq  \
-            --untrimmed-output library_preparation/06_barcodes/unclipped_R1_$sample_name.fastq \
+            --untrimmed-output library_preparation/06_barcodes/unclipped_R1_$sample_name.fastq  \
+	    --too-short-output library_preparation/06_barcodes/too_short_$sample_name.fastq  \
+	    --too-long-output  library_preparation/06_barcodes/too_long_$sample_name.fastq \
             ${read_barcode} \
             1>>logs/clip/R1_$sample_name.log 2>&1
 
