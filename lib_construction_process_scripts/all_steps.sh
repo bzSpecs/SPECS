@@ -132,6 +132,8 @@ python3 stats.py $sample_name $fastq_name
 # pre-clipped: CGCCCTTAGACACCATGGTGGCCAGCGCAACATCCAACCATGGGATCCGAGCTGGTTTACCAACAGTACCGGAATGCCAAGCTTACTTAGATCGCAGATCTAGAGTGAGGACGAACGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG
 # post-clipped: CAGCGCAACATCCAACCATG
 
+## barcodes
+
 mkdir -p library_preparation/06_barcodes
 echo "Clipping barcodes (R1)"
 ${cutadapt} -g GACACCATGGTGGC      \
@@ -144,8 +146,11 @@ ${cutadapt} -g GACACCATGGTGGC      \
 
 echo "Extracting barcodes"
 mkdir -p library_preparation/06_barcodes/R1_$sample_name
-python3 r1_to_tsv.py library_preparation/06_barcodes/clipped_R1_$sample_name.fastq library_preparation/06_barcodes/R1_$sample_name
-python3 get_barcodes.py library_preparation/04_alignBowtie/$sample_name/mapped_$sample_name.txt library_preparation/06_barcodes/R1_$sample_name/barcodes.tsv library_preparation/06_barcodes/${sample_name}_PAIRED.csv
+python3 r1_to_tsv.py library_preparation/06_barcodes/clipped_R1_$sample_name.fastq \
+        library_preparation/06_barcodes/R1_$sample_name
+python3 get_barcodes.py library_preparation/04_alignBowtie/$sample_name/mapped_$sample_name.txt \
+        library_preparation/06_barcodes/R1_$sample_name/barcodes.tsv \
+        library_preparation/06_barcodes/${sample_name}_PAIRED.csv
 
 # echo "Matching to promoters"
 # mkdir -p library_preparation/final
