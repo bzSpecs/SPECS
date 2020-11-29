@@ -6,3 +6,6 @@ validations/**/*
 
 lib_construction_process_scripts/library_preparation
 lib_construction_process_scripts/logs
+
+RNA_seq_process_scripts/RNA_seq_results
+RNA_seq_process_scripts/logs
