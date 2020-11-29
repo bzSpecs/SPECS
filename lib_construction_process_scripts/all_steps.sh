@@ -10,9 +10,9 @@ sample_name=$3 # proper name this sample will be called
 mkdir -p library_preparation
 mkdir -p logs
 
-fastqc="/project/bioinf_meissner/src/fastQC/fastqc_v0.11.5/fastqc"
-cutadapt="/project/bioinf_meissner/src/cutadapt/cutadapt"
-bowtie2="/project/bioinf_meissner/src/bowtie2/bowtie2-2.3.5.1-linux-x86_64/bowtie2"
+# fastqc="/project/bioinf_meissner/src/fastQC/fastqc_v0.11.5/fastqc"
+# cutadapt="/project/bioinf_meissner/src/cutadapt/cutadapt"
+# bowtie2="/project/bioinf_meissner/src/bowtie2/bowtie2-2.3.5.1-linux-x86_64/bowtie2"
 
 ## Fastqc pre ==> Quality control, done to establish a baseline
 # so that when we run QC again after trimming, we can compare and see the
