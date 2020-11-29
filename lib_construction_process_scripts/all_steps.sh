@@ -10,9 +10,10 @@ sample_name=$3 # proper name this sample will be called
 mkdir -p library_preparation
 mkdir -p logs
 
-# fastqc="/project/bioinf_meissner/src/fastQC/fastqc_v0.11.5/fastqc"
-# cutadapt="/project/bioinf_meissner/src/cutadapt/cutadapt"
-# bowtie2="/project/bioinf_meissner/src/bowtie2/bowtie2-2.3.5.1-linux-x86_64/bowtie2"
+# fastqc="/Applications/FastQC.app/Contents/MacOS/fastqc"
+# cutadapt="/Users/barzar/Library/Python/3.8/bin/cutadapt"
+# bowtie2="/Users/barzar/Downloads/bowtie2-2.4.2/bowtie2"
+# samtools="/Users/barzar/Downloads/samtools/bin/samtools"
 
 ## Fastqc pre ==> Quality control, done to establish a baseline
 # so that when we run QC again after trimming, we can compare and see the
@@ -96,12 +97,12 @@ ${bowtie2} --very-sensitive --norc \
 # -F INT --> Do not output alignments with any bits set in INT present i
 # and from https://broadinstitute.github.io/picard/explain-flags.html
 # code "4" means unmapped. So: omit reads that weren't successfully mapped to any "chromosome"
-samtools view -F 4 library_preparation/04_alignBowtie/$sample_name/$sample_name.sam | \
+${samtools} view -F 4 library_preparation/04_alignBowtie/$sample_name/$sample_name.sam | \
            cut -f1,3 | \
            sort -k1 > library_preparation/04_alignBowtie/$sample_name/mapped_$sample_name.txt 2>> logs/samtools/$sample_name.log
 # -f INT --> Only output alignments with all bits set in INT present in the FLAG field
 # so: only print out the unmapped alignments.
-samtools view -f 4 library_preparation/04_alignBowtie/$sample_name/$sample_name.sam | \
+${samtools} view -f 4 library_preparation/04_alignBowtie/$sample_name/$sample_name.sam | \
            cut -f1,10 | \
            sort -k1> library_preparation/04_alignBowtie/$sample_name/unmapped_$sample_name.txt 2>> logs/samtools/$sample_name.log
 # In each case above,

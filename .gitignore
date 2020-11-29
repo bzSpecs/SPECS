@@ -3,3 +3,6 @@ results*
 resources/**/*
 
 validations/**/*
+
+lib_construction_process_scripts/library_preparation
+lib_construction_process_scripts/logs
