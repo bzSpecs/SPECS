@@ -1,5 +1,3 @@
-# for now it supports only tech replicates results
-
 import pandas as pd
 import ipdb
 import sys
