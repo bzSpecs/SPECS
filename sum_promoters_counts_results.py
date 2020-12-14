@@ -1,5 +1,6 @@
 import pandas as pd
 import sys
+import os
 import ipdb
 
 files = sys.argv[1]
@@ -28,6 +29,10 @@ for i in range(len(dfs)):
     merged.drop(columns=["count_df"], inplace=True)
 
 merged = merged.sort_values(by="count", ascending=False)
+
+# create the folder if not exists yet
+if not os.path.exists(os.path.dirname(output_file)):
+    os.makedirs(os.path.dirname(output_file))
 
 merged.to_csv(output_file, index=False)
 

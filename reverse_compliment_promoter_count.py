@@ -20,6 +20,8 @@ promoter_count_df_copy = promoter_count_df.copy()
 merged_df = pd.merge(left=promoter_count_df, right=promoter_count_df,
                      left_on='promoter_without_id', right_on='reverse_promoter_without_id', how='left', suffixes=('', '_reverse'))
 merged_df = merged_df[['promoter', 'count', 'count_reverse']]
+merged_df['original_reverse_ratio'] = merged_df['count'] / \
+    merged_df['count_reverse']
 
 # create the folder if not exists yet
 if not os.path.exists(os.path.dirname(output_file)):

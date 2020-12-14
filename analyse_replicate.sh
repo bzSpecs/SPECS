@@ -52,6 +52,16 @@ unique_top_10_by_promoter=${unique_tech_rep}/top_10/by_promoter/unique_${cell_li
 python3 top_10_by_count.py ${unique_all_by_barcode} ${unique_top_10_by_barcode}
 python3 top_10_by_count.py ${unique_all_by_promoter} ${unique_top_10_by_promoter}
 
+normalized_unique_all_by_promoter=${unique_tech_rep}/all/by_promoter/normalized_unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
+python3 normalize_sum_by_reads.py ${unique_all_by_promoter} ${rna_seq_barcodes_csv_path} 100000 ${normalized_unique_all_by_promoter}
+
+unique_all_by_promoter_reverse_data_relations=${unique_tech_rep}/all/by_promoter/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all_reverse_data_relations.csv
+python3 reverse_compliment_promoter_count.py ${unique_all_by_promoter} ${unique_all_by_promoter_reverse_data_relations}
+
+normalized_unique_all_by_promoter_reverse_data_relations=${unique_tech_rep}/all/by_promoter/normalized_unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all_reverse_data_relations.csv
+python3 reverse_compliment_promoter_count.py ${normalized_unique_all_by_promoter} ${normalized_unique_all_by_promoter_reverse_data_relations}
+
+
 ###############################################
 
 # thresh_paired_path=${root_dir_path}/${threshold_and_number}_PAIRED.csv
