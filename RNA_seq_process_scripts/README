@@ -1,0 +1,6 @@
+# Here RNA pre-processing is performed, cutting away the adapter sequence AACCAGCTCGGATCC
+# and isolating the barcode for further processing, 
+# output is passed by default to RNA_seq_results/ (hard-coded)
+
+# e.g.
+# ./rna_seq_process.sh RNA-seq/HEK293T/HEK293T_2/HEK293T_bio_2_tech_1.fastq HEK293T_b2_t1
