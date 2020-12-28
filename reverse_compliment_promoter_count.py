@@ -15,8 +15,6 @@ promoter_count_df['promoter_without_id'] = pd.DataFrame(
 promoter_count_df['reverse_promoter_without_id'] = pd.DataFrame(
     [x.translate(table)[::-1] for x in promoter_count_df['promoter_without_id']])
 
-promoter_count_df_copy = promoter_count_df.copy()
-
 merged_df = pd.merge(left=promoter_count_df, right=promoter_count_df,
                      left_on='promoter_without_id', right_on='reverse_promoter_without_id', how='left', suffixes=('', '_reverse'))
 merged_df = merged_df[['promoter', 'count', 'count_reverse']]
