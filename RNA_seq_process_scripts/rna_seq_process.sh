@@ -4,7 +4,7 @@ start=$(date +"%s")
 fastq=$1 # reads file
 sample_name=$2 # proper name this sample will be called
 
-cutadapt="/Users/barzar/Library/Python/3.8/bin/cutadapt"
+# cutadapt="/Users/barzaruk/.local/bin/cutadapt"
 
 mkdir -p RNA_seq_results
 mkdir -p RNA_seq_results/$sample_name

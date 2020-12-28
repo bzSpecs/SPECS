@@ -11,9 +11,9 @@ mkdir -p library_preparation
 mkdir -p logs
 
 # fastqc="/Applications/FastQC.app/Contents/MacOS/fastqc"
-# cutadapt="/Users/barzar/Library/Python/3.8/bin/cutadapt"
-# bowtie2="/Users/barzar/Downloads/bowtie2-2.4.2/bowtie2"
-# samtools="/Users/barzar/Downloads/samtools/bin/samtools"
+# cutadapt="/Users/barzaruk/.local/bin/cutadapt"
+# bowtie2="/Users/barzaruk/Downloads/bowtie2-2.4.2/bowtie2"
+# samtools="/Users/barzaruk/Downloads/samtools/bin/samtools"
 
 ## Fastqc pre ==> Quality control, done to establish a baseline
 # so that when we run QC again after trimming, we can compare and see the
