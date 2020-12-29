@@ -25,9 +25,6 @@ if [ -f ${unique_paired_path} ]; then
         echo ${unique_paired_path} exists.
 else
         python3 barcodes_promotors_mapping_unique.py ${paired_path} ${unique_paired_path}
-
-        # uncomment only if you want to keep only the promoters that have a corresponding reverse compliment promoter
-        # python3 filter_only_ones_that_have_reverse.py ${unique_paired_path} ${unique_paired_path}
 fi
 
 
