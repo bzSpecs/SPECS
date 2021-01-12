@@ -29,7 +29,7 @@ for compare_df in dfs_to_compare:
         (df["count_compare"].isnull())
         | (df["count_compare"] / df["count"] <= 1 / fold_number)
     ]
-    df.drop(columns=["count_compare"], inplace=True)
+    df["ratio"] = df["count"] / df["count_compare"]
     df = df.reset_index()
 
 # create the folder if not exists yet
@@ -39,3 +39,5 @@ if not os.path.exists(os.path.dirname(output_file)):
 df.to_csv(output_file, index=False)
 
 # python find_uniqueness_in_cell_line.py results_2/sum_all_replicate/ESC/ESC_sum_normalized_above_400.csv results_2/sum_all_replicate/XEN/XEN_sum_normalized_above_100.csv,results_2/sum_all_replicate/MEF/MEF_sum_normalized_above_100.csv,results_2/sum_all_replicate/HEK293T/HEK293T_sum_normalized_above_100.csv 50 ./out.csv
+
+# python find_uniqueness_in_cell_line.py results_leukemia/HIGH/bio_A/unique/tech_3/all/by_promoter/normalized_unique_HIGH_bio_A_tech_3_all.csv results_leukemia/LOW/bio_A/unique/tech_3/all/by_promoter/normalized_unique_LOW_bio_A_tech_3_all.csv 5 results_leukemia/HIGH/bio_A/unique/tech_3/all/by_promoter/unique_compared_to_LOW_A_3.csv
