@@ -1,6 +1,24 @@
 # Here RNA pre-processing is performed, cutting away the adapter sequence AACCAGCTCGGATCC
-# and isolating the barcode for further processing, 
+# and isolating the barcode for further processing,
 # output is passed by default to RNA_seq_results/ (hard-coded)
 
-# e.g.
+# e.g. as a single run:
 # ./rna_seq_process.sh RNA-seq/HEK293T/HEK293T_2/HEK293T_bio_2_tech_1.fastq HEK293T_b2_t1
+
+# To run in batch:
+
+ls RNA-seq/*/*/*.fastq > file_list.txt
+grep -v "already clipped" file_list.txt  > temp
+mv temp file_list.txt
+# (then do some vim editing to make it look like rna_seq_process_batch.sh)
+source rna_seq_process_batch.sh
+# ^ this does the necessary pre-processing for all of the RNAseq datasets
+# i.e. clips barcode.
+
+# Next step can be done individually:
+# Note that the paired csv-promoter file has been symlinked to the local directory.
+./analyse_replicate.sh  LibConstruct_BO_PAIRED.csv RNA_preprocess_clipBarcodes/HEK293T_bio_2_tech_1/cut_adapt_out/clipped_HEK293T_bio_2_tech_1.fastq SPECS_RNAprocess_analyzeRep_out  HEK293T_b2_t1 2 1 100 3
+
+# ls RNA_preprocess_clipBarcodes/*/*/clipped*.fastq > flist
+# then read this into analyse_replicate_batch.sh
+source analyse_replicate_batch.sh
