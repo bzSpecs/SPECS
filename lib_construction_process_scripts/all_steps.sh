@@ -147,7 +147,7 @@ mkdir -p $sample_results_folder/06_barcodes
 echo "Clipping barcodes (R1)"
 ${cutadapt} -g GACACCATGGTGGC      \
             -a GGATCCGAGCTGGTT     \
-            -O 3 -n 2 -m 15 -M 25  \
+            -O 3 -n 2 -m 20 -M 20  \
             -o $sample_results_folder/06_barcodes/clipped_R1_$sample_name.fastq  \
             --untrimmed-output $sample_results_folder/06_barcodes/unclipped_R1_$sample_name.fastq  \
 	    --too-short-output $sample_results_folder/06_barcodes/too_short_$sample_name.fastq  \
