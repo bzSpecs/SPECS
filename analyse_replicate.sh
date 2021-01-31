@@ -1,8 +1,8 @@
 #!/bin/bash
 
-paired_path=$1 # promoter-barcode mapping
-rna_seq_fastq_path=$2 # RNA-seq fastq file
-root_dir_path=$3 # the root folder to all the outputs files
+paired_path_in=$1 # promoter-barcode mapping
+rna_seq_fastq_path_in=$2 # RNA-seq fastq file
+output_path=$3 # the root folder to all the outputs files
 cell_line=$4 # the name of the cell line
 bio_rep=$5 # biological replica name
 tech_rep=$6 # technical replica name
@@ -11,7 +11,7 @@ threshold_value=$8 # threshold value
 
 threshold_and_number=threshold_${threshold_value}
 
-cell_line_folder_path=${root_dir_path}/${cell_line}/bio_${bio_rep}
+cell_line_folder_path=${output_path}/${cell_line}/bio_${bio_rep}
 unique_tech_rep=${cell_line_folder_path}/unique/tech_${tech_rep}
 thresh_tech_rep=${cell_line_folder_path}/${threshold_and_number}/tech_${tech_rep}
 # unique_tech_rep=${cell_line_folder_path}/tech_${tech_rep}/unique
@@ -20,17 +20,17 @@ thresh_tech_rep=${cell_line_folder_path}/${threshold_and_number}/tech_${tech_rep
 mkdir -p ${cell_line_folder_path}
 # mkdir -p ${tech_rep}
 
-unique_paired_path=${root_dir_path}/unique_PAIRED.csv
+unique_paired_path=${output_path}/unique_PAIRED.csv
 if [ -f ${unique_paired_path} ]; then
         echo ${unique_paired_path} exists.
 else
-        python3 barcodes_promotors_mapping_unique.py ${paired_path} ${unique_paired_path}
+        python3 barcodes_promotors_mapping_unique.py ${paired_path_in} ${unique_paired_path}
 fi
 
 
 # extract barcodes from fastq file to csv
 rna_seq_barcodes_csv_path=${unique_tech_rep}/${cell_line}_bio_${bio_rep}_tech_${tech_rep}_rna_seq_barcodes.csv
-python3 rna_seq_extract_barcodes.py ${rna_seq_fastq_path} ${rna_seq_barcodes_csv_path}
+python3 rna_seq_extract_barcodes.py ${rna_seq_fastq_path_in} ${rna_seq_barcodes_csv_path}
 
 # make barcode-count csv
 unique_all_by_barcode=${unique_tech_rep}/all/by_barcode/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
@@ -64,11 +64,11 @@ python3 reverse_compliment_promoter_count.py ${normalized_unique_all_by_promoter
 
 ###############################################
 
-# thresh_paired_path=${root_dir_path}/${threshold_and_number}_PAIRED.csv
+# thresh_paired_path=${output_path}/${threshold_and_number}_PAIRED.csv
 # if [ -f ${thresh_paired_path} ]; then
 #         echo ${thresh_paired_path} exists.
 # else
-#         python3 barcodes_promotors_mapping_threshold.py ${paired_path} ${threshold_value} ${thresh_paired_path}
+#         python3 barcodes_promotors_mapping_threshold.py ${paired_path_in} ${threshold_value} ${thresh_paired_path}
 # fi
 
 # only_top_10_threshold_paired_path=${thresh_tech_rep}/${threshold_and_number}_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_paired.csv
