@@ -2,16 +2,20 @@
 
 read_promoter=$1 # promoters file
 sample_name=$2 # proper name this sample will be called
+lib_id=$3
 
 # cutadapt="/Users/barzaruk/.local/bin/cutadapt"
 # bowtie2="/Users/barzaruk/Downloads/bowtie2-2.4.2/bowtie2"
 # samtools="/Users/barzaruk/Downloads/samtools/bin/samtools"
 
-sample_results_folder=results/$sample_name/results
-sample_logs_folder=results/$sample_name/logs
+lib_folder=results/$lib_id
+sample_results_folder=$lib_folder/$sample_name/results
+sample_logs_folder=$lib_folder/$sample_name/logs
+lib_csv_results_folder=$lib_folder/promoters_csv_files
 
-mkdir -p sample_results_folder
-mkdir -p sample_logs_folder
+mkdir -p $sample_results_folder
+mkdir -p $sample_logs_folder
+mkdir -p $lib_csv_results_folder
 
 ## clipping
 echo "Clipping"
@@ -49,3 +53,9 @@ ${samtools} view -F 4 $sample_results_folder/04_alignBowtie/$sample_name/$sample
 ${samtools} view -f 4 $sample_results_folder/04_alignBowtie/$sample_name/$sample_name.sam | \
            cut -f1,10 | \
            sort -k1> $sample_results_folder/04_alignBowtie/$sample_name/unmapped_$sample_name.txt 2>> $sample_logs_folder/samtools/$sample_name.log
+
+python pyscripts/make_mapped_file_into_csv.py $sample_results_folder/04_alignBowtie/$sample_name/mapped_$sample_name.txt $sample_results_folder/04_alignBowtie/$sample_name/sample_$sample_name.csv
+
+python pyscripts/group_by_promoter.py $sample_results_folder/04_alignBowtie/$sample_name/sample_$sample_name.csv results/$lib_csv_results_folder/sample_grouped_$sample_name.csv
+
+python pyscripts/coverage.py $lib_csv_results_folder/sample_grouped_$sample_name.csv ../resources/libray_D7_details_v2.csv $sample_name $lib_folder/coverage.txt
