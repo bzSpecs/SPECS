@@ -4,8 +4,8 @@ resources/**/*
 
 validations/**/*
 
-lib_construction_process_scripts/library_preparation
-lib_construction_process_scripts/logs
+lib_construction_process_scripts/barcode_promoter_pairing_output
+lib_construction_process_scripts/define_local_exec_paths.sh
 
 RNA_seq_process_scripts/RNA_seq_results
 RNA_seq_process_scripts/logs
