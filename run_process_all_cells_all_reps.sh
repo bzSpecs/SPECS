@@ -1,6 +1,0 @@
-#!/bin/bash
-
-./analyse_all_replicates.sh HEK293T results_2 lib_construction_process_scripts/library_preparation/06_barcodes/first_lib_PAIRED.csv
-./analyse_all_replicates.sh XEN results_2 lib_construction_process_scripts/library_preparation/06_barcodes/first_lib_PAIRED.csv
-./analyse_all_replicates.sh ESC results_2 lib_construction_process_scripts/library_preparation/06_barcodes/first_lib_PAIRED.csv
-./analyse_all_replicates.sh MEF results_2 lib_construction_process_scripts/library_preparation/06_barcodes/first_lib_PAIRED.csv

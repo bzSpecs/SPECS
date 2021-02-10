@@ -7,7 +7,7 @@ promoter_upstream_adapter=$4
 promoter_downstream_adapter=$5
 
 # Define paths to executables specific to local machine
-source define_local_exec_paths.sh
+source ../resources/define_local_exec_paths.sh
 
 pyscripts=barcode_promoter_pairing_pyscripts
 bashscripts=barcode_promoter_pairing_bashscripts
