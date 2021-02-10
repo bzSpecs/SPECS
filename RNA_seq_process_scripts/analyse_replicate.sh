@@ -2,7 +2,7 @@
 
 paired_path_in=$1 # promoter-barcode mapping
 rna_seq_fastq_path_in=$2 # RNA-seq fastq file
-output_path=$3 # the root folder to all the outputs files
+experiment_name=$3 # the root folder to all the outputs files
 cell_line=$4 # the name of the cell line
 bio_rep=$5 # biological replica name
 tech_rep=$6 # technical replica name
@@ -11,6 +11,7 @@ threshold_value=$8 # threshold value
 
 threshold_and_number=threshold_${threshold_value}
 
+output_path=output/${experiment_name}
 cell_line_folder_path=${output_path}/${cell_line}/bio_${bio_rep}
 unique_tech_rep=${cell_line_folder_path}/unique/tech_${tech_rep}
 thresh_tech_rep=${cell_line_folder_path}/${threshold_and_number}/tech_${tech_rep}
