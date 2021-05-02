@@ -10,6 +10,7 @@ barcodes_csv_2 = sys.argv[3]
 y_label = sys.argv[4]
 title_label = sys.argv[5]
 by_which_parameter = sys.argv[6]
+output_file = sys.argv[7]
 
 by_promoter = by_which_parameter == "promoter"
 
@@ -18,11 +19,10 @@ barcodes_df_2 = pd.read_csv(barcodes_csv_2)
 
 if by_promoter:
     merged_df = barcodes_df_1.merge(
-        barcodes_df_2, on="promoter", how="inner")
+        barcodes_df_2, on="promoter", how="outer")
 else:
     merged_df = barcodes_df_1.merge(
-        barcodes_df_2, on="barcode", how="inner")
-
+        barcodes_df_2, on="barcode", how="outer")
 
 fig, ax = plt.subplots()
 sc = plt.scatter(merged_df["count_x"], merged_df["count_y"], s=60)
@@ -79,5 +79,5 @@ def hover(event):
 
 fig.canvas.mpl_connect("motion_notify_event", hover)
 plt.tight_layout()
-plt.savefig('sampleFileName.png')
+plt.savefig(output_file)
 plt.show()

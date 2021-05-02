@@ -1,7 +1,23 @@
 #!/bin/bash
 
-# first library
-./barcode_promoter_pairing_driver_script.sh ../resources/Library_Construction/lib_constuction_promoters.fastq ../resources/Library_Construction/lib_constuction_barcodes.fastq first_library CGGCCGCCCTGCAGG GGCGCGCCAGACGCT GACACCATGGTGGC GGATCCGAGCTGGTT 20 20
+# # first library
+# ./barcode_promoter_pairing_driver_script.sh ../resources/Library_Construction/lib_constuction_promoters.fastq ../resources/Library_Construction/lib_constuction_barcodes.fastq first_library_old CGGCCGCCCTGCAGG GGCGCGCCAGACGCT GACACCATGGTGGC GGATCCGAGCTGGTT 20 25
 
-# coverage LIOR_672
-./promotor_sample_coverage.sh ../resources/Lior36_run672/SPES_11112_1_S1_R1_001.fastq 11112_1 lib_672 GCGGCCGCCCTGCAGG ""
+# # coverage LIOR_672
+# ./promotor_sample_coverage.sh ../resources/Lior36_run672/SPES_11112_1_S1_R1_001.fastq 11112_1 lib_672 GCGGCCGCCCTGCAGG ""
+
+# # LIOR_150
+# ./barcode_promoter_pairing_driver_script.sh ../resources/transfer_3198_files_163ac1d0/Lior150_2_S1_R2_001.fastq ../resources/transfer_3198_files_163ac1d0/Lior150_2_S1_R1_001.fastq LIOR_150 GGCCGCCCTGCAGG CGCGCCAGAC CGAGCTGGGGATCC GAGCTGGTTTACCA 20 25
+
+# # coverage transfer_3364
+# ./promotor_sample_coverage.sh /Users/barzaruk/Documents/Projects/SPECS/resources/transfer_3364_files_0dc4ce07/LIOR_TR1_S26_R1_001.fastq TR1 transfer_3364 ATAAGNTTGATATCGCGGCCGCCCTGCAGG CGCGCCAGACGCTAGCGGGGGGCTATAAAAGGGGGTGGGGGCGTTCGTCCTCACTCT
+# ./promotor_sample_coverage.sh /Users/barzaruk/Documents/Projects/SPECS/resources/transfer_3364_files_0dc4ce07/LIOR_TR2_S27_R1_001.fastq TR2 transfer_3364 ATAAGNTTGATATCGCGGCCGCCCTGCAGG CGCGCCAGACGCTAGCGGGGGGCTATAAAAGGGGGTGGGGGCGTTCGTCCTCACTCT
+# ./promotor_sample_coverage.sh /Users/barzaruk/Documents/Projects/SPECS/resources/transfer_3364_files_0dc4ce07/LIOR_TR3_S28_R1_001.fastq TR3 transfer_3364 ATAAGNTTGATATCGCGGCCGCCCTGCAGG CGCGCCAGACGCTAGCGGGGGGCTATAAAAGGGGGTGGGGGCGTTCGTCCTCACTCT
+
+# # Miseq_run108
+# ./barcode_promoter_pairing_driver_script.sh ../resources/Miseq_run108/Lior1_S1_R2_001.fastq ../resources/Miseq_run108/Lior1_S1_R1_001.fastq Miseq_run108_1 GATATCGCGGCCGCCCTGCAGG CGCGCCAGACGCTAGCGGGGGGCTATAAAAGGGGGTGGGGGCGTTCGTCCTCACTCT CGCCCTTAGACACCATGGTGGCGAGCTGGGGATCC GAGCTGGTTTACCAACAGTACCGGAATGCCAAGCT 16 21
+# ./barcode_promoter_pairing_driver_script.sh ../resources/Miseq_run108/Lior2_S2_R2_001.fastq ../resources/Miseq_run108/Lior2_S2_R1_001.fastq Miseq_run108_2 GATATCGCGGCCGCCCTGCAGG CGCGCCAGACGCTAGCGGGGGGCTATAAAAGGGGGTGGGGGCGTTCGTCCTCACTCT CGCCCTTAGACACCATGGTGGCGAGCTGGGGATCC GAGCTGGTTTACCAACAGTACCGGAATGCCAAGCT 16 21
+# ./barcode_promoter_pairing_driver_script.sh ../resources/Miseq_run108/Lior3_S3_R2_001.fastq ../resources/Miseq_run108/Lior3_S3_R1_001.fastq Miseq_run108_3 GATATCGCGGCCGCCCTGCAGG CGCGCCAGACGCTAGCGGGGGGCTATAAAAGGGGGTGGGGGCGTTCGTCCTCACTCT CGCCCTTAGACACCATGGTGGCGAGCTGGGGATCC GAGCTGGTTTACCAACAGTACCGGAATGCCAAGCT 16 21
+# ./barcode_promoter_pairing_driver_script.sh ../resources/Miseq_run108/Lior4_S4_R2_001.fastq ../resources/Miseq_run108/Lior4_S4_R1_001.fastq Miseq_run108_4 GATATCGCGGCCGCCCTGCAGG CGCGCCAGACGCTAGCGGGGGGCTATAAAAGGGGGTGGGGGCGTTCGTCCTCACTCT CGCCCTTAGACACCATGGTGGCGAGCTGGGGATCC GAGCTGGTTTACCAACAGTACCGGAATGCCAAGCT 16 21
+# ./barcode_promoter_pairing_driver_script.sh ../resources/Miseq_run108/Lior5_S5_R2_001.fastq ../resources/Miseq_run108/Lior5_S5_R1_001.fastq Miseq_run108_5 GATATCGCGGCCGCCCTGCAGG CGCGCCAGACGCTAGCGGGGGGCTATAAAAGGGGGTGGGGGCGTTCGTCCTCACTCT CGCCCTTAGACACCATGGTGGCGAGCTGGGGATCC GAGCTGGTTTACCAACAGTACCGGAATGCCAAGCT 16 21
+# ./barcode_promoter_pairing_driver_script.sh ../resources/Miseq_run108/Lior6_S6_R2_001.fastq ../resources/Miseq_run108/Lior6_S6_R1_001.fastq Miseq_run108_6 GATATCGCGGCCGCCCTGCAGG CGCGCCAGACGCTAGCGGGGGGCTATAAAAGGGGGTGGGGGCGTTCGTCCTCACTCT CGCCCTTAGACACCATGGTGGCGAGCTGGGGATCC GAGCTGGTTTACCAACAGTACCGGAATGCCAAGCT 16 21

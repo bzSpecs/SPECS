@@ -1,0 +1,100 @@
+{
+    "name": "leukemia",
+    "output_folder": "/Users/barzaruk/Documents/Projects/SPECS/pipelines/output/leukemia",
+    "groups": [
+        {
+            "name": "HIGH",
+            "filter_greater": 4,
+            "unique_fold": 50,
+            "biological_replicates": [
+                {
+                    "name": "bio_A",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_A/unique/tech_1/all/by_promoter/unique_HIGH_bio_A_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_A/unique/tech_1/all/by_promoter/normalized_unique_HIGH_bio_A_tech_1_all.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_A/unique/tech_2/all/by_promoter/unique_HIGH_bio_A_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_A/unique/tech_2/all/by_promoter/normalized_unique_HIGH_bio_A_tech_2_all.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_A/unique/tech_3/all/by_promoter/unique_HIGH_bio_A_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_A/unique/tech_3/all/by_promoter/normalized_unique_HIGH_bio_A_tech_3_all.csv"
+                        }
+                    ]
+                },
+                {
+                    "name": "bio_B",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_B/unique/tech_1/all/by_promoter/unique_HIGH_bio_B_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_B/unique/tech_1/all/by_promoter/normalized_unique_HIGH_bio_B_tech_1_all.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_B/unique/tech_2/all/by_promoter/unique_HIGH_bio_B_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_B/unique/tech_2/all/by_promoter/normalized_unique_HIGH_bio_B_tech_2_all.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_B/unique/tech_3/all/by_promoter/unique_HIGH_bio_B_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/HIGH/bio_B/unique/tech_3/all/by_promoter/normalized_unique_HIGH_bio_B_tech_3_all.csv"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "LOW",
+            "filter_greater": 4,
+            "unique_fold": 50,
+            "biological_replicates": [
+                {
+                    "name": "bio_A",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_A/unique/tech_1/all/by_promoter/unique_LOW_bio_A_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_A/unique/tech_1/all/by_promoter/normalized_unique_LOW_bio_A_tech_1_all.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_A/unique/tech_2/all/by_promoter/unique_LOW_bio_A_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_A/unique/tech_2/all/by_promoter/normalized_unique_LOW_bio_A_tech_2_all.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_A/unique/tech_3/all/by_promoter/unique_LOW_bio_A_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_A/unique/tech_3/all/by_promoter/normalized_unique_LOW_bio_A_tech_3_all.csv"
+                        }
+                    ]
+                },
+                {
+                    "name": "bio_B",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_B/unique/tech_1/all/by_promoter/unique_LOW_bio_B_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_B/unique/tech_1/all/by_promoter/normalized_unique_LOW_bio_B_tech_1_all.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_B/unique/tech_2/all/by_promoter/unique_LOW_bio_B_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_B/unique/tech_2/all/by_promoter/normalized_unique_LOW_bio_B_tech_2_all.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_B/unique/tech_3/all/by_promoter/unique_LOW_bio_B_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/LEUKEMIA/LOW/bio_B/unique/tech_3/all/by_promoter/normalized_unique_LOW_bio_B_tech_3_all.csv"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

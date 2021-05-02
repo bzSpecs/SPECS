@@ -36,12 +36,16 @@ for i in range(len(dfs)):
     cell_line_name = cells_names[i]
     column_name = "count_" + cell_line_name
 
-    summarized_df = summarized_df.set_index("promoter").join(df.set_index("promoter")).reset_index()
+    summarized_df = summarized_df.set_index("promoter").join(
+        df.set_index("promoter"), how="outer").reset_index()
     summarized_df.rename(columns={"count": column_name}, inplace=True)
 
 # sort the summarized dataframe to a the chosen cell-line
 column_to_sort_by = "count_" + cell_to_sort_by
-summarized_df = summarized_df.sort_values(by=[column_to_sort_by], ascending=False)
+summarized_df = summarized_df.sort_values(
+    by=[column_to_sort_by], ascending=False)
+
+summarized_df = summarized_df.fillna(0)
 
 # create the folder if not exists yet
 if not os.path.exists(os.path.dirname(output_file)):

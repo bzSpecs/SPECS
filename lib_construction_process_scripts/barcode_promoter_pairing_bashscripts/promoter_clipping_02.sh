@@ -25,22 +25,23 @@ mkdir -p $clipping_logs_folder
 
 if [ -z "$downstream_adapter" ]
 then
-    $cutadapt -g $upstream_adapter \
+    $cutadapt -j 0 \
+                -g $upstream_adapter \
                 -O 3 -n 2 \
                 -o $clipping_results_folder/clipped_$sample_name.fastq -m 30 \
                 --untrimmed-output $clipping_results_folder/unclipped_$sample_name.fastq  \
             --too-short-output $clipping_results_folder/too_short_$sample_name.fastq  \
             --too-long-output  $clipping_results_folder/too_long_$sample_name.fastq  $file \
-                1>>$clipping_logs_folder/$sample_name.log 2>&1
+                1>$clipping_logs_folder/$sample_name.log 2>&1
 else
-    $cutadapt -g $upstream_adapter \
-                -a $downstream_adapter \
+    $cutadapt -j 0 \
+                -a "$upstream_adapter;required...$downstream_adapter;optional" \
                 -O 3 -n 2 \
                 -o $clipping_results_folder/clipped_$sample_name.fastq -m 30 \
                 --untrimmed-output $clipping_results_folder/unclipped_$sample_name.fastq  \
             --too-short-output $clipping_results_folder/too_short_$sample_name.fastq  \
             --too-long-output  $clipping_results_folder/too_long_$sample_name.fastq  $file \
-                1>>$clipping_logs_folder/$sample_name.log 2>&1
+                1>$clipping_logs_folder/$sample_name.log 2>&1
 fi
 #----------------------
 # From word doc:

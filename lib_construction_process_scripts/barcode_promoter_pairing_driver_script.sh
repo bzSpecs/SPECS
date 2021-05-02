@@ -21,7 +21,8 @@ mkdir -p ${sample_results_folder}
 mkdir -p ${sample_logs_folder}
 
 # Define paths to executables specific to local machine
-source define_local_exec_paths.sh
+source ../resources/define_local_exec_paths.sh
+
 # fastqc="/Applications/FastQC.app/Contents/MacOS/fastqc"
 # cutadapt="/Users/barzaruk/.local/bin/cutadapt"
 # bowtie2="/Users/barzaruk/Downloads/bowtie2-2.4.2/bowtie2"
