@@ -13,7 +13,8 @@
                         {
                             "name": "tech_2",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_1/unique/tech_2/all/by_promoter/unique_NT_bio_1_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_1/unique/tech_2/all/by_promoter/normalized_unique_NT_bio_1_tech_2_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_1/unique/tech_2/all/by_promoter/normalized_unique_NT_bio_1_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_1/unique/tech_2/NT_bio_1_tech_2_rna_seq_barcodes.csv"
                         }
                     ]
                 },
@@ -23,12 +24,14 @@
                         {
                             "name": "tech_1",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_2/unique/tech_1/all/by_promoter/unique_NT_bio_2_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_2/unique/tech_1/all/by_promoter/normalized_unique_NT_bio_2_tech_1_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_2/unique/tech_1/all/by_promoter/normalized_unique_NT_bio_2_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_2/unique/tech_1/NT_bio_2_tech_1_rna_seq_barcodes.csv"
                         },
                         {
                             "name": "tech_2",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_2/unique/tech_2/all/by_promoter/unique_NT_bio_2_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_2/unique/tech_2/all/by_promoter/normalized_unique_NT_bio_2_tech_2_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_2/unique/tech_2/all/by_promoter/normalized_unique_NT_bio_2_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NT/bio_2/unique/tech_2/NT_bio_2_tech_2_rna_seq_barcodes.csv"
                         }
                     ]
                 }
@@ -45,12 +48,14 @@
                         {
                             "name": "tech_1",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_1/unique/tech_1/all/by_promoter/unique_NORMAL_MEDIA_bio_1_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_1/unique/tech_1/all/by_promoter/normalized_unique_NORMAL_MEDIA_bio_1_tech_1_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_1/unique/tech_1/all/by_promoter/normalized_unique_NORMAL_MEDIA_bio_1_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_1/unique/tech_1/NORMAL_MEDIA_bio_1_tech_1_rna_seq_barcodes.csv"
                         },
                         {
                             "name": "tech_2",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_1/unique/tech_2/all/by_promoter/unique_NORMAL_MEDIA_bio_1_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_1/unique/tech_2/all/by_promoter/normalized_unique_NORMAL_MEDIA_bio_1_tech_2_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_1/unique/tech_2/all/by_promoter/normalized_unique_NORMAL_MEDIA_bio_1_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_1/unique/tech_2/NORMAL_MEDIA_bio_1_tech_2_rna_seq_barcodes.csv"
                         }
                     ]
                 },
@@ -60,12 +65,14 @@
                         {
                             "name": "tech_1",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_2/unique/tech_1/all/by_promoter/unique_NORMAL_MEDIA_bio_2_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_2/unique/tech_1/all/by_promoter/normalized_unique_NORMAL_MEDIA_bio_2_tech_1_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_2/unique/tech_1/all/by_promoter/normalized_unique_NORMAL_MEDIA_bio_2_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_2/unique/tech_1/NORMAL_MEDIA_bio_2_tech_1_rna_seq_barcodes.csv"
                         },
                         {
                             "name": "tech_2",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_2/unique/tech_2/all/by_promoter/unique_NORMAL_MEDIA_bio_2_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_2/unique/tech_2/all/by_promoter/normalized_unique_NORMAL_MEDIA_bio_2_tech_2_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_2/unique/tech_2/all/by_promoter/normalized_unique_NORMAL_MEDIA_bio_2_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_MEDIA/bio_2/unique/tech_2/NORMAL_MEDIA_bio_2_tech_2_rna_seq_barcodes.csv"
                         }
                     ]
                 }
@@ -82,12 +89,14 @@
                         {
                             "name": "tech_1",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_1/unique/tech_1/all/by_promoter/unique_CANCER_MEDIA_bio_1_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_1/unique/tech_1/all/by_promoter/normalized_unique_CANCER_MEDIA_bio_1_tech_1_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_1/unique/tech_1/all/by_promoter/normalized_unique_CANCER_MEDIA_bio_1_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_1/unique/tech_1/CANCER_MEDIA_bio_1_tech_1_rna_seq_barcodes.csv"
                         },
                         {
                             "name": "tech_2",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_1/unique/tech_2/all/by_promoter/unique_CANCER_MEDIA_bio_1_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_1/unique/tech_2/all/by_promoter/normalized_unique_CANCER_MEDIA_bio_1_tech_2_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_1/unique/tech_2/all/by_promoter/normalized_unique_CANCER_MEDIA_bio_1_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_1/unique/tech_2/CANCER_MEDIA_bio_1_tech_2_rna_seq_barcodes.csv"
                         }
                     ]
                 },
@@ -97,12 +106,14 @@
                         {
                             "name": "tech_1",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_2/unique/tech_1/all/by_promoter/unique_CANCER_MEDIA_bio_2_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_2/unique/tech_1/all/by_promoter/normalized_unique_CANCER_MEDIA_bio_2_tech_1_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_2/unique/tech_1/all/by_promoter/normalized_unique_CANCER_MEDIA_bio_2_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_2/unique/tech_1/CANCER_MEDIA_bio_2_tech_1_rna_seq_barcodes.csv"
                         },
                         {
                             "name": "tech_2",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_2/unique/tech_2/all/by_promoter/unique_CANCER_MEDIA_bio_2_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_2/unique/tech_2/all/by_promoter/normalized_unique_CANCER_MEDIA_bio_2_tech_2_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_2/unique/tech_2/all/by_promoter/normalized_unique_CANCER_MEDIA_bio_2_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_MEDIA/bio_2/unique/tech_2/CANCER_MEDIA_bio_2_tech_2_rna_seq_barcodes.csv"
                         }
                     ]
                 }
@@ -119,12 +130,14 @@
                         {
                             "name": "tech_1",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_1/unique/tech_1/all/by_promoter/unique_NORMAL_CC_bio_1_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_1/unique/tech_1/all/by_promoter/normalized_unique_NORMAL_CC_bio_1_tech_1_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_1/unique/tech_1/all/by_promoter/normalized_unique_NORMAL_CC_bio_1_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_1/unique/tech_1/NORMAL_CC_bio_1_tech_1_rna_seq_barcodes.csv"
                         },
                         {
                             "name": "tech_2",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_1/unique/tech_2/all/by_promoter/unique_NORMAL_CC_bio_1_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_1/unique/tech_2/all/by_promoter/normalized_unique_NORMAL_CC_bio_1_tech_2_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_1/unique/tech_2/all/by_promoter/normalized_unique_NORMAL_CC_bio_1_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_1/unique/tech_2/NORMAL_CC_bio_1_tech_2_rna_seq_barcodes.csv"
                         }
                     ]
                 },
@@ -134,12 +147,14 @@
                         {
                             "name": "tech_1",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_2/unique/tech_1/all/by_promoter/unique_NORMAL_CC_bio_2_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_2/unique/tech_1/all/by_promoter/normalized_unique_NORMAL_CC_bio_2_tech_1_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_2/unique/tech_1/all/by_promoter/normalized_unique_NORMAL_CC_bio_2_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_2/unique/tech_1/NORMAL_CC_bio_2_tech_1_rna_seq_barcodes.csv"
                         },
                         {
                             "name": "tech_2",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_2/unique/tech_2/all/by_promoter/unique_NORMAL_CC_bio_2_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_2/unique/tech_2/all/by_promoter/normalized_unique_NORMAL_CC_bio_2_tech_2_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_2/unique/tech_2/all/by_promoter/normalized_unique_NORMAL_CC_bio_2_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/NORMAL_CC/bio_2/unique/tech_2/NORMAL_CC_bio_2_tech_2_rna_seq_barcodes.csv"
                         }
                     ]
                 }
@@ -156,12 +171,14 @@
                         {
                             "name": "tech_1",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_1/unique/tech_1/all/by_promoter/unique_CANCER_CC_bio_1_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_1/unique/tech_1/all/by_promoter/normalized_unique_CANCER_CC_bio_1_tech_1_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_1/unique/tech_1/all/by_promoter/normalized_unique_CANCER_CC_bio_1_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_1/unique/tech_1/CANCER_CC_bio_1_tech_1_rna_seq_barcodes.csv"
                         },
                         {
                             "name": "tech_2",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_1/unique/tech_2/all/by_promoter/unique_CANCER_CC_bio_1_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_1/unique/tech_2/all/by_promoter/normalized_unique_CANCER_CC_bio_1_tech_2_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_1/unique/tech_2/all/by_promoter/normalized_unique_CANCER_CC_bio_1_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_1/unique/tech_2/CANCER_CC_bio_1_tech_2_rna_seq_barcodes.csv"
                         }
                     ]
                 },
@@ -171,12 +188,14 @@
                         {
                             "name": "tech_1",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_2/unique/tech_1/all/by_promoter/unique_CANCER_CC_bio_2_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_2/unique/tech_1/all/by_promoter/normalized_unique_CANCER_CC_bio_2_tech_1_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_2/unique/tech_1/all/by_promoter/normalized_unique_CANCER_CC_bio_2_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_2/unique/tech_1/CANCER_CC_bio_2_tech_1_rna_seq_barcodes.csv"
                         },
                         {
                             "name": "tech_2",
                             "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_2/unique/tech_2/all/by_promoter/unique_CANCER_CC_bio_2_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_2/unique/tech_2/all/by_promoter/normalized_unique_CANCER_CC_bio_2_tech_2_all.csv"
+                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_2/unique/tech_2/all/by_promoter/normalized_unique_CANCER_CC_bio_2_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/T_CELLS/CANCER_CC/bio_2/unique/tech_2/CANCER_CC_bio_2_tech_2_rna_seq_barcodes.csv"
                         }
                     ]
                 }

@@ -8,6 +8,7 @@ config_file = sys.argv[1]
 
 pyscripts_folder = '../pyscripts'
 sum_promoters_counts_py = f'{pyscripts_folder}/sum_promoters_counts_results.py'
+normalize_by_factor_py = f'{pyscripts_folder}/normalize_sum_by_factor.py'
 filter_greater_py = f'{pyscripts_folder}/filter_results_greater_than.py'
 find_uniqueness_py = f'{pyscripts_folder}/find_uniqueness_in_cell_line.py'
 rename_columns_py = f'{pyscripts_folder}/rename_columns.py'
@@ -60,30 +61,44 @@ for group in groups:
     all_tech_reps_files = []
     # tech normalized file paths for a specific experiment group
     all_norm_tech_reps_files = []
+    # sum the total number of reads in the raw barcodes files
+    group_number_of_total_reads = 0
 
     for bio_rep in biological_replicates:
         bio_name = bio_rep['name']
         technical_replicates = bio_rep['technical_replicates']
 
         # gathering all the techs promoter-count file paths for a bio replicate
-        tech_files = [tech_rep['promoter_count_file']
-                      for tech_rep in technical_replicates]
-        tech_files_joined = ','.join(tech_files)
-        all_tech_reps_files.extend(tech_files)
+        bio_files = [tech_rep['promoter_count_file']
+                     for tech_rep in technical_replicates]
+        bio_files_joined = ','.join(bio_files)
+        all_tech_reps_files.extend(bio_files)
 
         # perform summarizing promoter-count in the biological replicate level
-        subprocess.call(['python', sum_promoters_counts_py, tech_files_joined,
+        subprocess.call(['python', sum_promoters_counts_py, bio_files_joined,
                          output_files[group_name][bio_name]['output_bio_sum_promoter']])
 
         # gathering all the techs normalized promoter-count file paths for a bio replicate
-        norm_tech_files = [tech_rep['normalized_promoter_count_file']
-                           for tech_rep in technical_replicates]
-        norm_tech_files_joined = ','.join(norm_tech_files)
-        all_norm_tech_reps_files.extend(norm_tech_files)
+        norm_bio_files = [tech_rep['normalized_promoter_count_file']
+                          for tech_rep in technical_replicates]
+        norm_bio_files_joined = ','.join(norm_bio_files)
+        all_norm_tech_reps_files.extend(norm_bio_files)
 
         # perform summarizing normalized promoter-count in the biological replicate level
-        subprocess.call(['python', sum_promoters_counts_py, norm_tech_files_joined,
+        subprocess.call(['python', sum_promoters_counts_py, norm_bio_files_joined,
                          output_files[group_name][bio_name]['output_bio_normalized_sum_promoter']])
+
+        bio_raw_barcodes_files = [tech_rep['raw_barcodes_file']
+                                  for tech_rep in technical_replicates]
+        for f in bio_raw_barcodes_files:
+            file = open(f, "r")
+            line_count = 0
+            for line in file:
+                if line != "\n":
+                    line_count += 1
+            # decrement by one because of the csv title (`barcode`)
+            group_number_of_total_reads += line_count-1
+            file.close()
 
     # perform summarizing promoter-count in the group replicate level
     all_tech_reps_files_joined = ','.join(all_tech_reps_files)
@@ -94,6 +109,9 @@ for group in groups:
     all_norm_tech_reps_files_joined = ','.join(all_norm_tech_reps_files)
     subprocess.call(['python', sum_promoters_counts_py,
                      all_norm_tech_reps_files_joined, output_files[group_name]['output_normalized_sum_promoter']])
+    # normalize the summarized normalized promoter-count file based on the total reads number
+    subprocess.call(['python', normalize_by_factor_py, output_files[group_name]['output_normalized_sum_promoter'],
+                     str(group_number_of_total_reads), "1000000", output_files[group_name]['output_normalized_sum_promoter']])
 
     # filter the results that their count value are greater than the `filter_greater` input value
     filter_greater = str(group['filter_greater'])
