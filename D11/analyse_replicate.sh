@@ -1,0 +1,25 @@
+#!/bin/bash
+
+root_output_folder=$1
+experiment_name=$2
+cell_line_name=$3
+sample_name=$4
+paired_csv_file=$5
+pyscripts_folder=$6
+
+sample_folder=$root_output_folder/$experiment_name/$cell_line_name/$sample_name
+
+cleaned_raw_paired_csv_file=$sample_folder/cleaned_raw_paired.csv
+python $pyscripts_folder/clean_raw_paired_file.py $paired_csv_file $cleaned_raw_paired_csv_file
+
+unique_17_count_output_file=$sample_folder/unique_17_count.csv
+python $pyscripts_folder/count_unique_17.py $cleaned_raw_paired_csv_file $unique_17_count_output_file
+
+normalized_unique_17_count_output_file=$sample_folder/normalized_unique_17_count.csv
+python $pyscripts_folder/normalize_sum_by_reads.py $unique_17_count_output_file $cleaned_raw_paired_csv_file 10000 $normalized_unique_17_count_output_file
+
+unique_17_barcode_count_output_file=$sample_folder/unique_17_barcode_count.csv
+python $pyscripts_folder/count_unique_17_barcode.py $cleaned_raw_paired_csv_file $unique_17_barcode_count_output_file
+
+normalized_unique_17_barcode_count_output_file=$sample_folder/normalized_unique_17_barcode_count.csv
+python $pyscripts_folder/normalize_sum_by_reads.py $unique_17_barcode_count_output_file $cleaned_raw_paired_csv_file 10000 $normalized_unique_17_barcode_count_output_file

@@ -13,7 +13,12 @@ barcode_downstream_adapter=$7
 barcode_min_length=$8
 barcode_max_length=$9
 
-output_root_dir=barcode_promoter_pairing_output
+# subdir for pyscripts and bashscripts called by this driverscript
+pyscripts=${10}
+bashscripts=${11}
+
+output_root_dir=${12}
+
 sample_results_folder=${output_root_dir}/$sample_name/results
 sample_logs_folder=${output_root_dir}/$sample_name/logs
 
@@ -28,9 +33,6 @@ source ../resources/define_local_exec_paths.sh
 # bowtie2="/Users/barzaruk/Downloads/bowtie2-2.4.2/bowtie2"
 # samtools="/Users/barzaruk/Downloads/samtools/bin/samtools"
 
-# subdir for pyscripts and bashscripts called by this driverscript
-pyscripts=barcode_promoter_pairing_pyscripts
-bashscripts=barcode_promoter_pairing_bashscripts
 
 $bashscripts/promoter_fastq_pre_01.sh $read_promoter $sample_name $sample_results_folder $sample_logs_folder
 

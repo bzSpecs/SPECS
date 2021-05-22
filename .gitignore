@@ -12,3 +12,8 @@ RNA_seq_process_scripts/output
 pipelines/output
 
 .vscode/**/*
+
+rna_seq_results
+analysis_results
+
+D11/pipelines/output

@@ -7,12 +7,11 @@ import subprocess
 config_file = sys.argv[1]
 
 pyscripts_folder = '../pyscripts'
-sum_promoters_counts_py = f'{pyscripts_folder}/sum_promoters_counts_results.py'
+sum_unique_17_counts_py = f'{pyscripts_folder}/sum_unique_17_counts_results.py'
 normalize_by_factor_py = f'{pyscripts_folder}/normalize_sum_by_factor.py'
 filter_greater_py = f'{pyscripts_folder}/filter_results_greater_than.py'
 find_uniqueness_py = f'{pyscripts_folder}/find_uniqueness_in_cell_line.py'
 rename_columns_py = f'{pyscripts_folder}/rename_columns.py'
-reverse_compliment_promoter_count_py = f'{pyscripts_folder}/reverse_compliment_promoter_count.py'
 join_specific_columns_py = f'{pyscripts_folder}/join_specific_columns.py'
 
 config_file = open(config_file)
@@ -35,11 +34,10 @@ for group in groups:
     # --------- setting the file names for each of the analysis ---------
     # setting the file names for the combined biological replicates
     output_files[group_name] = {}
-    output_files[group_name]['output_sum_promoter'] = f'{output_folder}/{group_name}/sum_{group_name}.csv'
-    output_files[group_name]['output_sum_promoter_with_reverse'] = f'{output_folder}/{group_name}/sum_{group_name}_with_reverse_data.csv'
-    output_files[group_name]['output_normalized_sum_promoter'] = f'{output_folder}/{group_name}/normalized_sum_{group_name}.csv'
-    output_files[group_name][
-        'output_normalized_sum_promoter_with_reverse'] = f'{output_folder}/{group_name}/normalized_sum_{group_name}_with_reverse_data.csv'
+    output_files[group_name]['output_sum_unique_17'] = f'{output_folder}/{group_name}/sum_{group_name}.csv'
+    # output_files[group_name]['output_sum_unique_17_with_reverse'] = f'{output_folder}/{group_name}/sum_{group_name}_with_reverse_data.csv'
+    output_files[group_name]['output_normalized_sum_unique_17'] = f'{output_folder}/{group_name}/normalized_sum_{group_name}.csv'
+    # output_files[group_name]['output_normalized_sum_unique_17_with_reverse'] = f'{output_folder}/{group_name}/normalized_sum_{group_name}_with_reverse_data.csv'
     output_files[group_name]['output_normalized_filtered_greater'] = f'{output_folder}/{group_name}/normalized_sum_{group_name}_above_{filter_greater}.csv'
     output_files[group_name]['output_unique_fold'] = f'{output_folder}/{group_name}/unique_{group_name}_{unique_fold}_fold.csv'
 
@@ -49,9 +47,9 @@ for group in groups:
 
         output_files[group_name][bio_name] = {}
         output_files[group_name][bio_name][
-            'output_bio_sum_promoter'] = f'{output_folder}/{group_name}/{bio_name}/sum_{group_name}_{bio_name}.csv'
+            'output_bio_sum_unique_17'] = f'{output_folder}/{group_name}/{bio_name}/sum_{group_name}_{bio_name}.csv'
         output_files[group_name][bio_name][
-            'output_bio_normalized_sum_promoter'] = f'{output_folder}/{group_name}/{bio_name}/normalized_sum_{group_name}_{bio_name}.csv'
+            'output_bio_normalized_sum_unique_17'] = f'{output_folder}/{group_name}/{bio_name}/normalized_sum_{group_name}_{bio_name}.csv'
 
 # starting the first analyse pipeline - summarizing and filtering
 for group in groups:
@@ -68,54 +66,54 @@ for group in groups:
         bio_name = bio_rep['name']
         technical_replicates = bio_rep['technical_replicates']
 
-        # gathering all the techs promoter-count file paths for a bio replicate
-        bio_files = [tech_rep['promoter_count_file']
+        # gathering all the techs unique_17-count file paths for a bio replicate
+        bio_files = [tech_rep['unique_17_count_file']
                      for tech_rep in technical_replicates]
         bio_files_joined = ','.join(bio_files)
         all_tech_reps_files.extend(bio_files)
 
-        # perform summarizing promoter-count in the biological replicate level
-        subprocess.call(['python', sum_promoters_counts_py, bio_files_joined,
-                         output_files[group_name][bio_name]['output_bio_sum_promoter']])
+        # perform summarizing unique_17-count in the biological replicate level
+        subprocess.call(['python', sum_unique_17_counts_py, bio_files_joined,
+                         output_files[group_name][bio_name]['output_bio_sum_unique_17']])
 
-        # gathering all the techs normalized promoter-count file paths for a bio replicate
-        norm_bio_files = [tech_rep['normalized_promoter_count_file']
+        # gathering all the techs normalized unique_17-count file paths for a bio replicate
+        norm_bio_files = [tech_rep['normalized_unique_17_count_file']
                           for tech_rep in technical_replicates]
         norm_bio_files_joined = ','.join(norm_bio_files)
         all_norm_tech_reps_files.extend(norm_bio_files)
 
-        # perform summarizing normalized promoter-count in the biological replicate level
-        subprocess.call(['python', sum_promoters_counts_py, norm_bio_files_joined,
-                         output_files[group_name][bio_name]['output_bio_normalized_sum_promoter']])
+        # perform summarizing normalized unique_17-count in the biological replicate level
+        subprocess.call(['python', sum_unique_17_counts_py, norm_bio_files_joined,
+                         output_files[group_name][bio_name]['output_bio_normalized_sum_unique_17']])
 
-        bio_raw_barcodes_files = [tech_rep['raw_barcodes_file']
-                                  for tech_rep in technical_replicates]
-        for f in bio_raw_barcodes_files:
+        bio_cleaned_raw_paired_files = [tech_rep['cleaned_raw_paired_file']
+                                        for tech_rep in technical_replicates]
+        for f in bio_cleaned_raw_paired_files:
             file = open(f, "r")
             line_count = 0
             for line in file:
                 if line != "\n":
                     line_count += 1
-            # decrement by one because of the csv title (`barcode`)
+            # decrement by one because of the csv title
             group_number_of_total_reads += line_count-1
             file.close()
 
-    # perform summarizing promoter-count in the group replicate level
+    # perform summarizing unique_17-count in the group replicate level
     all_tech_reps_files_joined = ','.join(all_tech_reps_files)
-    subprocess.call(['python', sum_promoters_counts_py, all_tech_reps_files_joined,
-                     output_files[group_name]['output_sum_promoter']])
+    subprocess.call(['python', sum_unique_17_counts_py, all_tech_reps_files_joined,
+                     output_files[group_name]['output_sum_unique_17']])
 
-    # perform summarizing normalized promoter-count in the group replicate level
+    # perform summarizing normalized unique_17-count in the group replicate level
     all_norm_tech_reps_files_joined = ','.join(all_norm_tech_reps_files)
-    subprocess.call(['python', sum_promoters_counts_py,
-                     all_norm_tech_reps_files_joined, output_files[group_name]['output_normalized_sum_promoter']])
-    # normalize the summarized normalized promoter-count file based on the total reads number
-    subprocess.call(['python', normalize_by_factor_py, output_files[group_name]['output_normalized_sum_promoter'],
-                     str(group_number_of_total_reads), "1000000", output_files[group_name]['output_normalized_sum_promoter']])
+    subprocess.call(['python', sum_unique_17_counts_py,
+                     all_norm_tech_reps_files_joined, output_files[group_name]['output_normalized_sum_unique_17']])
+    # normalize the summarized normalized unique_17-count file based on the total reads number
+    subprocess.call(['python', normalize_by_factor_py, output_files[group_name]['output_normalized_sum_unique_17'],
+                     str(group_number_of_total_reads), "1000000", output_files[group_name]['output_normalized_sum_unique_17']])
 
     # filter the results that their count value are greater than the `filter_greater` input value
     filter_greater = str(group['filter_greater'])
-    subprocess.call(['python', filter_greater_py, output_files[group_name]['output_normalized_sum_promoter'],
+    subprocess.call(['python', filter_greater_py, output_files[group_name]['output_normalized_sum_unique_17'],
                      filter_greater, output_files[group_name]['output_normalized_filtered_greater']])
 
 # starting the first analyse pipeline - find uniqueness
@@ -140,7 +138,7 @@ for group in groups:
 
     # extract the unique promoters in the current group based on a `fold` value input
     subprocess.call(['python', find_uniqueness_py, output_files[group_name]['output_normalized_filtered_greater'], compared_files_joined,
-                     compared_groups_names_joined, unique_fold, output_files[group_name]['output_unique_fold']])
+                     compared_groups_names_joined, unique_fold, unique_promoters_output_file])
 
     # generating a new column names for the count and the normalized-filtered count of the compared groups
     compared_groups_count_columns_names = [
@@ -160,19 +158,3 @@ for group in groups:
     # rename the group count column to be count_normalized_and_filtered_{group_name}
     subprocess.call(['python', rename_columns_py, output_files[group_name]['output_unique_fold'], 'count',
                      f'count_normalized_and_filtered_{group_name}', output_files[group_name]['output_unique_fold']])
-
-    # find forward-reverse ratio in the group summarized normalized promoter-count (not the unique fold output file)
-    subprocess.call(['python', reverse_compliment_promoter_count_py, output_files[group_name]['output_normalized_sum_promoter'],
-                     output_files[group_name]['output_normalized_sum_promoter'], output_files[group_name]['output_normalized_sum_promoter_with_reverse']])
-
-    # join the `unique-fold` output file with the `summarized-normalized-promoter-count-with-reverse-ratio-data` output file
-    subprocess.call(['python', join_specific_columns_py, output_files[group_name]['output_unique_fold'], output_files[group_name]['output_normalized_sum_promoter_with_reverse'],
-                     'promoter', 'promoter', 'count_reverse,forward_reverse_ratio', '2,3', f'reversed_count_normalized_{group_name},forward_reverse_ratio', 'left', output_files[group_name]['output_unique_fold']])
-
-    # find forward-reverse ratio in the group summarized promoter-count
-    subprocess.call(['python', reverse_compliment_promoter_count_py, output_files[group_name]['output_sum_promoter'],
-                     output_files[group_name]['output_sum_promoter'], output_files[group_name]['output_sum_promoter_with_reverse']])
-
-    # join the `unique-fold` output file with the `summarized-promoter-count-with-reverse-ratio-data` output file
-    subprocess.call(['python', join_specific_columns_py, output_files[group_name]['output_unique_fold'], output_files[group_name]['output_sum_promoter_with_reverse'],
-                     'promoter', 'promoter', 'count,count_reverse', '4,5', f'count_{group_name},reverse_count_{group_name}', 'left', output_files[group_name]['output_unique_fold']])

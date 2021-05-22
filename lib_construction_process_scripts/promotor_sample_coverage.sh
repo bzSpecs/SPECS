@@ -6,13 +6,16 @@ lib_id=$3
 promoter_upstream_adapter=$4
 promoter_downstream_adapter=$5
 
+pyscripts=$6
+bashscripts=$7
+resources_folder=$8
+output_root_dir=$9
+
 # Define paths to executables specific to local machine
-source ../resources/define_local_exec_paths.sh
+source $resources_folder/define_local_exec_paths.sh
 
-pyscripts=barcode_promoter_pairing_pyscripts
-bashscripts=barcode_promoter_pairing_bashscripts
 
-lib_folder=barcode_promoter_pairing_output/$lib_id
+lib_folder=$output_root_dir/$lib_id
 sample_results_folder=$lib_folder/$sample_name/results
 sample_logs_folder=$lib_folder/$sample_name/logs
 lib_csv_results_folder=$lib_folder/promoters_csv_files

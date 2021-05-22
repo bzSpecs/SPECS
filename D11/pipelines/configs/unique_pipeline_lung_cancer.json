@@ -1,0 +1,144 @@
+{
+    "name": "lung_cancer",
+    "output_folder": "/Users/barzaruk/Documents/Projects/SPECS/D11/pipelines/output/lung_cancer",
+    "groups": [
+        {
+            "name": "LLC_2",
+            "filter_greater": 0,
+            "unique_fold": 10000000000000000,
+            "biological_replicates": [
+                {
+                    "name": "bio_1",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LLC_2/tech_1/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LLC_2/tech_1/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LLC_2/tech_1/cleaned_raw_paired.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LLC_2/tech_2/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LLC_2/tech_2/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LLC_2/tech_2/cleaned_raw_paired.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LLC_2/tech_3/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LLC_2/tech_3/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LLC_2/tech_3/cleaned_raw_paired.csv"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "MEF",
+            "filter_greater": 0,
+            "unique_fold": 10000000000000000,
+            "biological_replicates": [
+                {
+                    "name": "bio_1",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_1/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_1/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_1/cleaned_raw_paired.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_2/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_2/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_2/cleaned_raw_paired.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_3/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_3/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_3/cleaned_raw_paired.csv"
+                        },
+                        {
+                            "name": "tech_4",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_4/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_4/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/MEF/tech_4/cleaned_raw_paired.csv"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "LET-1",
+            "filter_greater": 0,
+            "unique_fold": 10000000000000000,
+            "biological_replicates": [
+                {
+                    "name": "bio_1",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_1/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_1/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_1/cleaned_raw_paired.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_2/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_2/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_2/cleaned_raw_paired.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_3/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_3/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_3/cleaned_raw_paired.csv"
+                        },
+                        {
+                            "name": "tech_4",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_4/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_4/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/LET-1/tech_4/cleaned_raw_paired.csv"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "nMuMG",
+            "filter_greater": 0,
+            "unique_fold": 10000000000000000,
+            "biological_replicates": [
+                {
+                    "name": "bio_1",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_1/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_1/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_1/cleaned_raw_paired.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_2/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_2/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_2/cleaned_raw_paired.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_3/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_3/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_3/cleaned_raw_paired.csv"
+                        },
+                        {
+                            "name": "tech_4",
+                            "unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_4/unique_17_count.csv",
+                            "normalized_unique_17_count_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_4/normalized_unique_17_count.csv",
+                            "cleaned_raw_paired_file": "/Users/barzaruk/Documents/Projects/SPECS/D11/analysis_results/LUNG_CANCER/nMuMG/tech_4/cleaned_raw_paired.csv"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

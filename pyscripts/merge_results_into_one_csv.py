@@ -30,11 +30,14 @@ summarized_df = pd.read_csv(paired_csv_file)
 summarized_df.drop_duplicates(subset=['promoter'], inplace=True)
 summarized_df.drop(columns=["barcode"], inplace=True)
 
+count_columns_names = []
+
 # join the count results to the promoter for each cell-line result dataframe
 for i in range(len(dfs)):
     df = dfs[i]
     cell_line_name = cells_names[i]
     column_name = "count_" + cell_line_name
+    count_columns_names.append(column_name)
 
     summarized_df = summarized_df.set_index("promoter").join(
         df.set_index("promoter"), how="outer").reset_index()
@@ -45,7 +48,9 @@ column_to_sort_by = "count_" + cell_to_sort_by
 summarized_df = summarized_df.sort_values(
     by=[column_to_sort_by], ascending=False)
 
+summarized_df = summarized_df.dropna(subset=count_columns_names, how='all')
 summarized_df = summarized_df.fillna(0)
+ipdb.set_trace()
 
 # create the folder if not exists yet
 if not os.path.exists(os.path.dirname(output_file)):
