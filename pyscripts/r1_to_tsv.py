@@ -12,5 +12,5 @@ with open(sys.argv[1], 'rt') as fastq:
             # Append lines until there are 4 (corresponding to 1 read)
             # output just the first-two column-wise
             if len(lines)==4:
-                out.write(lines[0][1:].split(" ")[0]+"\t"+lines[1][:16].strip()+'\n')
+                out.write(lines[0][1:].split(" ")[0]+"\t"+lines[1].strip()+'\n')
                 lines=[]

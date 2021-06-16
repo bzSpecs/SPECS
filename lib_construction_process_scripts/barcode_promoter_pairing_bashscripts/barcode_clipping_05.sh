@@ -41,4 +41,4 @@ mkdir -p $clipping_results_folder/$sample_name
 # of 4 and then outputs the 1rst and  2nd of each (i.e. readname and barcode
 # itself, leaving out quality score)
 python3 $pyscripts/r1_to_tsv.py $clipping_results_folder/clipped_$sample_name.fastq \
-        $clipping_results_folder/$sample_name
+        $clipping_results_folder/$sample_name/read_barcode.tsv

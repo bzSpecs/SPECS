@@ -4,8 +4,7 @@ resources/**/*
 
 validations/**/*
 
-lib_construction_process_scripts/barcode_promoter_pairing_output
-lib_construction_process_scripts/define_local_exec_paths.sh
+lib_construction_process_scripts/output
 
 RNA_seq_preprocess/output
 RNA_seq_process_scripts/output
