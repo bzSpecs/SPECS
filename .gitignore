@@ -15,4 +15,4 @@ pipelines/output
 rna_seq_results
 analysis_results
 
-D11/pipelines/output
+C1/*/output
