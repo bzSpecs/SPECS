@@ -1,0 +1,203 @@
+{
+    "name": "COLORECTAL_vs_NORMAL_1_4",
+    "output_folder": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/pipelines/output/COLORECTAL_vs_NORMAL_1_4",
+    "library_data_file_path": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/libray_D7.csv",
+    "groups": [
+        {
+            "name": "COLORECTAL",
+            "filter_greater": 0,
+            "biological_replicates": [
+                {
+                    "name": "HT29_bio_1",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_1/unique/tech_1/all/by_promoter/unique_HT29_1_4_bio_1_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_1/unique/tech_1/all/by_promoter/normalized_unique_HT29_1_4_bio_1_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_1/unique/tech_1/HT29_1_4_bio_1_tech_1_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_1/unique/tech_2/all/by_promoter/unique_HT29_1_4_bio_1_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_1/unique/tech_2/all/by_promoter/normalized_unique_HT29_1_4_bio_1_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_1/unique/tech_2/HT29_1_4_bio_1_tech_2_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_1/unique/tech_3/all/by_promoter/unique_HT29_1_4_bio_1_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_1/unique/tech_3/all/by_promoter/normalized_unique_HT29_1_4_bio_1_tech_3_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_1/unique/tech_3/HT29_1_4_bio_1_tech_3_rna_seq_barcodes.csv"
+                        }
+                    ]
+                },
+                {
+                    "name": "HT29_bio_2",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_2/unique/tech_1/all/by_promoter/unique_HT29_1_4_bio_2_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_2/unique/tech_1/all/by_promoter/normalized_unique_HT29_1_4_bio_2_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_2/unique/tech_1/HT29_1_4_bio_2_tech_1_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_2/unique/tech_2/all/by_promoter/unique_HT29_1_4_bio_2_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_2/unique/tech_2/all/by_promoter/normalized_unique_HT29_1_4_bio_2_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_2/unique/tech_2/HT29_1_4_bio_2_tech_2_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_2/unique/tech_3/all/by_promoter/unique_HT29_1_4_bio_2_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_2/unique/tech_3/all/by_promoter/normalized_unique_HT29_1_4_bio_2_tech_3_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HT29_1_4/bio_2/unique/tech_3/HT29_1_4_bio_2_tech_3_rna_seq_barcodes.csv"
+                        }
+                    ]
+                },
+                {
+                    "name": "HCT116_bio_1",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_1/unique/tech_1/all/by_promoter/unique_HCT116_1_4_bio_1_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_1/unique/tech_1/all/by_promoter/normalized_unique_HCT116_1_4_bio_1_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_1/unique/tech_1/HCT116_1_4_bio_1_tech_1_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_1/unique/tech_2/all/by_promoter/unique_HCT116_1_4_bio_1_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_1/unique/tech_2/all/by_promoter/normalized_unique_HCT116_1_4_bio_1_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_1/unique/tech_2/HCT116_1_4_bio_1_tech_2_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_1/unique/tech_3/all/by_promoter/unique_HCT116_1_4_bio_1_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_1/unique/tech_3/all/by_promoter/normalized_unique_HCT116_1_4_bio_1_tech_3_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_1/unique/tech_3/HCT116_1_4_bio_1_tech_3_rna_seq_barcodes.csv"
+                        }
+                    ]
+                },
+                {
+                    "name": "HCT116_bio_2",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_2/unique/tech_1/all/by_promoter/unique_HCT116_1_4_bio_2_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_2/unique/tech_1/all/by_promoter/normalized_unique_HCT116_1_4_bio_2_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_2/unique/tech_1/HCT116_1_4_bio_2_tech_1_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_2/unique/tech_2/all/by_promoter/unique_HCT116_1_4_bio_2_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_2/unique/tech_2/all/by_promoter/normalized_unique_HCT116_1_4_bio_2_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_2/unique/tech_2/HCT116_1_4_bio_2_tech_2_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_2/unique/tech_3/all/by_promoter/unique_HCT116_1_4_bio_2_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_2/unique/tech_3/all/by_promoter/normalized_unique_HCT116_1_4_bio_2_tech_3_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HCT116_1_4/bio_2/unique/tech_3/HCT116_1_4_bio_2_tech_3_rna_seq_barcodes.csv"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "NORMAL",
+            "filter_greater": 0,
+            "biological_replicates": [
+                {
+                    "name": "MCF-10_bio_1",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_1/unique/tech_1/all/by_promoter/unique_MCF-10_1_4_bio_1_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_1/unique/tech_1/all/by_promoter/normalized_unique_MCF-10_1_4_bio_1_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_1/unique/tech_1/MCF-10_1_4_bio_1_tech_1_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_1/unique/tech_2/all/by_promoter/unique_MCF-10_1_4_bio_1_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_1/unique/tech_2/all/by_promoter/normalized_unique_MCF-10_1_4_bio_1_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_1/unique/tech_2/MCF-10_1_4_bio_1_tech_2_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_1/unique/tech_3/all/by_promoter/unique_MCF-10_1_4_bio_1_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_1/unique/tech_3/all/by_promoter/normalized_unique_MCF-10_1_4_bio_1_tech_3_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_1/unique/tech_3/MCF-10_1_4_bio_1_tech_3_rna_seq_barcodes.csv"
+                        }
+                    ]
+                },
+                {
+                    "name": "MCF-10_bio_2",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_2/unique/tech_1/all/by_promoter/unique_MCF-10_1_4_bio_2_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_2/unique/tech_1/all/by_promoter/normalized_unique_MCF-10_1_4_bio_2_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_2/unique/tech_1/MCF-10_1_4_bio_2_tech_1_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_2/unique/tech_2/all/by_promoter/unique_MCF-10_1_4_bio_2_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_2/unique/tech_2/all/by_promoter/normalized_unique_MCF-10_1_4_bio_2_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_2/unique/tech_2/MCF-10_1_4_bio_2_tech_2_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_2/unique/tech_3/all/by_promoter/unique_MCF-10_1_4_bio_2_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_2/unique/tech_3/all/by_promoter/normalized_unique_MCF-10_1_4_bio_2_tech_3_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/MCF-10_1_4/bio_2/unique/tech_3/MCF-10_1_4_bio_2_tech_3_rna_seq_barcodes.csv"
+                        }
+                    ]
+                },
+                {
+                    "name": "HEK_bio_1",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_1/unique/tech_1/all/by_promoter/unique_HEK_1_4_bio_1_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_1/unique/tech_1/all/by_promoter/normalized_unique_HEK_1_4_bio_1_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_1/unique/tech_1/HEK_1_4_bio_1_tech_1_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_1/unique/tech_2/all/by_promoter/unique_HEK_1_4_bio_1_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_1/unique/tech_2/all/by_promoter/normalized_unique_HEK_1_4_bio_1_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_1/unique/tech_2/HEK_1_4_bio_1_tech_2_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_1/unique/tech_3/all/by_promoter/unique_HEK_1_4_bio_1_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_1/unique/tech_3/all/by_promoter/normalized_unique_HEK_1_4_bio_1_tech_3_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_1/unique/tech_3/HEK_1_4_bio_1_tech_3_rna_seq_barcodes.csv"
+                        }
+                    ]
+                },
+                {
+                    "name": "HEK_bio_2",
+                    "technical_replicates": [
+                        {
+                            "name": "tech_1",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_2/unique/tech_1/all/by_promoter/unique_HEK_1_4_bio_2_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_2/unique/tech_1/all/by_promoter/normalized_unique_HEK_1_4_bio_2_tech_1_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_2/unique/tech_1/HEK_1_4_bio_2_tech_1_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_2",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_2/unique/tech_2/all/by_promoter/unique_HEK_1_4_bio_2_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_2/unique/tech_2/all/by_promoter/normalized_unique_HEK_1_4_bio_2_tech_2_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_2/unique/tech_2/HEK_1_4_bio_2_tech_2_rna_seq_barcodes.csv"
+                        },
+                        {
+                            "name": "tech_3",
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_2/unique/tech_3/all/by_promoter/unique_HEK_1_4_bio_2_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_2/unique/tech_3/all/by_promoter/normalized_unique_HEK_1_4_bio_2_tech_3_all.csv",
+                            "raw_barcodes_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL/HEK_1_4/bio_2/unique/tech_3/HEK_1_4_bio_2_tech_3_rna_seq_barcodes.csv"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
