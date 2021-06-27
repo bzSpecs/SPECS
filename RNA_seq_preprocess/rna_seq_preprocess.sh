@@ -22,7 +22,8 @@ mkdir -p $logs_folder
 
 #clip barcodes:
 echo "Clipping barcodes"
-$cutadapt -g $upstream_adapter \
+$cutadapt -j 0 \
+         -g $upstream_adapter \
          -O 3 -n 2 -m $min -M $max \
          -o $results_folder/clipped_${sample_name}.fastq  \
          --untrimmed-output $results_folder/unclipped_${sample_name}.fastq \
