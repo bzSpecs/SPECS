@@ -10,7 +10,7 @@ pyscripts_folder = "../pyscripts"
 sum_promoters_counts_py = f"{pyscripts_folder}/sum_promoters_counts_results.py"
 normalize_by_factor_py = f"{pyscripts_folder}/normalize_sum_by_factor.py"
 filter_greater_py = f"{pyscripts_folder}/filter_results_greater_than.py"
-find_uniqueness_py = f"{pyscripts_folder}/find_uniqueness_in_cell_line.py"
+calulate_ratio_between_other_results_py = f"{pyscripts_folder}/calulate_ratio_between_other_results.py"
 rename_columns_py = f"{pyscripts_folder}/rename_columns.py"
 reverse_compliment_promoter_count_py = (
     f"{pyscripts_folder}/reverse_compliment_promoter_count.py"
@@ -216,7 +216,7 @@ for group in groups:
     subprocess.call(
         [
             "python",
-            find_uniqueness_py,
+            calulate_ratio_between_other_results_py,
             output_files[group_name]["output_normalized_filtered_greater"],
             compared_normalized_files_joined,
             compared_groups_names_joined,

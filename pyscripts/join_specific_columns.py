@@ -11,46 +11,58 @@ main_based_which_column = sys.argv[3]
 
 second_based_which_column = sys.argv[4]
 
-columns_to_merge = sys.argv[5]
-columns_to_merge = columns_to_merge.split(",")
+columns_to_merge = sys.argv[5] if sys.argv[5] != '' else None
+if columns_to_merge:
+    columns_to_merge = columns_to_merge.split(",")
 
-insert_indexes = sys.argv[6]
-insert_indexes = insert_indexes.split(",")
-insert_indexes = [int(insert_index) for insert_index in insert_indexes]
+insert_indexes = sys.argv[6] if sys.argv[6] != '' else None
+if insert_indexes:
+    insert_indexes = insert_indexes.split(",")
+    insert_indexes = [int(insert_index) for insert_index in insert_indexes]
 
-columns_to_merge_new_name = sys.argv[7]
-columns_to_merge_new_name = columns_to_merge_new_name.split(",")
+columns_to_merge_new_name = sys.argv[7] if sys.argv[7] != '' else None
+if columns_to_merge_new_name:
+    columns_to_merge_new_name = columns_to_merge_new_name.split(",")
 
 join_type = sys.argv[8]
 
-output_file = sys.argv[9]
+lsuffix = sys.argv[9]
+rsuffix = sys.argv[10]
+
+output_file = sys.argv[11]
 
 
 main_df = pd.read_csv(main_file)
 second_df = pd.read_csv(second_file)
 
 # take only the wanted columns from the second df
-second_df = second_df[[second_based_which_column] + columns_to_merge]
+if columns_to_merge:
+    second_df = second_df[[second_based_which_column] + columns_to_merge]
 
 # rename the columns to the wanted names
-for i in range(len(columns_to_merge_new_name)):
-    old_name = columns_to_merge[i]
-    new_name = columns_to_merge_new_name[i]
+if columns_to_merge and columns_to_merge_new_name:
+    for i in range(len(columns_to_merge_new_name)):
+        old_name = columns_to_merge[i]
+        new_name = columns_to_merge_new_name[i]
 
-    second_df = second_df.rename(columns={old_name: new_name})
+        second_df = second_df.rename(columns={old_name: new_name})
 
 # join
-df = main_df.set_index(main_based_which_column).join(
-    second_df.set_index(second_based_which_column), how=join_type).reset_index()
+df = (
+    main_df.set_index(main_based_which_column)
+    .join(second_df.set_index(second_based_which_column), how=join_type, lsuffix=lsuffix, rsuffix=rsuffix)
+    .reset_index()
+)
 
 # move new columns to their needed position (via insert_indexes arg)
-for i in range(len(columns_to_merge_new_name)):
-    insert_index = insert_indexes[i]
-    column_name = columns_to_merge_new_name[i]
+if insert_indexes:
+    for i in range(len(columns_to_merge_new_name)):
+        insert_index = insert_indexes[i]
+        column_name = columns_to_merge_new_name[i]
 
-    column_to_move = df.pop(column_name)
+        column_to_move = df.pop(column_name)
 
-    df.insert(insert_index, column_name, column_to_move)
+        df.insert(insert_index, column_name, column_to_move)
 
 # create the folder if not exists yet
 if not os.path.exists(os.path.dirname(output_file)):

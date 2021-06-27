@@ -10,7 +10,7 @@ pyscripts_folder = '../pyscripts'
 sum_unique_17_counts_py = f'{pyscripts_folder}/sum_unique_17_counts_results.py'
 normalize_by_factor_py = f'{pyscripts_folder}/normalize_sum_by_factor.py'
 filter_greater_py = f'{pyscripts_folder}/filter_results_greater_than.py'
-find_uniqueness_py = f'{pyscripts_folder}/find_uniqueness_in_cell_line.py'
+calulate_ratio_between_other_results_py = f'{pyscripts_folder}/calulate_ratio_between_other_results.py'
 rename_columns_py = f'{pyscripts_folder}/rename_columns.py'
 join_specific_columns_py = f'{pyscripts_folder}/join_specific_columns.py'
 
@@ -137,7 +137,7 @@ for group in groups:
     unique_promoters_output_file = output_files[group_name]['output_unique_fold']
 
     # extract the unique promoters in the current group based on a `fold` value input
-    subprocess.call(['python', find_uniqueness_py, output_files[group_name]['output_normalized_filtered_greater'], compared_files_joined,
+    subprocess.call(['python', calulate_ratio_between_other_results_py, output_files[group_name]['output_normalized_filtered_greater'], compared_files_joined,
                      compared_groups_names_joined, unique_fold, unique_promoters_output_file])
 
     # generating a new column names for the count and the normalized-filtered count of the compared groups
