@@ -10,8 +10,9 @@ pyscripts_folder = "../pyscripts"
 sum_promoters_counts_py = f"{pyscripts_folder}/sum_promoters_counts_results.py"
 normalize_by_factor_py = f"{pyscripts_folder}/normalize_sum_by_factor.py"
 filter_greater_py = f"{pyscripts_folder}/filter_results_greater_than.py"
-calulate_ratio_between_other_results_py = f"{pyscripts_folder}/calulate_ratio_between_other_results.py"
+calculate_ratio_between_other_results_py = f"{pyscripts_folder}/calculate_ratio_between_other_results.py"
 rename_columns_py = f"{pyscripts_folder}/rename_columns.py"
+add_number_of_barcodes_py = f"{pyscripts_folder}/add_number_of_barcodes.py"
 reverse_compliment_promoter_count_py = (
     f"{pyscripts_folder}/reverse_compliment_promoter_count.py"
 )
@@ -127,6 +128,8 @@ for group in groups:
             ]
         )
 
+        # gathering all the techs averagegs normalized promoter-count file paths for a bio replicate
+
         bio_raw_barcodes_files = [
             tech_rep["raw_barcodes_file"] for tech_rep in technical_replicates
         ]
@@ -216,7 +219,7 @@ for group in groups:
     subprocess.call(
         [
             "python",
-            calulate_ratio_between_other_results_py,
+            calculate_ratio_between_other_results_py,
             output_files[group_name]["output_normalized_filtered_greater"],
             compared_normalized_files_joined,
             compared_groups_names_joined,
