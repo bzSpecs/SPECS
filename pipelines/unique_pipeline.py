@@ -9,17 +9,15 @@ config_file = sys.argv[1]
 pyscripts_folder = "../pyscripts"
 sum_promoters_counts_py = f"{pyscripts_folder}/sum_promoters_counts_results.py"
 normalize_by_factor_py = f"{pyscripts_folder}/normalize_sum_by_factor.py"
-filter_greater_py = f"{pyscripts_folder}/filter_results_greater_than.py"
-calculate_ratio_between_other_results_py = f"{pyscripts_folder}/calculate_ratio_between_other_results.py"
+calculate_ratio_between_columns_py = (
+    f"{pyscripts_folder}/calculate_ratio_between_columns.py"
+)
 rename_columns_py = f"{pyscripts_folder}/rename_columns.py"
 add_number_of_barcodes_py = f"{pyscripts_folder}/add_number_of_barcodes.py"
-reverse_compliment_promoter_count_py = (
-    f"{pyscripts_folder}/reverse_compliment_promoter_count.py"
+add_reversed_compliment_promoter_column_py = (
+    f"{pyscripts_folder}/add_reversed_compliment_promoter_column.py"
 )
 join_specific_columns_py = f"{pyscripts_folder}/join_specific_columns.py"
-extract_id_from_promoter_column_py = (
-    f"{pyscripts_folder}/extract_id_from_promoter_column.py"
-)
 
 config_file = open(config_file)
 config = json.load(config_file)
@@ -36,7 +34,6 @@ D7_library_data = config["library_data_file_path"]
 output_files = {}
 for group in groups:
     group_name = group["name"]
-    filter_greater = group["filter_greater"]
     biological_replicates = group["biological_replicates"]
 
     # --------- setting the file names for each of the analysis ---------
@@ -55,14 +52,14 @@ for group in groups:
         "output_normalized_sum_promoter_with_reverse"
     ] = f"{output_folder}/{group_name}/normalized_sum_{group_name}_with_reverse_data.csv"
     output_files[group_name][
-        "output_normalized_filtered_greater"
-    ] = f"{output_folder}/{group_name}/normalized_sum_{group_name}_above_{filter_greater}.csv"
+        "output_group_summarized_info"
+    ] = f"{output_folder}/{group_name}/summarized_info_{group_name}.csv"
     output_files[group_name][
-        "output_unique"
-    ] = f"{output_folder}/{group_name}/unique_{group_name}.csv"
+        "output_final"
+    ] = f"{output_folder}/{group_name}/final_{group_name}.csv"
     output_files[group_name][
-        "output_unique_with_lib_data"
-    ] = f"{output_folder}/{group_name}/unique_{group_name}_with_lib_data.csv"
+        "output_final_with_lib_data"
+    ] = f"{output_folder}/{group_name}/final_{group_name}_with_lib_data.csv"
 
     # setting the file names for a biological replicate
     for bio_rep in biological_replicates:
@@ -176,198 +173,173 @@ for group in groups:
         ]
     )
 
-    # filter the results that their count value are greater than the `filter_greater` input value
-    filter_greater = str(group["filter_greater"])
+    # add the number of barcodes per promoter in lib
     subprocess.call(
         [
             "python",
-            filter_greater_py,
+            add_number_of_barcodes_py,
             output_files[group_name]["output_normalized_sum_promoter"],
-            filter_greater,
-            output_files[group_name]["output_normalized_filtered_greater"],
+            D7_library_data,
+            output_files[group_name]["output_group_summarized_info"],
         ]
     )
 
-# starting the first analyse pipeline - find uniqueness
+    subprocess.call(
+        [
+            "python",
+            calculate_ratio_between_columns_py,
+            output_files[group_name]["output_group_summarized_info"],
+            "count",
+            "number_of_barcodes",
+            "avg_count_based_on_number_of_barcodes",
+            "",
+            "",
+            "1000",
+            output_files[group_name]["output_group_summarized_info"],
+        ]
+    )
+
+    # add reversed promoter column
+    subprocess.call(
+        [
+            "python",
+            add_reversed_compliment_promoter_column_py,
+            output_files[group_name]["output_group_summarized_info"],
+            output_files[group_name]["output_group_summarized_info"],
+            output_files[group_name]["output_group_summarized_info"],
+        ]
+    )
+
+    # join the reversed promoter count and avg count for calculate ratio later
+    subprocess.call(
+        [
+            "python",
+            join_specific_columns_py,
+            output_files[group_name]["output_group_summarized_info"],
+            output_files[group_name]["output_group_summarized_info"],
+            "promoter",
+            "promoter_reverse",
+            "count,avg_count_based_on_number_of_barcodes",
+            "",
+            "reverse_compliment_count,reverse_compliment_avg_count_based_on_number_of_barcodes",
+            "left",
+            "",
+            "",
+            "avg_count_based_on_number_of_barcodes",
+            "False",
+            output_files[group_name]["output_group_summarized_info"],
+        ]
+    )
+
+    # calculate forward-reverse ratio of normalized count
+    subprocess.call(
+        [
+            "python",
+            calculate_ratio_between_columns_py,
+            output_files[group_name]["output_group_summarized_info"],
+            "count",
+            "reverse_compliment_count",
+            "forward_reverse_ratio",
+            "",
+            "",
+            "",
+            output_files[group_name]["output_group_summarized_info"],
+        ]
+    )
+
+    # calculate forward-reverse ratio of avg count by number of barcodes
+    subprocess.call(
+        [
+            "python",
+            calculate_ratio_between_columns_py,
+            output_files[group_name]["output_group_summarized_info"],
+            "avg_count_based_on_number_of_barcodes",
+            "reverse_compliment_avg_count_based_on_number_of_barcodes",
+            "avg_forward_reverse_ratio",
+            "",
+            "",
+            "",
+            output_files[group_name]["output_group_summarized_info"],
+        ]
+    )
+
+    # add original sum read of promoter
+    subprocess.call(
+        [
+            "python",
+            join_specific_columns_py,
+            output_files[group_name]["output_group_summarized_info"],
+            output_files[group_name]["output_sum_promoter"],
+            "promoter",
+            "promoter",
+            "count",
+            "",
+            "unnormalized_count",
+            "left",
+            "",
+            "",
+            "avg_count_based_on_number_of_barcodes",
+            "False",
+            output_files[group_name]["output_group_summarized_info"],
+        ]
+    )
+
+# starting the first analyse pipeline - find relations between compared groups
 for group in groups:
     group_name = group["name"]
     compared_groups = [g for g in groups if g["name"] != group_name]
 
-    filter_greater = str(group["filter_greater"])
-
     # gathering the normalized-filtered file path to compare with the current group file
-    compared_normalized_files = [
-        output_files[compared_group["name"]]["output_normalized_filtered_greater"]
+    compared_summarized_info_files = [
+        output_files[compared_group["name"]]["output_group_summarized_info"]
         for compared_group in compared_groups
     ]
-    # gathering the normalized-filtered file path to compare with the current group file
-    compared_files = [
-        output_files[compared_group["name"]]["output_sum_promoter"]
-        for compared_group in compared_groups
-    ]
-    # gathering the group names to compare with the current group
-    compared_groups_names = [
-        compared_group["name"] for compared_group in compared_groups
-    ]
 
-    compared_normalized_files_joined = ",".join(compared_normalized_files)
-    compared_files_joined = ",".join(compared_files)
-    compared_groups_names_joined = ",".join(compared_groups_names)
-    unique_promoters_output_file = output_files[group_name]["output_unique"]
-
-    # calculates the ratio between the promoters counts
-    subprocess.call(
-        [
-            "python",
-            calculate_ratio_between_other_results_py,
-            output_files[group_name]["output_normalized_filtered_greater"],
-            compared_normalized_files_joined,
-            compared_groups_names_joined,
-            output_files[group_name]["output_unique"],
-        ]
-    )
-
-    # generating a new column names for the count and the normalized-filtered count of the compared groups
-    compared_groups_count_columns_names = [f"count_{c}" for c in compared_groups_names]
-    compared_groups_count_columns_new_names = [
-        f"count_normalized_and_filtered_{c}" for c in compared_groups_names
-    ]
-
-    compared_groups_count_columns_names_joined = ",".join(
-        compared_groups_count_columns_names
-    )
-    compared_groups_count_columns_new_names_joined = ",".join(
-        compared_groups_count_columns_new_names
-    )
-
-    # rename the default columns names for the compared groups by the new generated ones
-    subprocess.call(
-        [
-            "python",
-            rename_columns_py,
-            output_files[group_name]["output_unique"],
-            compared_groups_count_columns_names_joined,
-            compared_groups_count_columns_new_names_joined,
-            output_files[group_name]["output_unique"],
-        ]
-    )
-
-    # rename the group count column to be count_normalized_and_filtered_{group_name}
-    subprocess.call(
-        [
-            "python",
-            rename_columns_py,
-            output_files[group_name]["output_unique"],
-            "count",
-            f"count_normalized_and_filtered_{group_name}",
-            output_files[group_name]["output_unique"],
-        ]
-    )
-
-    # find forward-reverse ratio in the group summarized normalized promoter-count (not the unique output file)
-    subprocess.call(
-        [
-            "python",
-            reverse_compliment_promoter_count_py,
-            output_files[group_name]["output_normalized_sum_promoter"],
-            output_files[group_name]["output_normalized_sum_promoter"],
-            output_files[group_name]["output_normalized_sum_promoter_with_reverse"],
-        ]
-    )
-
-    # join the `unique` output file with the `summarized-normalized-promoter-count-with-reverse-ratio-data` output file
-    subprocess.call(
-        [
-            "python",
-            join_specific_columns_py,
-            output_files[group_name]["output_unique"],
-            output_files[group_name]["output_normalized_sum_promoter_with_reverse"],
-            "promoter",
-            "promoter",
-            "count_reverse,forward_reverse_ratio",
-            "2,3",
-            f"reversed_count_normalized_{group_name},forward_reverse_ratio",
-            "left",
-            "",
-            "",
-            output_files[group_name]["output_unique"],
-        ]
-    )
-
-    # find forward-reverse ratio in the group summarized promoter-count
-    subprocess.call(
-        [
-            "python",
-            reverse_compliment_promoter_count_py,
-            output_files[group_name]["output_sum_promoter"],
-            output_files[group_name]["output_sum_promoter"],
-            output_files[group_name]["output_sum_promoter_with_reverse"],
-        ]
-    )
-
-    # join the `unique` output file with the `summarized-promoter-count-with-reverse-ratio-data` output file
-    subprocess.call(
-        [
-            "python",
-            join_specific_columns_py,
-            output_files[group_name]["output_unique"],
-            output_files[group_name]["output_sum_promoter_with_reverse"],
-            "promoter",
-            "promoter",
-            "count,count_reverse",
-            "4,5",
-            f"count_{group_name},reverse_count_{group_name}",
-            "left",
-            "",
-            "",
-            output_files[group_name]["output_unique"],
-        ]
-    )
-
-    # join the `unique` output file with the `summarized-promoter-count` of each compared group
     for compared_group in compared_groups:
-        compared_file = output_files[compared_group["name"]]["output_sum_promoter"]
+        compared_group_name = compared_group["name"]
+        columns_to_join = [
+            "count",
+            "avg_count_based_on_number_of_barcodes",
+            "unnormalized_count",
+        ]
+        new_columns_names = [f"{compared_group_name}_{c}" for c in columns_to_join]
+        columns_to_calculate_ratio = [
+            "count",
+            "avg_count_based_on_number_of_barcodes",
+            "unnormalized_count",
+        ]
         subprocess.call(
             [
                 "python",
                 join_specific_columns_py,
-                output_files[group_name]["output_unique"],
-                compared_file,
+                output_files[group_name]["output_group_summarized_info"],
+                output_files[compared_group_name]["output_group_summarized_info"],
                 "promoter",
                 "promoter",
-                "count",
+                ",".join(columns_to_join),
                 "",
-                f"count_{compared_group['name']}",
+                ",".join(new_columns_names),
                 "left",
                 "",
                 "",
-                output_files[group_name]["output_unique"],
+                "avg_count_based_on_number_of_barcodes",
+                "False",
+                output_files[group_name]["output_group_summarized_info"],
             ]
         )
 
-    # join the `unique` output file with the library additional information
-    subprocess.call(
-        [
-            "python",
-            extract_id_from_promoter_column_py,
-            output_files[group_name]["output_unique"],
-            output_files[group_name]["output_unique"],
-        ]
-    )
-    subprocess.call(
-        [
-            "python",
-            join_specific_columns_py,
-            output_files[group_name]["output_unique"],
-            D7_library_data,
-            "id",
-            "id",
-            "",
-            "",
-            "",
-            "left",
-            "",
-            "",
-            output_files[group_name]["output_unique_with_lib_data"],
-        ]
-    )
+        for column_to_calculate_ratio in columns_to_calculate_ratio:
+            subprocess.call(
+                [
+                    "python",
+                    calculate_ratio_between_columns_py,
+                    output_files[group_name]["output_group_summarized_info"],
+                    column_to_calculate_ratio,
+                    f'{compared_group_name}_{column_to_calculate_ratio}',
+                    f'{compared_group_name}_{column_to_calculate_ratio}_ratio',
+                    "",
+                    "",
+                    "",
+                    output_files[group_name]["output_group_summarized_info"],
+                ]
+            )

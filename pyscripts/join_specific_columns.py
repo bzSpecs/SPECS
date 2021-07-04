@@ -29,7 +29,10 @@ join_type = sys.argv[8]
 lsuffix = sys.argv[9]
 rsuffix = sys.argv[10]
 
-output_file = sys.argv[11]
+sort_by = sys.argv[11]
+ascending = sys.argv[12] == "True"
+
+output_file = sys.argv[13]
 
 
 main_df = pd.read_csv(main_file)
@@ -51,8 +54,11 @@ if columns_to_merge and columns_to_merge_new_name:
 df = (
     main_df.set_index(main_based_which_column)
     .join(second_df.set_index(second_based_which_column), how=join_type, lsuffix=lsuffix, rsuffix=rsuffix)
-    .reset_index()
 )
+df = df.reset_index().rename(columns={"index":main_based_which_column})
+
+if sort_by != "":
+    df = df.sort_values(by=[sort_by], ascending=[ascending])
 
 # move new columns to their needed position (via insert_indexes arg)
 if insert_indexes:

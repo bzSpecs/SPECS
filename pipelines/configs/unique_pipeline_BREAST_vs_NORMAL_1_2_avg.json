@@ -1,11 +1,10 @@
 {
     "name": "BREAST_vs_NORMAL_1_2_avg",
     "output_folder": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/pipelines/output/BREAST_vs_NORMAL_1_2_avg",
-    "library_data_file_path": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/libray_D7.csv",
+    "library_data_file_path": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/NIR_BREAST_COLORECTAL_avg/unique_PAIRED.csv",
     "groups": [
         {
             "name": "BREAST",
-            "filter_greater": 0,
             "biological_replicates": [
                 {
                     "name": "MCF-7_bio_1",
@@ -103,7 +102,6 @@
         },
         {
             "name": "NORMAL",
-            "filter_greater": 0,
             "biological_replicates": [
                 {
                     "name": "MCF-10_bio_1",

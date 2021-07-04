@@ -41,26 +41,39 @@ python3 barcodes_counts.py ${rna_seq_barcodes_csv_path} ${unique_all_by_barcode}
 unique_all_by_promoter=${unique_tech_rep}/all/by_promoter/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
 python3 promoter_counts.py ${unique_all_by_barcode} ${unique_paired_path} ${unique_all_by_promoter}
 
+unique_all_by_promoter_avg_by_bc_number=${unique_tech_rep}/all/by_promoter/avg_unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
+python3 avg_by_number_of_barcodes.py ${unique_all_by_promoter} ${unique_paired_path} 1000 ${unique_all_by_promoter_avg_by_bc_number}
+
 # highlighted barcodes and promoters by number of reads
 unique_highlight_by_barcode=${unique_tech_rep}/highlights/by_barcode/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_highlights.csv
 unique_highlight_by_promoter=${unique_tech_rep}/highlights/by_promoter/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_highlights.csv
+unique_highlight_by_promoter_avg=${unique_tech_rep}/highlights/by_promoter/avg_unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_highlights.csv
 python3 highlights_by_count.py ${unique_all_by_barcode} ${unique_highlight_by_barcode} ${highlight_value}
 python3 highlights_by_count.py ${unique_all_by_promoter} ${unique_highlight_by_promoter} ${highlight_value}
+python3 highlights_by_count.py ${unique_all_by_promoter_avg_by_bc_number} ${unique_highlight_by_promoter_avg} ${highlight_value}
 
 # top 10 barcodes and promoters for replica
 unique_top_10_by_barcode=${unique_tech_rep}/top_10/by_barcode/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_top_10.csv
 unique_top_10_by_promoter=${unique_tech_rep}/top_10/by_promoter/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_top_10.csv
+unique_top_10_by_promoter_avg=${unique_tech_rep}/top_10/by_promoter/avg_unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_top_10.csv
 python3 top_10_by_count.py ${unique_all_by_barcode} ${unique_top_10_by_barcode}
 python3 top_10_by_count.py ${unique_all_by_promoter} ${unique_top_10_by_promoter}
+python3 top_10_by_count.py ${unique_all_by_promoter_avg_by_bc_number} ${unique_top_10_by_promoter_avg}
 
 normalized_unique_all_by_promoter=${unique_tech_rep}/all/by_promoter/normalized_unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
+normalized_avg_unique_all_by_promoter=${unique_tech_rep}/all/by_promoter/normalized_avg_unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all.csv
 python3 normalize_sum_by_reads.py ${unique_all_by_promoter} ${rna_seq_barcodes_csv_path} 100000 ${normalized_unique_all_by_promoter}
+python3 normalize_sum_by_reads.py ${unique_all_by_promoter_avg_by_bc_number} ${rna_seq_barcodes_csv_path} 100000 ${normalized_avg_unique_all_by_promoter}
 
 unique_all_by_promoter_reverse_data_relations=${unique_tech_rep}/all/by_promoter/unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all_reverse_data_relations.csv
+unique_all_by_promoter_reverse_data_relations_avg=${unique_tech_rep}/all/by_promoter/avg_unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all_reverse_data_relations.csv
 python3 reverse_compliment_promoter_count.py ${unique_all_by_promoter} ${unique_all_by_promoter} ${unique_all_by_promoter_reverse_data_relations}
+python3 reverse_compliment_promoter_count.py ${unique_all_by_promoter_avg_by_bc_number} ${unique_all_by_promoter_avg_by_bc_number} ${unique_all_by_promoter_reverse_data_relations_avg}
 
 normalized_unique_all_by_promoter_reverse_data_relations=${unique_tech_rep}/all/by_promoter/normalized_unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all_reverse_data_relations.csv
+normalized_avg_unique_all_by_promoter_reverse_data_relations=${unique_tech_rep}/all/by_promoter/normalized_avg_unique_${cell_line}_bio_${bio_rep}_tech_${tech_rep}_all_reverse_data_relations.csv
 python3 reverse_compliment_promoter_count.py ${normalized_unique_all_by_promoter} ${normalized_unique_all_by_promoter} ${normalized_unique_all_by_promoter_reverse_data_relations}
+python3 reverse_compliment_promoter_count.py ${normalized_avg_unique_all_by_promoter} ${normalized_avg_unique_all_by_promoter} ${normalized_avg_unique_all_by_promoter_reverse_data_relations}
 
 
 ###############################################
