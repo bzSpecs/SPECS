@@ -2,17 +2,25 @@ import pandas as pd
 import ipdb
 import sys
 import os
+from sklearn.preprocessing import MinMaxScaler
+
 
 results_file = sys.argv[1]
 original_reads_file = sys.argv[2]
-multiplier = int(sys.argv[3])
+column_name = sys.argv[3]
+range_min = int(sys.argv[4])
+range_max = int(sys.argv[5])
 
-output_file = sys.argv[4]
+output_file = sys.argv[6]
+
+scaler = MinMaxScaler(feature_range=(range_min, range_max))
 
 results_df = pd.read_csv(results_file)
 reads_df = pd.read_csv(original_reads_file)
 
-results_df["count"] = (results_df["count"] / len(reads_df)) * multiplier
+results_df[column_name] = results_df[column_name] / len(reads_df)
+
+results_df[[column_name]] = scaler.fit_transform(results_df[[column_name]])
 
 # create the folder if not exists yet
 if not os.path.exists(os.path.dirname(output_file)):

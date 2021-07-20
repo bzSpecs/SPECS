@@ -3,11 +3,12 @@
 root_output_folder=$1
 experiment_name=$2
 cell_line_name=$3
-sample_name=$4
-paired_csv_file=$5
-pyscripts_folder=$6
+bio_name=$4
+sample_name=$5
+paired_csv_file=$6
+pyscripts_folder=$7
 
-sample_folder=$root_output_folder/$experiment_name/$cell_line_name/$sample_name
+sample_folder=$root_output_folder/$experiment_name/$cell_line_name/$bio_name/$sample_name
 
 cleaned_raw_paired_csv_file=$sample_folder/cleaned_raw_paired.csv
 python $pyscripts_folder/clean_raw_paired_file.py $paired_csv_file $cleaned_raw_paired_csv_file
@@ -16,10 +17,28 @@ unique_17_count_output_file=$sample_folder/unique_17_count.csv
 python $pyscripts_folder/count_unique_17.py $cleaned_raw_paired_csv_file $unique_17_count_output_file
 
 normalized_unique_17_count_output_file=$sample_folder/normalized_unique_17_count.csv
-python $pyscripts_folder/normalize_sum_by_reads.py $unique_17_count_output_file $cleaned_raw_paired_csv_file 10000 $normalized_unique_17_count_output_file
+python $pyscripts_folder/normalize_column_by_reads.py $unique_17_count_output_file $cleaned_raw_paired_csv_file count 1 200 $normalized_unique_17_count_output_file
 
 unique_17_barcode_count_output_file=$sample_folder/unique_17_barcode_count.csv
 python $pyscripts_folder/count_unique_17_barcode.py $cleaned_raw_paired_csv_file $unique_17_barcode_count_output_file
 
 normalized_unique_17_barcode_count_output_file=$sample_folder/normalized_unique_17_barcode_count.csv
-python $pyscripts_folder/normalize_sum_by_reads.py $unique_17_barcode_count_output_file $cleaned_raw_paired_csv_file 10000 $normalized_unique_17_barcode_count_output_file
+python $pyscripts_folder/normalize_column_by_reads.py $unique_17_barcode_count_output_file $cleaned_raw_paired_csv_file count 1 200 $normalized_unique_17_barcode_count_output_file
+
+unique_17_and_number_of_barcode_output_file=$sample_folder/unique_17_and_number_of_barcode.csv
+avg_unique_17_count_output_file=$sample_folder/avg_unique_17_count.csv
+avg_normalized_unique_17_count_output_file=$sample_folder/avg_normalized_unique_17_count.csv
+
+python $pyscripts_folder/add_number_of_barcodes.py $cleaned_raw_paired_csv_file $unique_17_and_number_of_barcode_output_file
+python $pyscripts_folder/join_specific_columns.py $unique_17_count_output_file $unique_17_and_number_of_barcode_output_file unique_17 unique_17 "" "" "" "" "" "" count False $avg_unique_17_count_output_file
+python $pyscripts_folder/calculate_ratio_between_columns.py $avg_unique_17_count_output_file count number_of_barcodes avg_count_per_number_of_barcodes "" 0 1 $avg_unique_17_count_output_file
+python $pyscripts_folder/normalize_column_by_factor.py $avg_unique_17_count_output_file 1 avg_count_per_number_of_barcodes 1 200 $avg_unique_17_count_output_file
+python $pyscripts_folder/sort_df_by_column.py $avg_unique_17_count_output_file avg_count_per_number_of_barcodes False $avg_unique_17_count_output_file
+
+python $pyscripts_folder/join_specific_columns.py $normalized_unique_17_count_output_file $unique_17_and_number_of_barcode_output_file unique_17 unique_17 "" "" "" "" "" "" count False $avg_normalized_unique_17_count_output_file
+python $pyscripts_folder/calculate_ratio_between_columns.py $avg_normalized_unique_17_count_output_file count number_of_barcodes avg_count_per_number_of_barcodes "" 0 1000 $avg_normalized_unique_17_count_output_file
+python $pyscripts_folder/normalize_column_by_factor.py $avg_normalized_unique_17_count_output_file 1 avg_count_per_number_of_barcodes 1 200 $avg_normalized_unique_17_count_output_file
+python $pyscripts_folder/sort_df_by_column.py $avg_normalized_unique_17_count_output_file avg_count_per_number_of_barcodes False $avg_normalized_unique_17_count_output_file
+
+summarized_info_of_unique_17_count_file=$sample_folder/summarized_info_of_unique_17_count.csv
+python $pyscripts_folder/join_specific_columns.py $avg_normalized_unique_17_count_output_file $unique_17_count_output_file unique_17 unique_17 count "" unnormalized_count "" "" "" avg_count_per_number_of_barcodes False $summarized_info_of_unique_17_count_file

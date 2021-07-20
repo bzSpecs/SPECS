@@ -1,14 +1,16 @@
 #!/bin/bash
 
 experiment_name=$1
-sample_name=$2
-file=$3
-pyscripts_folder=$4
-bowtie2_referece_folder=$5
-define_local_exec_paths_file=$6
-output_root_dir=$7
+cell_line_name=$2
+replicate_name=$3
+sample_name=$4
+file=$5
+pyscripts_folder=$6
+bowtie2_referece_folder=$7
+define_local_exec_paths_file=$8
+output_root_dir=$9
 
-sample_folder=$output_root_dir/$experiment_name/$sample_name
+sample_folder=$output_root_dir/$experiment_name/$cell_line_name/$replicate_name/$sample_name
 
 source $define_local_exec_paths_file
 
@@ -29,3 +31,4 @@ $cutadapt -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o $sample_folder/barcodes/cut
 
 python $pyscripts_folder/r1_to_tsv.py $sample_folder/barcodes/cutadapt/clipped_barcodes_output.fastq $sample_folder/barcodes/barcodes_mapping.tsv
 python $pyscripts_folder/pair_barcodes_to_unique_17.py $sample_folder/17_unique/alignment/new_17_unique.txt $sample_folder/barcodes/barcodes_mapping.tsv $sample_folder/paired.csv
+python $pyscripts_folder/extract_distinct_pairing_and_number_of_barcodes_per_unique_17.py $sample_folder/paired.csv $sample_folder/distinct_paired.csv $sample_folder/number_of_BC_per_unique_17.csv

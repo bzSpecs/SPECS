@@ -8,14 +8,16 @@ results_csv_1 = sys.argv[1]
 results_1_label = sys.argv[2]
 columns_to_merge_by_results_1 = sys.argv[3]
 columns_to_merge_by_results_1 = columns_to_merge_by_results_1.split(",")
+scatter_col_1 = sys.argv[4]
 
-results_csv_2 = sys.argv[4]
-results_2_label = sys.argv[5]
-columns_to_merge_by_results_2 = sys.argv[6]
+results_csv_2 = sys.argv[5]
+results_2_label = sys.argv[6]
+columns_to_merge_by_results_2 = sys.argv[7]
 columns_to_merge_by_results_2 = columns_to_merge_by_results_2.split(",")
+scatter_col_2 = sys.argv[8]
 
-title_label = sys.argv[7]
-output_file = sys.argv[8]
+title_label = sys.argv[9]
+output_file = sys.argv[10]
 
 results_df_1 = pd.read_csv(results_csv_1)
 results_df_2 = pd.read_csv(results_csv_2)
@@ -24,7 +26,7 @@ merged_df = pd.merge(results_df_1, results_df_2,  how='left',
                      left_on=columns_to_merge_by_results_1, right_on=columns_to_merge_by_results_2)
 
 fig, ax = plt.subplots()
-sc = plt.scatter(merged_df["count_x"], merged_df["count_y"], s=60)
+sc = plt.scatter(merged_df[f"{scatter_col_1}_x"], merged_df[f"{scatter_col_2}_y"], s=60)
 
 fig.set_size_inches(800/fig.dpi, 800/fig.dpi, forward=True)
 
@@ -32,8 +34,8 @@ plt.xscale('log')
 plt.yscale('log')
 
 
-all_values_from_the_two_columns = merged_df['count_x'].append(
-    merged_df['count_y']).reset_index(drop=True)
+all_values_from_the_two_columns = merged_df[f"{scatter_col_1}_x"].append(
+    merged_df[f"{scatter_col_1}_y"]).reset_index(drop=True)
 max_value = all_values_from_the_two_columns.max()
 
 plt.xlim(1, max_value + 1000)
