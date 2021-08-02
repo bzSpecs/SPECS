@@ -26,7 +26,7 @@ merged_df = pd.merge(results_df_1, results_df_2,  how='left',
                      left_on=columns_to_merge_by_results_1, right_on=columns_to_merge_by_results_2)
 
 fig, ax = plt.subplots()
-sc = plt.scatter(merged_df[f"{scatter_col_1}_x"], merged_df[f"{scatter_col_2}_y"], s=60)
+sc = plt.scatter(merged_df[f"{scatter_col_1}_x"], merged_df[f"{scatter_col_2}_y"], s=10)
 
 fig.set_size_inches(800/fig.dpi, 800/fig.dpi, forward=True)
 
@@ -45,7 +45,7 @@ plt.xlabel(results_1_label, fontfamily='Arial', fontsize=36, fontweight="bold")
 plt.ylabel(results_2_label, fontfamily='Arial', fontsize=36, fontweight="bold")
 plt.xticks(fontsize=36)
 plt.yticks(fontsize=36)
-plt.title(title_label, fontfamily='Arial', fontsize=42, fontweight="bold")
+plt.title(title_label, fontfamily='Arial', fontsize=24, fontweight="bold")
 
 annot = ax.annotate("", xy=(0, 0), xytext=(
     0, 10), textcoords="offset points", bbox=dict(boxstyle="round", fc="w"), ha='center')
