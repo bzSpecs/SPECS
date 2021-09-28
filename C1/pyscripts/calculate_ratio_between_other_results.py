@@ -11,7 +11,10 @@ files_to_compare_to = files_to_compare_to.split(",")
 cell_names = sys.argv[3]
 cell_names = cell_names.split(",")
 
-output_file = sys.argv[4]
+column_names = sys.argv[4]
+column_names = column_names.split(",")
+
+output_file = sys.argv[5]
 
 df = pd.read_csv(file_to_find_uniques_for)
 
@@ -29,8 +32,10 @@ for i in range(len(dfs_to_compare)):
         .sort_values(by=["count"], ascending=False)
     )
 
-    df[f'ratio_{cell_name}'] = df["count"] / df[f'count_{cell_name}']
-    df[f'ratio_{cell_name}'] = df[f'ratio_{cell_name}'].fillna('Totaly Unique')
+    for column_name in column_names:
+        df[f'{column_name}_ratio_{cell_name}'] = df[column_name] / df[f'{column_name}_{cell_name}']
+        df[f'{column_name}_ratio_{cell_name}'] = df[f'{column_name}_ratio_{cell_name}'].fillna('Totaly Unique')
+
     df = df.reset_index()
 
 df = df.fillna(0)

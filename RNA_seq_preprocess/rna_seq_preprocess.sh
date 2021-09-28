@@ -11,6 +11,7 @@ max=$6 # maximum length of seq
 # Define paths to executables specific to local machine
 source ../resources/define_local_exec_paths.sh
 
+# Define output file paths
 output_path=output/$experiment_name
 results_folder=$output_path/$sample_name/results
 logs_folder=$output_path/$sample_name/logs

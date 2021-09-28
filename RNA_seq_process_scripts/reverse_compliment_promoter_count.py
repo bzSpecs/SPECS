@@ -3,6 +3,30 @@ import ipdb
 import sys
 import os
 
+# promoter_count_df:
+#     promoter,count,promoter_without_id
+#     DM_1111;AAT,3,AAT
+#     ..
+#     ..
+#     ..
+#     DM_2345;TTA,5,TTA
+
+# second_promoter_count_df:
+#     promoter,count,reverse_promoter_without_id
+#     DM_1111;AAT,3,TTA
+#     ..
+#     ..
+#     ..
+#     DM_2345;TTA,5,AAT
+
+# merged:
+#     promoter,count,count_reverse,forward_reverse_ratio
+#     DM_1111;AAT,3,5,0.6
+#     ..
+#     ..
+#     ..
+#     DM_2345;TTA,5,3,1.3
+
 results_by_promoter_csv_file = sys.argv[1]
 second_results_by_promoter_csv_file = sys.argv[2]
 output_file = sys.argv[3]

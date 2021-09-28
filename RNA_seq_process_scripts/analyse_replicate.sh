@@ -15,11 +15,8 @@ output_path=output/${experiment_name}
 cell_line_folder_path=${output_path}/${cell_line}/bio_${bio_rep}
 unique_tech_rep=${cell_line_folder_path}/unique/tech_${tech_rep}
 thresh_tech_rep=${cell_line_folder_path}/${threshold_and_number}/tech_${tech_rep}
-# unique_tech_rep=${cell_line_folder_path}/tech_${tech_rep}/unique
-# thresh_tech_rep=${cell_line_folder_path}/tech_${tech_rep}/${threshold_and_number}
 
 mkdir -p ${cell_line_folder_path}
-# mkdir -p ${tech_rep}
 
 unique_paired_path=${output_path}/unique_PAIRED.csv
 if [ -f ${unique_paired_path} ]; then

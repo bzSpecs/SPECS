@@ -81,8 +81,6 @@ for group in groups:
     all_tech_reps_files = []
     # tech normalized file paths for a specific experiment group
     all_norm_tech_reps_files = []
-    # sum the total number of reads in the raw barcodes files
-    group_number_of_total_reads = 0
 
     for bio_rep in biological_replicates:
         bio_name = bio_rep["name"]
@@ -125,21 +123,6 @@ for group in groups:
             ]
         )
 
-        # gathering all the techs averagegs normalized promoter-count file paths for a bio replicate
-
-        bio_raw_barcodes_files = [
-            tech_rep["raw_barcodes_file"] for tech_rep in technical_replicates
-        ]
-        for f in bio_raw_barcodes_files:
-            file = open(f, "r")
-            line_count = 0
-            for line in file:
-                if line != "\n":
-                    line_count += 1
-            # decrement by one because of the csv title (`barcode`)
-            group_number_of_total_reads += line_count - 1
-            file.close()
-
     # perform summarizing promoter-count in the group replicate level
     all_tech_reps_files_joined = ",".join(all_tech_reps_files)
     subprocess.call(
@@ -167,8 +150,8 @@ for group in groups:
             "python",
             normalize_by_factor_py,
             output_files[group_name]["output_normalized_sum_promoter"],
-            str(group_number_of_total_reads),
-            "1000000",
+            str(len(all_tech_reps_files)),
+            "1",
             output_files[group_name]["output_normalized_sum_promoter"],
         ]
     )

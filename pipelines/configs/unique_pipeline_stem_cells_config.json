@@ -1,6 +1,7 @@
 {
     "name": "stem_cells",
-    "output_folder": "/Users/barzaruk/Documents/Projects/SPECS/pipelines/output/stem_cells",
+    "output_folder": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/pipelines/output/stem_cells",
+    "library_data_file_path": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/unique_PAIRED.csv",
     "groups": [
         {
             "name": "ESC",
@@ -8,42 +9,22 @@
             "unique_fold": 50,
             "biological_replicates": [
                 {
-                    "name": "bio_1",
-                    "technical_replicates": [
-                        {
-                            "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_1/unique/tech_1/all/by_promoter/unique_ESC_bio_1_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_1/unique/tech_1/all/by_promoter/normalized_unique_ESC_bio_1_tech_1_all.csv"
-                        },
-                        {
-                            "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_1/unique/tech_2/all/by_promoter/unique_ESC_bio_1_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_1/unique/tech_2/all/by_promoter/normalized_unique_ESC_bio_1_tech_2_all.csv"
-                        },
-                        {
-                            "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_1/unique/tech_3/all/by_promoter/unique_ESC_bio_1_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_1/unique/tech_3/all/by_promoter/normalized_unique_ESC_bio_1_tech_3_all.csv"
-                        }
-                    ]
-                },
-                {
                     "name": "bio_2",
                     "technical_replicates": [
                         {
                             "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_1/all/by_promoter/unique_ESC_bio_2_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_1/all/by_promoter/normalized_unique_ESC_bio_2_tech_1_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_1/all/by_promoter/unique_ESC_bio_2_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_1/all/by_promoter/normalized_unique_ESC_bio_2_tech_1_all.csv"
                         },
                         {
                             "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_2/all/by_promoter/unique_ESC_bio_2_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_2/all/by_promoter/normalized_unique_ESC_bio_2_tech_2_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_2/all/by_promoter/unique_ESC_bio_2_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_2/all/by_promoter/normalized_unique_ESC_bio_2_tech_2_all.csv"
                         },
                         {
                             "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_3/all/by_promoter/unique_ESC_bio_2_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_3/all/by_promoter/normalized_unique_ESC_bio_2_tech_3_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_3/all/by_promoter/unique_ESC_bio_2_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_2/unique/tech_3/all/by_promoter/normalized_unique_ESC_bio_2_tech_3_all.csv"
                         }
                     ]
                 },
@@ -52,18 +33,18 @@
                     "technical_replicates": [
                         {
                             "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_1/all/by_promoter/unique_ESC_bio_3_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_1/all/by_promoter/normalized_unique_ESC_bio_3_tech_1_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_1/all/by_promoter/unique_ESC_bio_3_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_1/all/by_promoter/normalized_unique_ESC_bio_3_tech_1_all.csv"
                         },
                         {
                             "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_2/all/by_promoter/unique_ESC_bio_3_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_2/all/by_promoter/normalized_unique_ESC_bio_3_tech_2_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_2/all/by_promoter/unique_ESC_bio_3_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_2/all/by_promoter/normalized_unique_ESC_bio_3_tech_2_all.csv"
                         },
                         {
                             "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_3/all/by_promoter/unique_ESC_bio_3_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_3/all/by_promoter/normalized_unique_ESC_bio_3_tech_3_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_3/all/by_promoter/unique_ESC_bio_3_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/ESC/bio_3/unique/tech_3/all/by_promoter/normalized_unique_ESC_bio_3_tech_3_all.csv"
                         }
                     ]
                 }
@@ -75,42 +56,22 @@
             "unique_fold": 50,
             "biological_replicates": [
                 {
-                    "name": "bio_1",
-                    "technical_replicates": [
-                        {
-                            "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_1/unique/tech_1/all/by_promoter/unique_MEF_bio_1_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_1/unique/tech_1/all/by_promoter/normalized_unique_MEF_bio_1_tech_1_all.csv"
-                        },
-                        {
-                            "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_1/unique/tech_2/all/by_promoter/unique_MEF_bio_1_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_1/unique/tech_2/all/by_promoter/normalized_unique_MEF_bio_1_tech_2_all.csv"
-                        },
-                        {
-                            "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_1/unique/tech_3/all/by_promoter/unique_MEF_bio_1_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_1/unique/tech_3/all/by_promoter/normalized_unique_MEF_bio_1_tech_3_all.csv"
-                        }
-                    ]
-                },
-                {
                     "name": "bio_2",
                     "technical_replicates": [
                         {
                             "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_1/all/by_promoter/unique_MEF_bio_2_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_1/all/by_promoter/normalized_unique_MEF_bio_2_tech_1_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_1/all/by_promoter/unique_MEF_bio_2_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_1/all/by_promoter/normalized_unique_MEF_bio_2_tech_1_all.csv"
                         },
                         {
                             "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_2/all/by_promoter/unique_MEF_bio_2_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_2/all/by_promoter/normalized_unique_MEF_bio_2_tech_2_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_2/all/by_promoter/unique_MEF_bio_2_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_2/all/by_promoter/normalized_unique_MEF_bio_2_tech_2_all.csv"
                         },
                         {
                             "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_3/all/by_promoter/unique_MEF_bio_2_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_3/all/by_promoter/normalized_unique_MEF_bio_2_tech_3_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_3/all/by_promoter/unique_MEF_bio_2_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_2/unique/tech_3/all/by_promoter/normalized_unique_MEF_bio_2_tech_3_all.csv"
                         }
                     ]
                 },
@@ -119,18 +80,18 @@
                     "technical_replicates": [
                         {
                             "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_1/all/by_promoter/unique_MEF_bio_3_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_1/all/by_promoter/normalized_unique_MEF_bio_3_tech_1_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_1/all/by_promoter/unique_MEF_bio_3_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_1/all/by_promoter/normalized_unique_MEF_bio_3_tech_1_all.csv"
                         },
                         {
                             "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_2/all/by_promoter/unique_MEF_bio_3_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_2/all/by_promoter/normalized_unique_MEF_bio_3_tech_2_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_2/all/by_promoter/unique_MEF_bio_3_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_2/all/by_promoter/normalized_unique_MEF_bio_3_tech_2_all.csv"
                         },
                         {
                             "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_3/all/by_promoter/unique_MEF_bio_3_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_3/all/by_promoter/normalized_unique_MEF_bio_3_tech_3_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_3/all/by_promoter/unique_MEF_bio_3_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/MEF/bio_3/unique/tech_3/all/by_promoter/normalized_unique_MEF_bio_3_tech_3_all.csv"
                         }
                     ]
                 }
@@ -142,42 +103,22 @@
             "unique_fold": 50,
             "biological_replicates": [
                 {
-                    "name": "bio_1",
-                    "technical_replicates": [
-                        {
-                            "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_1/unique/tech_1/all/by_promoter/unique_HEK293T_bio_1_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_1/unique/tech_1/all/by_promoter/normalized_unique_HEK293T_bio_1_tech_1_all.csv"
-                        },
-                        {
-                            "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_1/unique/tech_2/all/by_promoter/unique_HEK293T_bio_1_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_1/unique/tech_2/all/by_promoter/normalized_unique_HEK293T_bio_1_tech_2_all.csv"
-                        },
-                        {
-                            "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_1/unique/tech_3/all/by_promoter/unique_HEK293T_bio_1_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_1/unique/tech_3/all/by_promoter/normalized_unique_HEK293T_bio_1_tech_3_all.csv"
-                        }
-                    ]
-                },
-                {
                     "name": "bio_2",
                     "technical_replicates": [
                         {
                             "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_1/all/by_promoter/unique_HEK293T_bio_2_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_1/all/by_promoter/normalized_unique_HEK293T_bio_2_tech_1_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_1/all/by_promoter/unique_HEK293T_bio_2_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_1/all/by_promoter/normalized_unique_HEK293T_bio_2_tech_1_all.csv"
                         },
                         {
                             "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_2/all/by_promoter/unique_HEK293T_bio_2_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_2/all/by_promoter/normalized_unique_HEK293T_bio_2_tech_2_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_2/all/by_promoter/unique_HEK293T_bio_2_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_2/all/by_promoter/normalized_unique_HEK293T_bio_2_tech_2_all.csv"
                         },
                         {
                             "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_3/all/by_promoter/unique_HEK293T_bio_2_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_3/all/by_promoter/normalized_unique_HEK293T_bio_2_tech_3_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_3/all/by_promoter/unique_HEK293T_bio_2_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_2/unique/tech_3/all/by_promoter/normalized_unique_HEK293T_bio_2_tech_3_all.csv"
                         }
                     ]
                 },
@@ -186,18 +127,18 @@
                     "technical_replicates": [
                         {
                             "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_1/all/by_promoter/unique_HEK293T_bio_3_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_1/all/by_promoter/normalized_unique_HEK293T_bio_3_tech_1_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_1/all/by_promoter/unique_HEK293T_bio_3_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_1/all/by_promoter/normalized_unique_HEK293T_bio_3_tech_1_all.csv"
                         },
                         {
                             "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_2/all/by_promoter/unique_HEK293T_bio_3_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_2/all/by_promoter/normalized_unique_HEK293T_bio_3_tech_2_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_2/all/by_promoter/unique_HEK293T_bio_3_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_2/all/by_promoter/normalized_unique_HEK293T_bio_3_tech_2_all.csv"
                         },
                         {
                             "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_3/all/by_promoter/unique_HEK293T_bio_3_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_3/all/by_promoter/normalized_unique_HEK293T_bio_3_tech_3_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_3/all/by_promoter/unique_HEK293T_bio_3_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/HEK293T/bio_3/unique/tech_3/all/by_promoter/normalized_unique_HEK293T_bio_3_tech_3_all.csv"
                         }
                     ]
                 }
@@ -209,42 +150,22 @@
             "unique_fold": 50,
             "biological_replicates": [
                 {
-                    "name": "bio_1",
-                    "technical_replicates": [
-                        {
-                            "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_1/unique/tech_1/all/by_promoter/unique_XEN_bio_1_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_1/unique/tech_1/all/by_promoter/normalized_unique_XEN_bio_1_tech_1_all.csv"
-                        },
-                        {
-                            "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_1/unique/tech_2/all/by_promoter/unique_XEN_bio_1_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_1/unique/tech_2/all/by_promoter/normalized_unique_XEN_bio_1_tech_2_all.csv"
-                        },
-                        {
-                            "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_1/unique/tech_3/all/by_promoter/unique_XEN_bio_1_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_1/unique/tech_3/all/by_promoter/normalized_unique_XEN_bio_1_tech_3_all.csv"
-                        }
-                    ]
-                },
-                {
                     "name": "bio_2",
                     "technical_replicates": [
                         {
                             "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_1/all/by_promoter/unique_XEN_bio_2_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_1/all/by_promoter/normalized_unique_XEN_bio_2_tech_1_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_1/all/by_promoter/unique_XEN_bio_2_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_1/all/by_promoter/normalized_unique_XEN_bio_2_tech_1_all.csv"
                         },
                         {
                             "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_2/all/by_promoter/unique_XEN_bio_2_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_2/all/by_promoter/normalized_unique_XEN_bio_2_tech_2_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_2/all/by_promoter/unique_XEN_bio_2_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_2/all/by_promoter/normalized_unique_XEN_bio_2_tech_2_all.csv"
                         },
                         {
                             "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_3/all/by_promoter/unique_XEN_bio_2_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_3/all/by_promoter/normalized_unique_XEN_bio_2_tech_3_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_3/all/by_promoter/unique_XEN_bio_2_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_2/unique/tech_3/all/by_promoter/normalized_unique_XEN_bio_2_tech_3_all.csv"
                         }
                     ]
                 },
@@ -253,18 +174,18 @@
                     "technical_replicates": [
                         {
                             "name": "tech_1",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_1/all/by_promoter/unique_XEN_bio_3_tech_1_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_1/all/by_promoter/normalized_unique_XEN_bio_3_tech_1_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_1/all/by_promoter/unique_XEN_bio_3_tech_1_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_1/all/by_promoter/normalized_unique_XEN_bio_3_tech_1_all.csv"
                         },
                         {
                             "name": "tech_2",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_2/all/by_promoter/unique_XEN_bio_3_tech_2_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_2/all/by_promoter/normalized_unique_XEN_bio_3_tech_2_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_2/all/by_promoter/unique_XEN_bio_3_tech_2_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_2/all/by_promoter/normalized_unique_XEN_bio_3_tech_2_all.csv"
                         },
                         {
                             "name": "tech_3",
-                            "promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_3/all/by_promoter/unique_XEN_bio_3_tech_3_all.csv",
-                            "normalized_promoter_count_file": "/Users/barzaruk/Documents/Projects/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_3/all/by_promoter/normalized_unique_XEN_bio_3_tech_3_all.csv"
+                            "promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_3/all/by_promoter/unique_XEN_bio_3_tech_3_all.csv",
+                            "normalized_promoter_count_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/RNA_seq_process_scripts/output/stem_cells/XEN/bio_3/unique/tech_3/all/by_promoter/normalized_unique_XEN_bio_3_tech_3_all.csv"
                         }
                     ]
                 }
