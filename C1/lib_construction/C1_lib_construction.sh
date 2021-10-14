@@ -18,6 +18,13 @@ mkdir -p $sample_folder/17_unique/cutadapt
 mkdir -p $sample_folder/17_unique/alignment
 mkdir -p $sample_folder/barcodes/cutadapt
 
+# TGCGATCTAAGTAAGCTTGCCTGCATTAAAGGTCAGGTACTGTTGGTAAACCAGCTCCGTGAGACGGATTTGAGGA
+# adapter 1: TGCGATCTAAGTAAGCTTG
+# 17 unique: CCTGCATTAAAGGTCAG
+# adapter 2: GTACTGTTGGTAAACCAGCTC
+# barcode: CGTGAGACGGATTTGA
+# leftover: GGA
+
 # 17 unique
 $cutadapt -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o $sample_folder/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output $sample_folder/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output $sample_folder/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output  $sample_folder/17_unique/cutadapt/too_long_17_unique_output.fastq $file
 

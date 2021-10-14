@@ -48,7 +48,7 @@ python $pyscripts_folder/join_specific_columns.py $normalized_unique_17_count_ou
 python $pyscripts_folder/calculate_ratio_between_columns.py $avg_normalized_unique_17_count_output_file count number_of_barcodes avg_count_per_number_of_barcodes "" 0 1000 $avg_normalized_unique_17_count_output_file
 python $pyscripts_folder/sort_df_by_column.py $avg_normalized_unique_17_count_output_file avg_count_per_number_of_barcodes False $avg_normalized_unique_17_count_output_file
 
-# output summarized info file which contains unique_17,count,number_of_barcodes,avg_count_per_number_of_barcodes,unnormalized_count 
+# output summarized info file which contains unique_17,normalized_count,number_of_barcodes,avg_count_per_number_of_barcodes,count 
 summarized_info_of_unique_17_count_file=$sample_folder/summarized_info_of_unique_17_count.csv
 python $pyscripts_folder/rename_columns.py $avg_normalized_unique_17_count_output_file count normalized_count $summarized_info_of_unique_17_count_file
 python $pyscripts_folder/join_specific_columns.py $summarized_info_of_unique_17_count_file $unique_17_count_output_file unique_17 unique_17 count "" "" "" "" "" avg_count_per_number_of_barcodes False $summarized_info_of_unique_17_count_file
