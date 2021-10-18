@@ -40,7 +40,7 @@ max_value = all_values_from_the_two_columns.max()
 
 plt.xlim(1, max_value + 1000)
 plt.ylim(1, max_value + 1000)
-
+# TODO add pearson R and p-val on plot
 plt.xlabel(results_1_label, fontfamily='Arial', fontsize=36, fontweight="bold")
 plt.ylabel(results_2_label, fontfamily='Arial', fontsize=36, fontweight="bold")
 plt.xticks(fontsize=36)
