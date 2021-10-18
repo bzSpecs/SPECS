@@ -1,5 +1,6 @@
 import numpy as np
 import pandas as pd
+import scipy
 import sys
 from sklearn.metrics import r2_score
 
@@ -22,9 +23,7 @@ joined_df.fillna(0, inplace=True)
 df_1_count_col = joined_df[f"{df_1_column_name}_1"].to_numpy() 
 df_2_count_col = joined_df[f"{df_2_column_name}_2"].to_numpy()
 
-correlation_matrix = np.corrcoef(df_1_count_col, df_2_count_col)
-correlation_xy = correlation_matrix[0,1]
-r_squared = correlation_xy**2
+r_squared, p_val = scipy.stats.pearsonr(df_1_count_col, df_2_count_col)
 
 with open(output_file, "w") as file1:
-    file1.write(str(r_squared))
+    file1.write(f'R^2 = {r_squared}, p value = {p_val}')
