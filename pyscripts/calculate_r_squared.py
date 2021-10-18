@@ -1,4 +1,5 @@
 import numpy as np
+import scipy
 import pandas as pd
 import sys
 
@@ -14,8 +15,6 @@ joined_df.fillna(0, inplace=True)
 df_1_count_col = joined_df["count_1"].to_numpy() 
 df_2_count_col = joined_df["count_2"].to_numpy() 
 
-correlation_matrix = np.corrcoef(df_1_count_col, df_2_count_col)
-correlation_xy = correlation_matrix[0,1]
-r_squared = correlation_xy**2
+r_squared, p_val = scipy.stats.pearsonr(df_1_count_col, df_2_count_col)
 
-print(r_squared)
+print(r_squared, p_val)
