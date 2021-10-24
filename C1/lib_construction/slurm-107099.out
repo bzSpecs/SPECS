@@ -1,0 +1,2630 @@
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR1/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR1/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR1/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR1/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_1_S14_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 38.72 s (17 µs/read; 3.49 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,255,252
+Reads with adapters:                 2,252,069 (99.9%)
+Reads that were too short:               6,767 (0.3%)
+Reads that were too long:               24,530 (1.1%)
+Reads written (passing filters):     2,223,955 (98.6%)
+
+Total basepairs processed:   171,399,152 bp
+Total written (filtered):     37,807,235 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 2246602 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	196	35238.3	0	196
+4	19	8809.6	0	19
+5	3	2202.4	0	3
+6	1	550.6	0	1
+9	1	8.6	0	1
+10	4	2.2	1	2 2
+11	12	0.5	1	4 8
+12	20	0.1	1	14 6
+13	14	0.0	1	3 11
+14	10	0.0	1	6 4
+15	50	0.0	1	20 30
+16	24	0.0	1	9 15
+17	261	0.0	1	112 149
+18	11306	0.0	1	690 10616
+19	2229230	0.0	1	2175050 54180
+20	5439	0.0	1	419 5020
+21	1	0.0	1	0 1
+24	1	0.0	1	1
+26	1	0.0	1	1
+27	3	0.0	1	3
+31	1	0.0	1	1
+35	1	0.0	1	1
+38	2	0.0	1	2
+45	1	0.0	1	1
+56	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 2241509 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 27.9%
+  C: 32.7%
+  G: 19.9%
+  T: 19.6%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	183	35238.3	0	183
+4	8	8809.6	0	8
+8	5	34.4	0	5
+11	2	0.5	1	2
+20	1	0.0	2	1
+21	17	0.0	2	17
+22	3	0.0	2	2 1
+24	2	0.0	2	2
+28	31	0.0	2	31
+29	15	0.0	2	15
+30	16	0.0	2	15 0 1
+31	4	0.0	2	4
+32	2	0.0	2	2
+33	10	0.0	2	10
+34	18	0.0	2	18
+35	26	0.0	2	23 3
+36	27	0.0	2	24 2 1
+37	58	0.0	2	56 2
+38	154	0.0	2	148 6
+39	9851	0.0	2	9309 484 58
+40	2211667	0.0	2	2106236 97721 7710
+41	15185	0.0	2	14062 1030 93
+42	1846	0.0	2	1640 127 79
+43	487	0.0	2	421 36 30
+44	262	0.0	2	247 10 5
+45	137	0.0	2	133 3 1
+46	139	0.0	2	114 14 11
+47	98	0.0	2	86 11 1
+48	115	0.0	2	110 3 2
+49	621	0.0	2	592 25 4
+50	96	0.0	2	95 0 1
+51	58	0.0	2	38 20
+52	34	0.0	2	34
+53	183	0.0	2	111 68 4
+54	47	0.0	2	25 1 21
+55	18	0.0	2	12 5 1
+56	11	0.0	2	10 0 1
+57	14	0.0	2	0 0 14
+58	58	0.0	2	6 52
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR1/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR1/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR1/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR1/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_1_S14_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 22.84 s (10 µs/read; 5.92 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,255,252
+Reads with adapters:                 2,241,370 (99.4%)
+Reads written (passing filters):     2,241,370 (99.4%)
+
+Total basepairs processed:   171,399,152 bp
+Total written (filtered):     42,509,380 bp (24.8%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 2269982 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	19231	35238.3	0	19231
+4	5240	8809.6	0	5240
+5	2032	2202.4	0	2032
+6	918	550.6	0	918
+7	989	137.6	0	989
+8	105	34.4	0	105
+9	23	8.6	0	14 9
+10	47	2.2	1	5 42
+11	36	0.5	1	9 27
+13	21	0.0	1	0 21
+16	10	0.0	1	0 10
+37	12	0.0	2	0 0 12
+38	17	0.0	2	0 11 6
+39	48	0.0	2	6 41 1
+40	10	0.0	2	0 0 10
+41	15	0.0	2	10 0 5
+42	17	0.0	2	12 5
+43	29	0.0	2	25 1 3
+44	202	0.0	2	111 68 23
+45	34	0.0	2	34
+46	58	0.0	2	38 20
+47	98	0.0	2	95 0 3
+48	619	0.0	2	592 25 2
+49	115	0.0	2	110 3 2
+50	109	0.0	2	86 22 1
+51	130	0.0	2	114 3 13
+52	139	0.0	2	133 3 3
+53	275	0.0	2	247 26 2
+54	470	0.0	2	421 22 27
+55	2007	0.0	2	1640 144 223
+56	19712	0.0	2	14062 5346 304
+57	2202583	0.0	2	2106236 90449 5898
+58	13116	0.0	2	9309 3415 392
+59	1283	0.0	2	148 12 1123
+60	60	0.0	2	56 2 2
+61	27	0.0	2	24 2 1
+62	26	0.0	2	23 3
+63	18	0.0	2	18
+64	10	0.0	2	10
+65	2	0.0	2	2
+66	4	0.0	2	4
+67	16	0.0	2	15 0 1
+68	15	0.0	2	15
+69	31	0.0	2	31
+73	2	0.0	2	2
+75	3	0.0	2	2 1
+76	18	0.0	2	17 1
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 18, No unique_17: 32090
+Number of rows without empty cells is: 2209280
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 265205
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR1/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR1/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR1/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR1/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_2_S15_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 49.88 s (18 µs/read; 3.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,811,386
+Reads with adapters:                 2,809,356 (99.9%)
+Reads that were too short:               7,654 (0.3%)
+Reads that were too long:               26,243 (0.9%)
+Reads written (passing filters):     2,777,489 (98.8%)
+
+Total basepairs processed:   213,665,336 bp
+Total written (filtered):     47,217,313 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 2802892 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	182	43927.9	0	182
+4	14	10982.0	0	14
+6	2	686.4	0	2
+9	4	10.7	0	4
+10	10	2.7	1	7 3
+11	16	0.7	1	8 8
+12	18	0.2	1	10 8
+13	22	0.0	1	5 17
+14	28	0.0	1	19 9
+15	40	0.0	1	15 25
+16	30	0.0	1	8 22
+17	308	0.0	1	128 180
+18	13946	0.0	1	818 13128
+19	2781506	0.0	1	2713933 67573
+20	6759	0.0	1	532 6227
+21	3	0.0	1	0 3
+27	1	0.0	1	1
+30	2	0.0	1	2
+38	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 2797280 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 28.2%
+  C: 32.4%
+  G: 20.2%
+  T: 19.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	179	43927.9	0	179
+4	1	10982.0	0	1
+22	1	0.0	2	1
+23	1	0.0	2	1
+24	35	0.0	2	35
+25	5	0.0	2	5
+26	2	0.0	2	2
+27	25	0.0	2	22 3
+29	1	0.0	2	1
+30	12	0.0	2	11 1
+31	69	0.0	2	68 1
+32	6	0.0	2	5 1
+33	26	0.0	2	25 1
+34	2	0.0	2	2
+35	34	0.0	2	29 5
+36	17	0.0	2	16 0 1
+37	115	0.0	2	112 3
+38	36	0.0	2	34 1 1
+39	11529	0.0	2	10846 608 75
+40	2761792	0.0	2	2633080 119717 8995
+41	18390	0.0	2	17121 1157 112
+42	2414	0.0	2	2280 116 18
+43	793	0.0	2	668 27 98
+44	413	0.0	2	397 6 10
+45	189	0.0	2	171 16 2
+46	279	0.0	2	218 8 53
+47	90	0.0	2	88 1 1
+48	126	0.0	2	121 4 1
+49	399	0.0	2	391 6 2
+50	107	0.0	2	86 17 4
+51	17	0.0	2	3 0 14
+52	97	0.0	2	90 7
+53	40	0.0	2	27 6 7
+54	1	0.0	2	1
+55	1	0.0	2	0 1
+56	28	0.0	2	0 20 8
+58	6	0.0	2	6
+59	1	0.0	2	0 0 1
+68	1	0.0	2	1
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR1/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR1/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR1/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR1/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_2_S15_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 26.42 s (9 µs/read; 6.38 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,811,386
+Reads with adapters:                 2,797,122 (99.5%)
+Reads written (passing filters):     2,797,122 (99.5%)
+
+Total basepairs processed:   213,665,336 bp
+Total written (filtered):     53,033,737 bp (24.8%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 2833933 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	23513	43927.9	0	23513
+4	7251	10982.0	0	7251
+5	2791	2745.5	0	2791
+6	1252	686.4	0	1252
+7	1571	171.6	0	1571
+8	188	42.9	0	188
+9	1	10.7	0	1
+10	67	2.7	1	0 67
+11	169	0.7	1	99 70
+12	1	0.2	1	0 1
+13	8	0.0	1	0 8
+29	1	0.0	2	1
+37	1	0.0	2	0 0 1
+38	21	0.0	2	0 0 21
+39	6	0.0	2	6
+40	24	0.0	2	0 20 4
+41	4	0.0	2	0 0 4
+42	1	0.0	2	0 1
+43	8	0.0	2	1 0 7
+44	33	0.0	2	27 6
+45	97	0.0	2	90 7
+46	17	0.0	2	3 0 14
+47	107	0.0	2	86 17 4
+48	399	0.0	2	391 6 2
+49	126	0.0	2	121 4 1
+50	90	0.0	2	88 1 1
+51	279	0.0	2	218 8 53
+52	190	0.0	2	171 17 2
+53	412	0.0	2	397 5 10
+54	800	0.0	2	668 33 99
+55	2744	0.0	2	2280 142 322
+56	24095	0.0	2	17121 6530 444
+57	2750388	0.0	2	2633080 110690 6618
+58	15496	0.0	2	10846 4218 432
+59	1426	0.0	2	34 13 1379
+60	119	0.0	2	112 2 5
+61	21	0.0	2	16 4 1
+62	31	0.0	2	29 2
+63	2	0.0	2	2
+64	26	0.0	2	25 1
+65	6	0.0	2	5 1
+66	69	0.0	2	68 1
+67	12	0.0	2	11 1
+68	1	0.0	2	1
+70	25	0.0	2	22 3
+71	2	0.0	2	2
+72	5	0.0	2	5
+73	35	0.0	2	35
+74	1	0.0	2	1
+75	1	0.0	2	1
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 0, No unique_17: 43196
+Number of rows without empty cells is: 2753926
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 227980
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR1/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR1/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR1/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR1/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_3_S16_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 42.23 s (17 µs/read; 3.49 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,456,008
+Reads with adapters:                 2,453,504 (99.9%)
+Reads that were too short:               6,939 (0.3%)
+Reads that were too long:               21,665 (0.9%)
+Reads written (passing filters):     2,427,404 (98.8%)
+
+Total basepairs processed:   186,656,608 bp
+Total written (filtered):     41,265,868 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 2447669 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	112	38375.1	0	112
+4	16	9593.8	0	16
+9	3	9.4	0	3
+10	7	2.3	1	5 2
+11	7	0.6	1	1 6
+12	23	0.1	1	14 9
+13	17	0.0	1	2 15
+14	16	0.0	1	10 6
+15	34	0.0	1	11 23
+16	14	0.0	1	6 8
+17	244	0.0	1	102 142
+18	11679	0.0	1	676 11003
+19	2429371	0.0	1	2368753 60618
+20	6019	0.0	1	492 5527
+21	3	0.0	1	2 1
+23	1	0.0	1	1
+24	2	0.0	1	1 1
+26	39	0.0	1	38 1
+31	1	0.0	1	1
+35	2	0.0	1	2
+36	53	0.0	1	53
+39	1	0.0	1	1
+43	1	0.0	1	1
+44	1	0.0	1	1
+45	2	0.0	1	2
+55	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 2445970 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 28.1%
+  C: 32.5%
+  G: 19.8%
+  T: 19.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	168	38375.1	0	168
+4	4	9593.8	0	4
+6	3	599.6	0	3
+8	2	37.5	0	2
+14	2	0.0	1	2
+20	1	0.0	2	1
+22	22	0.0	2	22
+23	1	0.0	2	1
+24	1	0.0	2	1
+26	8	0.0	2	8
+27	3	0.0	2	3
+28	33	0.0	2	31 2
+29	8	0.0	2	1 6 1
+30	2	0.0	2	1 0 1
+32	28	0.0	2	26 1 1
+33	2	0.0	2	2
+34	35	0.0	2	34 0 1
+35	19	0.0	2	4 15
+36	56	0.0	2	53 2 1
+37	47	0.0	2	45 2
+38	54	0.0	2	52 1 1
+39	10912	0.0	2	10151 695 66
+40	2414523	0.0	2	2303837 102757 7929
+41	15875	0.0	2	14620 1054 201
+42	1922	0.0	2	1702 157 63
+43	654	0.0	2	576 38 40
+44	279	0.0	2	165 104 10
+45	221	0.0	2	215 5 1
+46	146	0.0	2	112 4 30
+47	135	0.0	2	103 29 3
+48	58	0.0	2	55 2 1
+49	357	0.0	2	338 18 1
+50	128	0.0	2	106 21 1
+51	1	0.0	2	0 1
+52	33	0.0	2	0 1 32
+53	197	0.0	2	157 8 32
+54	8	0.0	2	8
+55	3	0.0	2	0 3
+56	16	0.0	2	7 0 9
+58	1	0.0	2	0 0 1
+76	2	0.0	2	0 0 2
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR1/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR1/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR1/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR1/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_3_S16_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 24.88 s (10 µs/read; 5.92 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,456,008
+Reads with adapters:                 2,445,837 (99.6%)
+Reads written (passing filters):     2,445,837 (99.6%)
+
+Total basepairs processed:   186,656,608 bp
+Total written (filtered):     46,381,481 bp (24.8%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 2476400 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	20158	38375.1	0	20158
+4	6382	9593.8	0	6382
+5	1943	2398.4	0	1943
+6	756	599.6	0	756
+7	755	149.9	0	755
+8	256	37.5	0	256
+9	9	9.4	0	6 3
+10	117	2.3	1	0 117
+11	157	0.6	1	68 89
+12	6	0.1	1	6
+13	33	0.0	1	0 33
+14	1	0.0	1	0 1
+19	2	0.0	1	2
+38	37	0.0	2	0 0 37
+41	16	0.0	2	7 0 9
+42	3	0.0	2	0 3
+43	37	0.0	2	8 0 29
+44	168	0.0	2	157 8 3
+45	33	0.0	2	0 1 32
+46	1	0.0	2	0 1
+47	128	0.0	2	106 21 1
+48	359	0.0	2	338 18 3
+49	58	0.0	2	55 2 1
+50	133	0.0	2	103 29 1
+51	147	0.0	2	112 4 31
+52	222	0.0	2	215 5 2
+53	276	0.0	2	165 103 8
+54	656	0.0	2	576 41 39
+55	2119	0.0	2	1702 184 233
+56	20638	0.0	2	14620 5628 390
+57	2404645	0.0	2	2303837 94644 6164
+58	14824	0.0	2	10151 4190 483
+59	1053	0.0	2	52 16 985
+60	54	0.0	2	45 3 6
+61	69	0.0	2	53 15 1
+62	5	0.0	2	4 1
+63	34	0.0	2	34
+64	2	0.0	2	2
+65	29	0.0	2	26 1 2
+67	1	0.0	2	1
+68	8	0.0	2	1 6 1
+69	34	0.0	2	31 2 1
+70	3	0.0	2	3
+71	8	0.0	2	8
+73	1	0.0	2	1
+74	1	0.0	2	1
+75	22	0.0	2	22
+76	1	0.0	2	0 1
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 4, No unique_17: 38526
+Number of rows without empty cells is: 2407310
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 212549
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR1/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR1/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR1/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR1/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_4_S17_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 40.34 s (20 µs/read; 2.95 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               1,980,463
+Reads with adapters:                 1,978,256 (99.9%)
+Reads that were too short:               5,874 (0.3%)
+Reads that were too long:               18,294 (0.9%)
+Reads written (passing filters):     1,956,295 (98.8%)
+
+Total basepairs processed:   150,515,188 bp
+Total written (filtered):     33,257,015 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 1973897 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	135	30944.7	0	135
+4	58	7736.2	0	58
+6	2	483.5	0	2
+8	1	30.2	0	1
+9	1	7.6	0	1
+10	2	1.9	1	1 1
+11	8	0.5	1	3 5
+12	12	0.1	1	6 6
+13	14	0.0	1	3 11
+14	18	0.0	1	17 1
+15	29	0.0	1	9 20
+16	20	0.0	1	9 11
+17	215	0.0	1	102 113
+18	9244	0.0	1	467 8777
+19	1959413	0.0	1	1912071 47342
+20	4693	0.0	1	339 4354
+21	1	0.0	1	1
+23	1	0.0	1	1
+26	1	0.0	1	1
+29	2	0.0	1	2
+33	1	0.0	1	1
+39	23	0.0	1	23
+42	1	0.0	1	1
+43	1	0.0	1	1
+44	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 1971061 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 29.2%
+  C: 32.3%
+  G: 19.2%
+  T: 19.3%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	128	30944.7	0	128
+4	4	7736.2	0	4
+5	1	1934.0	0	1
+8	11	30.2	0	11
+11	1	0.5	1	1
+22	2	0.0	2	2
+24	18	0.0	2	11 7
+25	8	0.0	2	8
+28	21	0.0	2	21
+29	5	0.0	2	5
+30	4	0.0	2	1 3
+31	4	0.0	2	4
+33	21	0.0	2	4 17
+34	56	0.0	2	53 3
+35	10	0.0	2	10
+36	16	0.0	2	16
+37	16	0.0	2	16
+38	126	0.0	2	117 9
+39	8404	0.0	2	7849 494 61
+40	1945921	0.0	2	1855576 84128 6217
+41	12699	0.0	2	11717 900 82
+42	1669	0.0	2	1479 140 50
+43	457	0.0	2	413 20 24
+44	208	0.0	2	141 49 18
+45	124	0.0	2	93 3 28
+46	106	0.0	2	100 6
+47	144	0.0	2	136 7 1
+48	154	0.0	2	130 22 2
+49	465	0.0	2	443 17 5
+50	117	0.0	2	113 4
+51	5	0.0	2	5
+53	49	0.0	2	35 9 5
+55	2	0.0	2	1 1
+56	15	0.0	2	1 1 13
+58	65	0.0	2	5 60
+76	5	0.0	2	0 0 5
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR1/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR1/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR1/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR1/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_4_S17_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 20.55 s (10 µs/read; 5.78 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               1,980,463
+Reads with adapters:                 1,970,931 (99.5%)
+Reads written (passing filters):     1,970,931 (99.5%)
+
+Total basepairs processed:   150,515,188 bp
+Total written (filtered):     37,381,225 bp (24.8%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 1995048 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	16487	30944.7	0	16487
+4	4500	7736.2	0	4500
+5	1696	1934.0	0	1696
+6	482	483.5	0	482
+7	764	120.9	0	764
+8	52	30.2	0	52
+9	31	7.6	0	29 2
+10	64	1.9	1	0 64
+11	38	0.5	1	4 34
+13	7	0.0	1	0 7
+15	6	0.0	1	0 6
+19	6	0.0	1	5 1
+37	1	0.0	2	0 0 1
+38	61	0.0	2	0 59 2
+39	7	0.0	2	5 1 1
+40	1	0.0	2	0 1
+41	14	0.0	2	1 0 13
+42	7	0.0	2	1 1 5
+44	44	0.0	2	35 9
+46	5	0.0	2	5
+47	118	0.0	2	113 5
+48	464	0.0	2	443 16 5
+49	154	0.0	2	130 22 2
+50	144	0.0	2	136 7 1
+51	106	0.0	2	100 6
+52	125	0.0	2	93 3 29
+53	222	0.0	2	141 49 32
+54	444	0.0	2	413 21 10
+55	1760	0.0	2	1479 162 119
+56	16877	0.0	2	11717 4899 261
+57	1937853	0.0	2	1855576 77526 4751
+58	11230	0.0	2	7849 3057 324
+59	1094	0.0	2	117 26 951
+60	19	0.0	2	16 0 3
+61	16	0.0	2	16
+62	10	0.0	2	10
+63	56	0.0	2	53 3
+64	21	0.0	2	4 17
+66	4	0.0	2	4
+67	4	0.0	2	1 3
+68	5	0.0	2	5
+69	21	0.0	2	21
+72	8	0.0	2	8
+73	18	0.0	2	11 7
+75	2	0.0	2	2
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 0, No unique_17: 30055
+Number of rows without empty cells is: 1940876
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 208494
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR1/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR1/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR1/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR1/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_5_S18_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 38.62 s (17 µs/read; 3.57 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,300,336
+Reads with adapters:                 2,299,096 (99.9%)
+Reads that were too short:               7,381 (0.3%)
+Reads that were too long:               17,599 (0.8%)
+Reads written (passing filters):     2,275,356 (98.9%)
+
+Total basepairs processed:   174,825,536 bp
+Total written (filtered):     38,681,052 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 2293826 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	86	35942.8	0	86
+4	19	8985.7	0	19
+6	21	561.6	0	21
+8	1	35.1	0	1
+9	5	8.8	0	5
+10	2	2.2	1	2
+11	6	0.5	1	2 4
+12	20	0.1	1	14 6
+13	13	0.0	1	3 10
+14	16	0.0	1	7 9
+15	38	0.0	1	14 24
+16	20	0.0	1	9 11
+17	225	0.0	1	100 125
+18	10742	0.0	1	587 10155
+19	2277058	0.0	1	2221415 55643
+20	5536	0.0	1	426 5110
+21	2	0.0	1	1 1
+23	1	0.0	1	1
+26	1	0.0	1	1
+31	1	0.0	1	1
+32	2	0.0	1	2
+35	1	0.0	1	1
+36	6	0.0	1	6
+37	2	0.0	1	2
+46	1	0.0	1	1
+50	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 2292730 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 29.1%
+  C: 32.2%
+  G: 19.2%
+  T: 19.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	131	35942.8	0	131
+4	2	8985.7	0	2
+8	9	35.1	0	9
+21	1	0.0	2	0 1
+22	1	0.0	2	1
+24	11	0.0	2	10 1
+25	18	0.0	2	18
+27	4	0.0	2	4
+28	1	0.0	2	1
+30	21	0.0	2	21
+31	38	0.0	2	35 3
+32	48	0.0	2	48
+33	43	0.0	2	39 4
+34	2	0.0	2	2
+35	24	0.0	2	23 1
+36	36	0.0	2	27 8 1
+37	33	0.0	2	32 0 1
+38	162	0.0	2	155 7
+39	9360	0.0	2	8873 422 65
+40	2263326	0.0	2	2159218 96954 7154
+41	14798	0.0	2	13780 916 102
+42	2096	0.0	2	1875 150 71
+43	811	0.0	2	680 50 81
+44	262	0.0	2	173 41 48
+45	191	0.0	2	161 5 25
+46	185	0.0	2	154 24 7
+47	81	0.0	2	80 1
+48	137	0.0	2	76 59 2
+49	699	0.0	2	634 55 10
+50	112	0.0	2	75 35 2
+51	6	0.0	2	4 1 1
+52	13	0.0	2	0 12 1
+53	4	0.0	2	0 2 2
+54	18	0.0	2	17 1
+55	34	0.0	2	9 24 1
+56	7	0.0	2	7
+58	4	0.0	2	1 3
+76	1	0.0	2	0 0 1
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR1/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR1/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR1/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR1/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_5_S18_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 22.82 s (10 µs/read; 6.05 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,300,336
+Reads with adapters:                 2,292,600 (99.7%)
+Reads written (passing filters):     2,292,600 (99.7%)
+
+Total basepairs processed:   174,825,536 bp
+Total written (filtered):     43,482,377 bp (24.9%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 2320888 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	19344	35942.8	0	19344
+4	5525	8985.7	0	5525
+5	1703	2246.4	0	1703
+6	674	561.6	0	674
+7	737	140.4	0	737
+8	93	35.1	0	93
+9	51	8.8	0	48 3
+10	96	2.2	1	0 96
+11	43	0.5	1	0 43
+12	22	0.1	1	0 22
+19	1	0.0	1	1
+37	2	0.0	2	0 0 2
+38	10	0.0	2	0 0 10
+39	4	0.0	2	1 3
+41	7	0.0	2	7
+42	34	0.0	2	9 24 1
+43	19	0.0	2	17 1 1
+44	16	0.0	2	0 14 2
+46	6	0.0	2	4 1 1
+47	113	0.0	2	75 36 2
+48	718	0.0	2	634 74 10
+49	116	0.0	2	76 39 1
+50	81	0.0	2	80 1
+51	187	0.0	2	154 24 9
+52	233	0.0	2	161 5 67
+53	219	0.0	2	173 41 5
+54	818	0.0	2	680 55 83
+55	2251	0.0	2	1875 183 193
+56	19748	0.0	2	13780 5661 307
+57	2254211	0.0	2	2159218 89391 5602
+58	12482	0.0	2	8873 3198 411
+59	1042	0.0	2	155 10 877
+60	33	0.0	2	32 1
+61	37	0.0	2	27 9 1
+62	24	0.0	2	23 0 1
+63	2	0.0	2	2
+64	43	0.0	2	39 4
+65	48	0.0	2	48
+66	38	0.0	2	35 3
+67	21	0.0	2	21
+69	1	0.0	2	1
+70	4	0.0	2	4
+72	18	0.0	2	18
+73	11	0.0	2	10 1
+75	1	0.0	2	1
+76	1	0.0	2	0 1
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 1, No unique_17: 34609
+Number of rows without empty cells is: 2257991
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 203974
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR1/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR1/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR1/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR1/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_6_S19_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 40.00 s (18 µs/read; 3.39 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,261,494
+Reads with adapters:                 2,260,207 (99.9%)
+Reads that were too short:               6,033 (0.3%)
+Reads that were too long:               18,455 (0.8%)
+Reads written (passing filters):     2,237,006 (98.9%)
+
+Total basepairs processed:   171,873,544 bp
+Total written (filtered):     38,029,102 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 2254680 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	111	35335.8	0	111
+4	17	8834.0	0	17
+5	1	2208.5	0	1
+9	1	8.6	0	1
+10	6	2.2	1	4 2
+11	9	0.5	1	5 4
+12	18	0.1	1	10 8
+13	13	0.0	1	2 11
+14	11	0.0	1	6 5
+15	30	0.0	1	11 19
+16	22	0.0	1	11 11
+17	231	0.0	1	112 119
+18	10944	0.0	1	537 10407
+19	2237809	0.0	1	2182137 55672
+20	5448	0.0	1	431 5017
+27	3	0.0	1	3
+29	1	0.0	1	1
+34	1	0.0	1	1
+35	1	0.0	1	1
+36	1	0.0	1	1
+47	1	0.0	1	1
+54	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 2253684 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 29.3%
+  C: 32.0%
+  G: 19.6%
+  T: 19.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	188	35335.8	0	188
+4	1	8834.0	0	1
+5	2	2208.5	0	2
+8	48	34.5	0	48
+9	1	8.6	0	1
+11	1	0.5	1	1
+12	1	0.1	1	1
+18	4	0.0	1	0 4
+20	10	0.0	2	10
+22	12	0.0	2	12
+23	2	0.0	2	1 1
+24	1	0.0	2	1
+25	5	0.0	2	1 4
+27	6	0.0	2	6
+28	8	0.0	2	8
+29	44	0.0	2	42 0 2
+30	6	0.0	2	6
+31	17	0.0	2	17
+32	7	0.0	2	7
+33	5	0.0	2	5
+34	6	0.0	2	6
+35	12	0.0	2	4 8
+36	4	0.0	2	4
+37	93	0.0	2	88 3 2
+38	242	0.0	2	216 19 7
+39	9585	0.0	2	8925 591 69
+40	2225039	0.0	2	2122033 95492 7514
+41	14645	0.0	2	13496 1021 128
+42	2035	0.0	2	1866 118 51
+43	604	0.0	2	529 46 29
+44	247	0.0	2	236 8 3
+45	175	0.0	2	139 35 1
+46	105	0.0	2	78 15 12
+47	65	0.0	2	57 2 6
+48	66	0.0	2	62 4
+49	151	0.0	2	125 5 21
+50	25	0.0	2	24 0 1
+51	21	0.0	2	14 1 6
+52	37	0.0	2	27 3 7
+53	83	0.0	2	41 4 38
+54	18	0.0	2	6 0 12
+55	4	0.0	2	3 0 1
+56	23	0.0	2	23
+57	9	0.0	2	8 0 1
+58	20	0.0	2	0 20
+59	1	0.0	2	0 1
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR1/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR1/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR1/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR1/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_6_S19_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 22.34 s (10 µs/read; 6.07 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,261,494
+Reads with adapters:                 2,253,442 (99.6%)
+Reads written (passing filters):     2,253,442 (99.6%)
+
+Total basepairs processed:   171,873,544 bp
+Total written (filtered):     42,729,265 bp (24.9%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 2281820 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	19008	35335.8	0	19008
+4	5584	8834.0	0	5584
+5	2053	2208.5	0	2053
+6	632	552.1	0	632
+7	798	138.0	0	798
+8	84	34.5	0	84
+9	67	8.6	0	60 7
+10	63	2.2	1	0 63
+11	46	0.5	1	37 9
+12	10	0.1	1	0 10
+13	1	0.0	1	0 1
+15	36	0.0	1	0 36
+37	1	0.0	2	0 1
+38	20	0.0	2	0 20
+40	9	0.0	2	8 0 1
+41	23	0.0	2	23
+42	3	0.0	2	3
+43	25	0.0	2	6 0 19
+44	77	0.0	2	41 4 32
+45	43	0.0	2	27 3 13
+46	15	0.0	2	14 1
+47	25	0.0	2	24 0 1
+48	157	0.0	2	125 5 27
+49	66	0.0	2	62 4
+50	59	0.0	2	57 2
+51	105	0.0	2	78 15 12
+52	175	0.0	2	139 35 1
+53	248	0.0	2	236 9 3
+54	610	0.0	2	529 48 33
+55	2200	0.0	2	1866 134 200
+56	18816	0.0	2	13496 5005 315
+57	2216306	0.0	2	2122033 88513 5760
+58	12899	0.0	2	8925 3549 425
+59	1311	0.0	2	216 36 1059
+60	100	0.0	2	88 4 8
+61	12	0.0	2	4 8
+62	4	0.0	2	4
+63	6	0.0	2	6
+64	5	0.0	2	5
+65	7	0.0	2	7
+66	17	0.0	2	17
+67	6	0.0	2	6
+68	43	0.0	2	42 0 1
+69	9	0.0	2	8 0 1
+70	6	0.0	2	6
+72	5	0.0	2	1 4
+73	1	0.0	2	1
+74	2	0.0	2	1 1
+75	12	0.0	2	12
+76	10	0.0	2	0 10
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 11, No unique_17: 34753
+Number of rows without empty cells is: 2218689
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 246775
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /ALAA_787//viral_A_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_7_S20_R1_001.fastq/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /ALAA_787//viral_A_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_7_S20_R1_001.fastq/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /ALAA_787//viral_A_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_7_S20_R1_001.fastq/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /ALAA_787//viral_A_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_7_S20_R1_001.fastq/17_unique/cutadapt/too_long_17_unique_output.fastq pyscripts
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /ALAA_787//viral_A_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_7_S20_R1_001.fastq/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /ALAA_787//viral_A_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_7_S20_R1_001.fastq/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /ALAA_787//viral_A_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_7_S20_R1_001.fastq/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /ALAA_787//viral_A_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_7_S20_R1_001.fastq/barcodes/too_long_clipped_barcodes_output.fastq pyscripts
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /ALAA_787//viral_B_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_8_S21_R1_001.fastq/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /ALAA_787//viral_B_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_8_S21_R1_001.fastq/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /ALAA_787//viral_B_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_8_S21_R1_001.fastq/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /ALAA_787//viral_B_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_8_S21_R1_001.fastq/17_unique/cutadapt/too_long_17_unique_output.fastq pyscripts
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /ALAA_787//viral_B_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_8_S21_R1_001.fastq/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /ALAA_787//viral_B_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_8_S21_R1_001.fastq/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /ALAA_787//viral_B_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_8_S21_R1_001.fastq/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /ALAA_787//viral_B_PCR1//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_8_S21_R1_001.fastq/barcodes/too_long_clipped_barcodes_output.fastq pyscripts
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR2/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR2/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR2/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR2/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_9_S22_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 52.84 s (16 µs/read; 3.72 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               3,277,237
+Reads with adapters:                 3,273,647 (99.9%)
+Reads that were too short:               9,640 (0.3%)
+Reads that were too long:               29,821 (0.9%)
+Reads written (passing filters):     3,237,776 (98.8%)
+
+Total basepairs processed:   249,070,012 bp
+Total written (filtered):     55,042,192 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 3265655 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	274	51206.8	0	274
+4	39	12801.7	0	39
+6	16	800.1	0	16
+9	2	12.5	0	2
+10	7	3.1	1	4 3
+11	9	0.8	1	5 4
+12	20	0.2	1	6 14
+13	16	0.0	1	4 12
+14	29	0.0	1	22 7
+15	72	0.0	1	20 52
+16	33	0.0	1	15 18
+17	342	0.0	1	141 201
+18	15821	0.0	1	896 14925
+19	3240851	0.0	1	3161025 79826
+20	8084	0.0	1	674 7410
+21	2	0.0	1	0 2
+23	1	0.0	1	1
+24	2	0.0	1	2
+25	1	0.0	1	1
+26	2	0.0	1	2
+27	6	0.0	1	6
+28	1	0.0	1	1
+29	1	0.0	1	1
+30	2	0.0	1	2
+31	1	0.0	1	1
+32	1	0.0	1	1
+33	5	0.0	1	5
+35	1	0.0	1	1
+36	1	0.0	1	1
+37	7	0.0	1	7
+39	1	0.0	1	1
+42	1	0.0	1	1
+43	3	0.0	1	3
+44	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 3262304 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 27.7%
+  C: 32.9%
+  G: 19.9%
+  T: 19.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	250	51206.8	0	250
+4	2	12801.7	0	2
+11	3	0.8	1	3
+15	3	0.0	1	0 3
+20	4	0.0	2	2 2
+23	8	0.0	2	7 1
+24	24	0.0	2	14 10
+26	14	0.0	2	13 1
+27	4	0.0	2	4
+28	7	0.0	2	7
+29	1	0.0	2	1
+30	8	0.0	2	7 1
+31	4	0.0	2	2 2
+32	1	0.0	2	1
+33	14	0.0	2	13 1
+34	9	0.0	2	8 1
+35	39	0.0	2	36 3
+36	41	0.0	2	40 1
+37	123	0.0	2	118 4 1
+38	288	0.0	2	264 20 4
+39	13671	0.0	2	12763 788 120
+40	3220312	0.0	2	3059557 149206 11549
+41	21880	0.0	2	20337 1358 185
+42	2846	0.0	2	2452 269 125
+43	778	0.0	2	667 63 48
+44	250	0.0	2	208 39 3
+45	160	0.0	2	149 10 1
+46	141	0.0	2	81 37 23
+47	126	0.0	2	115 10 1
+48	83	0.0	2	77 5 1
+49	784	0.0	2	731 34 19
+50	126	0.0	2	123 2 1
+51	24	0.0	2	24
+52	30	0.0	2	28 2
+53	89	0.0	2	72 10 7
+54	15	0.0	2	13 0 2
+55	16	0.0	2	15 1
+56	40	0.0	2	38 1 1
+57	41	0.0	2	37 2 2
+58	43	0.0	2	16 27
+59	1	0.0	2	1
+63	1	0.0	2	1
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR2/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR2/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR2/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR2/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_9_S22_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 34.65 s (11 µs/read; 5.68 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               3,277,237
+Reads with adapters:                 3,262,099 (99.5%)
+Reads written (passing filters):     3,262,099 (99.5%)
+
+Total basepairs processed:   249,070,012 bp
+Total written (filtered):     61,860,105 bp (24.8%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 3304211 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	28966	51206.8	0	28966
+4	7512	12801.7	0	7512
+5	3106	3200.4	0	3106
+6	1034	800.1	0	1034
+7	1119	200.0	0	1119
+8	142	50.0	0	142
+9	73	12.5	0	48 25
+10	99	3.1	1	0 99
+11	32	0.8	1	14 18
+12	2	0.2	1	0 2
+13	22	0.0	1	0 22
+16	6	0.0	1	0 6
+34	1	0.0	2	1
+37	17	0.0	2	0 0 17
+38	27	0.0	2	1 26
+39	37	0.0	2	16 1 20
+40	42	0.0	2	37 2 3
+41	40	0.0	2	38 1 1
+42	16	0.0	2	15 1
+43	18	0.0	2	13 0 5
+44	88	0.0	2	72 12 4
+45	28	0.0	2	28
+46	24	0.0	2	24
+47	128	0.0	2	123 2 3
+48	782	0.0	2	731 34 17
+49	83	0.0	2	77 6
+50	125	0.0	2	115 9 1
+51	143	0.0	2	81 38 24
+52	161	0.0	2	149 10 2
+53	250	0.0	2	208 40 2
+54	781	0.0	2	667 65 49
+55	3153	0.0	2	2452 299 402
+56	28118	0.0	2	20337 7322 459
+57	3207660	0.0	2	3059557 139154 8949
+58	18145	0.0	2	12763 4833 549
+59	1904	0.0	2	264 29 1611
+60	135	0.0	2	118 4 13
+61	41	0.0	2	40 1
+62	39	0.0	2	36 3
+63	9	0.0	2	8 1
+64	14	0.0	2	13 1
+65	1	0.0	2	1
+66	4	0.0	2	2 2
+67	8	0.0	2	7 1
+68	1	0.0	2	1
+69	7	0.0	2	7
+70	4	0.0	2	4
+71	14	0.0	2	13 1
+73	24	0.0	2	14 10
+74	8	0.0	2	7 1
+76	18	0.0	2	0 2 16
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 18, No unique_17: 47080
+Number of rows without empty cells is: 3215018
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 323858
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR2/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR2/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR2/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR2/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_10_S23_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 35.82 s (16 µs/read; 3.69 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,205,183
+Reads with adapters:                 2,203,768 (99.9%)
+Reads that were too short:               6,864 (0.3%)
+Reads that were too long:               18,607 (0.8%)
+Reads written (passing filters):     2,179,712 (98.8%)
+
+Total basepairs processed:   167,593,908 bp
+Total written (filtered):     37,055,104 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 2198605 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	136	34456.0	0	136
+4	20	8614.0	0	20
+6	1	538.4	0	1
+8	1	33.6	0	1
+10	8	2.1	1	5 3
+11	5	0.5	1	3 2
+12	5	0.1	1	3 2
+13	15	0.0	1	6 9
+14	21	0.0	1	12 9
+15	40	0.0	1	17 23
+16	23	0.0	1	10 13
+17	208	0.0	1	89 119
+18	10269	0.0	1	593 9676
+19	2182719	0.0	1	2129456 53263
+20	5112	0.0	1	421 4691
+21	2	0.0	1	1 1
+26	3	0.0	1	3
+29	1	0.0	1	1
+32	8	0.0	1	8
+35	2	0.0	1	2
+37	2	0.0	1	2
+42	1	0.0	1	1
+44	1	0.0	1	0 1
+46	1	0.0	1	1
+48	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 2196418 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 27.8%
+  C: 32.6%
+  G: 20.1%
+  T: 19.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	155	34456.0	0	155
+4	2	8614.0	0	2
+11	2	0.5	1	2
+13	1	0.0	1	1
+14	4	0.0	1	4
+15	33	0.0	1	31 2
+17	1	0.0	1	1
+19	3	0.0	1	3
+23	1	0.0	2	1
+24	6	0.0	2	4 2
+27	1	0.0	2	1
+28	11	0.0	2	10 1
+29	2	0.0	2	2
+30	25	0.0	2	22 3
+31	1	0.0	2	0 0 1
+32	28	0.0	2	27 1
+33	1	0.0	2	1
+34	3	0.0	2	3
+35	45	0.0	2	45
+36	38	0.0	2	37 1
+37	41	0.0	2	38 3
+38	127	0.0	2	117 10
+39	9034	0.0	2	8409 562 63
+40	2168430	0.0	2	2057947 102768 7715
+41	14399	0.0	2	13076 1187 136
+42	1705	0.0	2	1540 109 56
+43	619	0.0	2	535 20 64
+44	191	0.0	2	153 13 25
+45	228	0.0	2	190 29 9
+46	84	0.0	2	82 2
+47	87	0.0	2	78 9
+48	51	0.0	2	47 1 3
+49	652	0.0	2	577 71 4
+50	134	0.0	2	129 3 2
+51	82	0.0	2	61 21
+52	8	0.0	2	8
+53	106	0.0	2	72 21 13
+54	4	0.0	2	4
+56	16	0.0	2	15 1
+57	34	0.0	2	23 0 11
+58	22	0.0	2	0 22
+60	1	0.0	2	0 0 1
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR2/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR2/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR2/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR2/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_10_S23_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 23.89 s (11 µs/read; 5.54 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,205,183
+Reads with adapters:                 2,196,250 (99.6%)
+Reads written (passing filters):     2,196,250 (99.6%)
+
+Total basepairs processed:   167,593,908 bp
+Total written (filtered):     41,653,862 bp (24.9%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 2223765 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	18263	34456.0	0	18263
+4	5603	8614.0	0	5603
+5	2009	2153.5	0	2009
+6	773	538.4	0	773
+7	698	134.6	0	698
+8	86	33.6	0	86
+9	22	8.4	0	1 21
+10	54	2.1	1	0 54
+11	21	0.5	1	21
+13	3	0.0	1	0 3
+37	10	0.0	2	0 0 10
+38	25	0.0	2	0 21 4
+39	12	0.0	2	0 1 11
+40	23	0.0	2	23
+41	16	0.0	2	15 1
+42	10	0.0	2	0 0 10
+43	4	0.0	2	4
+44	96	0.0	2	72 21 3
+45	8	0.0	2	8
+46	82	0.0	2	61 21
+47	134	0.0	2	129 3 2
+48	652	0.0	2	577 71 4
+49	50	0.0	2	47 1 2
+50	87	0.0	2	78 9
+51	85	0.0	2	82 2 1
+52	228	0.0	2	190 30 8
+53	191	0.0	2	153 12 26
+54	621	0.0	2	535 22 64
+55	1854	0.0	2	1540 138 176
+56	18791	0.0	2	13076 5377 338
+57	2159243	0.0	2	2057947 95277 6019
+58	12584	0.0	2	8409 3824 351
+59	1218	0.0	2	117 18 1083
+60	44	0.0	2	38 3 3
+61	38	0.0	2	37 1
+62	45	0.0	2	45
+63	3	0.0	2	3
+64	1	0.0	2	1
+65	28	0.0	2	27 1
+66	1	0.0	2	0 0 1
+67	25	0.0	2	22 3
+68	2	0.0	2	2
+69	11	0.0	2	10 1
+70	1	0.0	2	1
+73	6	0.0	2	4 2
+74	1	0.0	2	1
+76	3	0.0	2	0 0 3
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 6, No unique_17: 35511
+Number of rows without empty cells is: 2160739
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 241464
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR2/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR2/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR2/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR2/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_11_S24_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 44.08 s (18 µs/read; 3.33 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,449,798
+Reads with adapters:                 2,448,013 (99.9%)
+Reads that were too short:               6,635 (0.3%)
+Reads that were too long:               21,366 (0.9%)
+Reads written (passing filters):     2,421,797 (98.9%)
+
+Total basepairs processed:   186,184,648 bp
+Total written (filtered):     41,170,549 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 2442668 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	220	38278.1	0	220
+4	18	9569.5	0	18
+6	2	598.1	0	2
+8	2	37.4	0	2
+9	2	9.3	0	2
+10	6	2.3	1	4 2
+11	4	0.6	1	1 3
+12	12	0.1	1	5 7
+13	9	0.0	1	0 9
+14	14	0.0	1	8 6
+15	26	0.0	1	12 14
+16	22	0.0	1	7 15
+17	201	0.0	1	83 118
+18	11159	0.0	1	647 10512
+19	2425232	0.0	1	2365594 59638
+20	5701	0.0	1	432 5269
+21	2	0.0	1	2
+24	1	0.0	1	1
+25	3	0.0	1	3
+26	2	0.0	1	2
+27	1	0.0	1	1
+30	1	0.0	1	1
+35	1	0.0	1	1
+36	1	0.0	1	1
+38	1	0.0	1	1
+39	5	0.0	1	5
+40	7	0.0	1	7
+41	1	0.0	1	1
+43	8	0.0	1	8
+45	2	0.0	1	2
+51	1	0.0	1	1
+62	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 2439497 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 27.8%
+  C: 32.8%
+  G: 19.9%
+  T: 19.5%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	200	38278.1	0	200
+4	2	9569.5	0	2
+9	1	9.3	0	1
+15	1	0.0	1	1
+17	2	0.0	1	2
+19	1	0.0	1	1
+20	1	0.0	2	1
+22	1	0.0	2	1
+24	8	0.0	2	8
+25	1	0.0	2	1
+27	21	0.0	2	20 1
+28	2	0.0	2	2
+30	3	0.0	2	3
+31	3	0.0	2	3
+32	48	0.0	2	43 4 1
+33	18	0.0	2	18
+35	19	0.0	2	13 6
+36	68	0.0	2	67 1
+37	77	0.0	2	74 2 1
+38	238	0.0	2	223 11 4
+39	10302	0.0	2	9582 651 69
+40	2409558	0.0	2	2288232 112875 8451
+41	15136	0.0	2	13948 1048 140
+42	1918	0.0	2	1661 123 134
+43	555	0.0	2	469 31 55
+44	228	0.0	2	198 24 6
+45	152	0.0	2	129 21 2
+46	109	0.0	2	100 6 3
+47	127	0.0	2	118 8 1
+48	119	0.0	2	112 5 2
+49	291	0.0	2	263 23 5
+50	88	0.0	2	66 14 8
+51	36	0.0	2	28 2 6
+52	26	0.0	2	23 2 1
+53	44	0.0	2	34 9 1
+54	34	0.0	2	32 1 1
+55	22	0.0	2	7 15
+56	6	0.0	2	6
+57	10	0.0	2	9 0 1
+58	19	0.0	2	2 17
+60	1	0.0	2	0 0 1
+61	1	0.0	2	0 0 1
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR2/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR2/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR2/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR2/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_11_S24_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 25.43 s (10 µs/read; 5.78 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,449,798
+Reads with adapters:                 2,439,320 (99.6%)
+Reads written (passing filters):     2,439,320 (99.6%)
+
+Total basepairs processed:   186,184,648 bp
+Total written (filtered):     46,257,873 bp (24.8%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 2469046 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	19473	38278.1	0	19473
+4	5745	9569.5	0	5745
+5	2355	2392.4	0	2355
+6	937	598.1	0	937
+7	830	149.5	0	830
+8	106	37.4	0	106
+9	111	9.3	0	40 71
+10	78	2.3	1	0 78
+11	80	0.6	1	16 64
+12	12	0.1	1	12
+13	2	0.0	1	0 2
+36	1	0.0	2	0 0 1
+37	25	0.0	2	0 0 25
+38	12	0.0	2	0 11 1
+39	9	0.0	2	2 6 1
+40	9	0.0	2	9
+41	7	0.0	2	6 0 1
+42	7	0.0	2	7
+43	49	0.0	2	32 16 1
+44	45	0.0	2	34 9 2
+45	32	0.0	2	23 3 6
+46	29	0.0	2	28 1
+47	88	0.0	2	66 14 8
+48	291	0.0	2	263 23 5
+49	119	0.0	2	112 5 2
+50	128	0.0	2	118 9 1
+51	108	0.0	2	100 5 3
+52	152	0.0	2	129 21 2
+53	235	0.0	2	198 31 6
+54	549	0.0	2	469 26 54
+55	2109	0.0	2	1661 147 301
+56	20612	0.0	2	13948 6252 412
+57	2399059	0.0	2	2288232 104329 6498
+58	13887	0.0	2	9582 3942 363
+59	1475	0.0	2	223 36 1216
+60	86	0.0	2	74 2 10
+61	72	0.0	2	67 5
+62	14	0.0	2	13 1
+63	1	0.0	2	0 1
+64	18	0.0	2	18
+65	48	0.0	2	43 4 1
+66	3	0.0	2	3
+67	3	0.0	2	3
+69	2	0.0	2	2
+70	21	0.0	2	20 1
+72	1	0.0	2	1
+73	8	0.0	2	8
+75	1	0.0	2	1
+76	2	0.0	2	0 1 1
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 8, No unique_17: 36570
+Number of rows without empty cells is: 2402750
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 275064
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR2/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR2/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR2/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR2/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_12_S25_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 44.13 s (16 µs/read; 3.71 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,724,736
+Reads with adapters:                 2,722,609 (99.9%)
+Reads that were too short:               7,331 (0.3%)
+Reads that were too long:               22,183 (0.8%)
+Reads written (passing filters):     2,695,222 (98.9%)
+
+Total basepairs processed:   207,079,936 bp
+Total written (filtered):     45,818,774 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 2717016 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	187	42574.0	0	187
+4	25	10643.5	0	25
+6	1	665.2	0	1
+8	3	41.6	0	3
+9	3	10.4	0	3
+10	7	2.6	1	4 3
+11	3	0.6	1	1 2
+12	15	0.2	1	10 5
+13	12	0.0	1	2 10
+14	21	0.0	1	15 6
+15	27	0.0	1	8 19
+16	20	0.0	1	10 10
+17	214	0.0	1	97 117
+18	12410	0.0	1	621 11789
+19	2697564	0.0	1	2634465 63099
+20	6434	0.0	1	524 5910
+21	2	0.0	1	1 1
+24	1	0.0	1	1
+25	2	0.0	1	2
+26	4	0.0	1	2 2
+27	1	0.0	1	1
+29	1	0.0	1	1
+31	1	0.0	1	1
+33	2	0.0	1	2
+36	31	0.0	1	1 30
+37	3	0.0	1	3
+39	5	0.0	1	4 1
+41	7	0.0	1	0 7
+43	1	0.0	1	1
+45	8	0.0	1	8
+50	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 2713724 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 29.2%
+  C: 32.2%
+  G: 19.5%
+  T: 19.2%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	175	42574.0	0	175
+4	3	10643.5	0	3
+8	12	41.6	0	12
+9	1	10.4	0	1
+11	25	0.6	1	25
+20	2	0.0	2	2
+21	1	0.0	2	0 1
+22	22	0.0	2	22
+23	1	0.0	2	1
+24	65	0.0	2	61 4
+25	10	0.0	2	10
+26	2	0.0	2	2
+27	1	0.0	2	1
+28	15	0.0	2	15
+29	1	0.0	2	1
+30	6	0.0	2	6
+31	17	0.0	2	17
+32	15	0.0	2	15
+33	25	0.0	2	24 1
+34	15	0.0	2	15
+35	14	0.0	2	14
+36	22	0.0	2	20 1 1
+37	89	0.0	2	86 3
+38	148	0.0	2	139 8 1
+39	10912	0.0	2	10138 721 53
+40	2680990	0.0	2	2548357 123662 8971
+41	17090	0.0	2	15799 1145 146
+42	1939	0.0	2	1718 150 71
+43	742	0.0	2	630 57 55
+44	251	0.0	2	172 33 46
+45	224	0.0	2	194 23 7
+46	115	0.0	2	92 5 18
+47	112	0.0	2	106 4 2
+48	80	0.0	2	56 23 1
+49	325	0.0	2	300 23 2
+50	86	0.0	2	82 4
+51	13	0.0	2	10 1 2
+52	8	0.0	2	2 6
+53	84	0.0	2	67 13 4
+54	17	0.0	2	1 15 1
+55	25	0.0	2	5 20
+56	4	0.0	2	4
+57	1	0.0	2	1
+58	18	0.0	2	0 17 1
+60	1	0.0	2	0 0 1
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR2/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR2/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR2/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR2/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_12_S25_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 29.60 s (11 µs/read; 5.52 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,724,736
+Reads with adapters:                 2,713,534 (99.6%)
+Reads written (passing filters):     2,713,534 (99.6%)
+
+Total basepairs processed:   207,079,936 bp
+Total written (filtered):     51,455,537 bp (24.8%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 2747628 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	23544	42574.0	0	23544
+4	6331	10643.5	0	6331
+5	2352	2660.9	0	2352
+6	928	665.2	0	928
+7	620	166.3	0	620
+8	128	41.6	0	128
+9	66	10.4	0	43 23
+10	61	2.6	1	0 61
+11	36	0.6	1	18 18
+12	8	0.2	1	0 8
+13	19	0.0	1	0 19
+15	2	0.0	1	0 2
+37	16	0.0	2	0 0 16
+38	22	0.0	2	0 11 11
+39	6	0.0	2	0 6
+40	1	0.0	2	1
+41	4	0.0	2	4
+42	28	0.0	2	5 23
+43	15	0.0	2	1 12 2
+44	88	0.0	2	67 19 2
+45	4	0.0	2	2 1 1
+46	12	0.0	2	10 0 2
+47	91	0.0	2	82 8 1
+48	322	0.0	2	300 19 3
+49	80	0.0	2	56 23 1
+50	110	0.0	2	106 4
+51	128	0.0	2	92 5 31
+52	226	0.0	2	194 23 9
+53	237	0.0	2	172 34 31
+54	743	0.0	2	630 58 55
+55	2115	0.0	2	1718 189 208
+56	22428	0.0	2	15799 6235 394
+57	2670244	0.0	2	2548357 115131 6756
+58	14624	0.0	2	10138 4101 385
+59	1660	0.0	2	139 28 1493
+60	95	0.0	2	86 3 6
+61	22	0.0	2	20 1 1
+62	14	0.0	2	14
+63	15	0.0	2	15
+64	25	0.0	2	24 1
+65	15	0.0	2	15
+66	17	0.0	2	17
+67	6	0.0	2	6
+68	1	0.0	2	1
+69	15	0.0	2	15
+70	1	0.0	2	1
+71	2	0.0	2	2
+72	10	0.0	2	10
+73	65	0.0	2	61 4
+74	1	0.0	2	1
+75	22	0.0	2	22
+76	3	0.0	2	0 3
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 4, No unique_17: 38910
+Number of rows without empty cells is: 2674624
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 323684
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR2/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR2/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR2/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR2/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_13_S26_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 48.74 s (17 µs/read; 3.60 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,926,920
+Reads with adapters:                 2,925,038 (99.9%)
+Reads that were too short:               7,682 (0.3%)
+Reads that were too long:               24,650 (0.8%)
+Reads written (passing filters):     2,894,588 (98.9%)
+
+Total basepairs processed:   222,445,920 bp
+Total written (filtered):     49,207,996 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 2918794 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	153	45733.1	0	153
+4	19	11433.3	0	19
+5	2	2858.3	0	2
+6	5	714.6	0	5
+8	2	44.7	0	2
+9	5	11.2	0	5
+10	2	2.8	1	1 1
+11	12	0.7	1	8 4
+12	12	0.2	1	7 5
+13	19	0.0	1	1 18
+14	14	0.0	1	8 6
+15	31	0.0	1	8 23
+16	37	0.0	1	14 23
+17	273	0.0	1	117 156
+18	13887	0.0	1	770 13117
+19	2897300	0.0	1	2829817 67483
+20	6985	0.0	1	586 6399
+21	3	0.0	1	0 3
+23	2	0.0	1	2
+24	8	0.0	1	8
+25	1	0.0	1	1
+26	2	0.0	1	2
+28	1	0.0	1	1
+30	2	0.0	1	2
+32	2	0.0	1	1 1
+33	1	0.0	1	1
+36	1	0.0	1	1
+37	7	0.0	1	7
+40	1	0.0	1	1
+43	3	0.0	1	3
+45	1	0.0	1	1
+46	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 2915365 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 29.1%
+  C: 32.6%
+  G: 19.3%
+  T: 19.0%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	181	45733.1	0	181
+4	1	11433.3	0	1
+8	21	44.7	0	21
+10	1	2.8	1	1
+14	7	0.0	1	7
+15	1	0.0	1	1
+17	2	0.0	1	2
+19	1	0.0	1	1
+21	13	0.0	2	0 11 2
+22	40	0.0	2	39 1
+23	7	0.0	2	6 1
+24	45	0.0	2	44 1
+25	1	0.0	2	1
+27	10	0.0	2	10
+28	12	0.0	2	10 2
+29	2	0.0	2	2
+30	23	0.0	2	22 1
+31	35	0.0	2	33 2
+32	18	0.0	2	18
+33	37	0.0	2	34 2 1
+34	20	0.0	2	19 1
+35	60	0.0	2	59 1
+36	45	0.0	2	44 1
+37	69	0.0	2	63 4 2
+38	217	0.0	2	206 7 4
+39	12649	0.0	2	11802 749 98
+40	2878622	0.0	2	2739530 129781 9311
+41	18783	0.0	2	17320 1285 178
+42	2250	0.0	2	2036 143 71
+43	603	0.0	2	538 50 15
+44	260	0.0	2	216 21 23
+45	141	0.0	2	133 7 1
+46	111	0.0	2	85 16 10
+47	108	0.0	2	85 22 1
+48	125	0.0	2	114 10 1
+49	480	0.0	2	428 38 14
+50	144	0.0	2	134 10
+51	28	0.0	2	25 3
+52	11	0.0	2	2 2 7
+53	93	0.0	2	34 52 7
+54	19	0.0	2	9 0 10
+55	3	0.0	2	1 2
+56	9	0.0	2	8 1
+57	13	0.0	2	2 0 11
+58	41	0.0	2	10 31
+63	1	0.0	2	1
+67	1	0.0	2	1
+68	1	0.0	2	1
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR2/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR2/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR2/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR2/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_13_S26_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 31.34 s (11 µs/read; 5.60 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               2,926,920
+Reads with adapters:                 2,915,198 (99.6%)
+Reads written (passing filters):     2,915,198 (99.6%)
+
+Total basepairs processed:   222,445,920 bp
+Total written (filtered):     55,281,745 bp (24.9%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 2951323 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	24422	45733.1	0	24422
+4	6870	11433.3	0	6870
+5	2458	2858.3	0	2458
+6	1058	714.6	0	1058
+7	1111	178.6	0	1111
+8	85	44.7	0	85
+9	30	11.2	0	17 13
+10	78	2.8	1	0 78
+11	16	0.7	1	7 9
+29	1	0.0	2	1
+30	1	0.0	2	1
+34	1	0.0	2	1
+37	22	0.0	2	0 0 22
+38	24	0.0	2	0 5 19
+39	39	0.0	2	10 26 3
+40	13	0.0	2	2 0 11
+41	9	0.0	2	8 1
+42	13	0.0	2	1 2 10
+43	12	0.0	2	9 0 3
+44	90	0.0	2	34 52 4
+45	11	0.0	2	2 2 7
+46	28	0.0	2	25 3
+47	144	0.0	2	134 10
+48	480	0.0	2	428 38 14
+49	126	0.0	2	114 11 1
+50	108	0.0	2	85 22 1
+51	110	0.0	2	85 15 10
+52	162	0.0	2	133 7 22
+53	259	0.0	2	216 41 2
+54	593	0.0	2	538 38 17
+55	2421	0.0	2	2036 199 186
+56	24688	0.0	2	17320 6954 414
+57	2867312	0.0	2	2739530 120522 7260
+58	16599	0.0	2	11802 4261 536
+59	1489	0.0	2	206 21 1262
+60	71	0.0	2	63 4 4
+61	45	0.0	2	44 1
+62	60	0.0	2	59 1
+63	20	0.0	2	19 1
+64	36	0.0	2	34 2
+65	20	0.0	2	18 1 1
+66	34	0.0	2	33 1
+67	23	0.0	2	22 1
+68	2	0.0	2	2
+69	12	0.0	2	10 2
+70	10	0.0	2	10
+72	1	0.0	2	1
+73	45	0.0	2	44 1
+74	7	0.0	2	6 1
+75	40	0.0	2	39 1
+76	14	0.0	2	0 11 3
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 14, No unique_17: 42574
+Number of rows without empty cells is: 2872623
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 325592
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR2/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR2/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR2/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR2/17_unique/cutadapt/too_long_17_unique_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_14_S27_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 66.37 s (22 µs/read; 2.77 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               3,065,647
+Reads with adapters:                 3,063,598 (99.9%)
+Reads that were too short:               8,588 (0.3%)
+Reads that were too long:               27,105 (0.9%)
+Reads written (passing filters):     3,029,954 (98.8%)
+
+Total basepairs processed:   232,989,172 bp
+Total written (filtered):     51,509,218 bp (22.1%)
+
+=== Adapter 1 ===
+
+Sequence: TGCGATCTAAGTAAGCTTG; Type: regular 5'; Length: 19; Trimmed: 3056099 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	226	47900.7	0	226
+4	31	11975.2	0	31
+8	3	46.8	0	3
+9	2	11.7	0	2
+10	6	2.9	1	4 2
+11	10	0.7	1	4 6
+12	12	0.2	1	6 6
+13	8	0.0	1	2 6
+14	22	0.0	1	15 7
+15	38	0.0	1	16 22
+16	23	0.0	1	10 13
+17	299	0.0	1	125 174
+18	13928	0.0	1	786 13142
+19	3034267	0.0	1	2958011 76256
+20	7155	0.0	1	518 6637
+21	6	0.0	1	3 3
+22	5	0.0	1	5
+23	1	0.0	1	1
+24	16	0.0	1	16
+25	5	0.0	1	5
+26	2	0.0	1	1 1
+28	1	0.0	1	1
+29	2	0.0	1	2
+32	11	0.0	1	11
+33	1	0.0	1	1
+35	1	0.0	1	0 1
+36	2	0.0	1	2
+37	1	0.0	1	1
+39	5	0.0	1	5
+41	5	0.0	1	5
+42	1	0.0	1	1
+44	2	0.0	1	2
+46	1	0.0	1	1
+53	1	0.0	1	1
+
+
+=== Adapter 2 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 3'; Length: 21; Trimmed: 3052705 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Bases preceding removed adapters:
+  A: 29.4%
+  C: 32.1%
+  G: 19.4%
+  T: 19.1%
+  none/other: 0.0%
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	236	47900.7	0	236
+4	6	11975.2	0	6
+6	1	748.4	0	1
+8	35	46.8	0	35
+17	1	0.0	1	1
+20	9	0.0	2	8 1
+21	37	0.0	2	35 0 2
+22	9	0.0	2	8 1
+24	38	0.0	2	38
+25	2	0.0	2	2
+26	1	0.0	2	1
+27	3	0.0	2	2 1
+28	41	0.0	2	40 1
+29	1	0.0	2	0 0 1
+30	7	0.0	2	6 1
+31	14	0.0	2	13 0 1
+32	3	0.0	2	3
+33	8	0.0	2	8
+34	7	0.0	2	7
+35	55	0.0	2	54 1
+36	32	0.0	2	31 1
+37	66	0.0	2	64 2
+38	235	0.0	2	200 24 11
+39	12527	0.0	2	11713 726 88
+40	3015168	0.0	2	2864535 139660 10973
+41	19053	0.0	2	17699 1197 157
+42	2417	0.0	2	2165 161 91
+43	678	0.0	2	622 36 20
+44	343	0.0	2	307 20 16
+45	247	0.0	2	222 17 8
+46	167	0.0	2	142 13 12
+47	165	0.0	2	147 4 14
+48	208	0.0	2	192 14 2
+49	494	0.0	2	447 42 5
+50	117	0.0	2	99 10 8
+51	55	0.0	2	51 3 1
+52	44	0.0	2	26 11 7
+53	77	0.0	2	33 31 13
+54	12	0.0	2	6 0 6
+55	21	0.0	2	16 5
+56	30	0.0	2	13 2 15
+57	24	0.0	2	2 1 21
+58	11	0.0	2	1 10
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR2/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR2/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR2/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR2/barcodes/too_long_clipped_barcodes_output.fastq /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_14_S27_R1_001.fastq
+Processing reads on 1 core in single-end mode ...
+Finished in 32.27 s (11 µs/read; 5.70 M reads/minute).
+
+=== Summary ===
+
+Total reads processed:               3,065,647
+Reads with adapters:                 3,052,437 (99.6%)
+Reads written (passing filters):     3,052,437 (99.6%)
+
+Total basepairs processed:   232,989,172 bp
+Total written (filtered):     57,886,763 bp (24.8%)
+
+=== Adapter 1 ===
+
+Sequence: GTACTGTTGGTAAACCAGCTC; Type: regular 5'; Length: 21; Trimmed: 3089826 times
+
+No. of allowed errors:
+1-9 bp: 0; 10-19 bp: 1; 20-21 bp: 2
+
+Overview of removed sequences
+length	count	expect	max.err	error counts
+3	24661	47900.7	0	24661
+4	7598	11975.2	0	7598
+5	2825	2993.8	0	2825
+6	920	748.4	0	920
+7	1112	187.1	0	1112
+8	94	46.8	0	94
+9	51	11.7	0	50 1
+10	87	2.9	1	0 87
+11	37	0.7	1	15 22
+12	3	0.2	1	0 3
+13	2	0.0	1	0 2
+37	7	0.0	2	0 0 7
+38	8	0.0	2	0 7 1
+39	6	0.0	2	1 3 2
+40	22	0.0	2	2 3 17
+41	32	0.0	2	13 0 19
+42	28	0.0	2	16 5 7
+43	9	0.0	2	6 0 3
+44	85	0.0	2	33 42 10
+45	33	0.0	2	26 0 7
+46	55	0.0	2	51 4
+47	112	0.0	2	99 9 4
+48	511	0.0	2	447 42 22
+49	208	0.0	2	192 14 2
+50	153	0.0	2	147 4 2
+51	177	0.0	2	142 13 22
+52	252	0.0	2	222 18 12
+53	333	0.0	2	307 20 6
+54	676	0.0	2	622 39 15
+55	2589	0.0	2	2165 193 231
+56	24896	0.0	2	17699 6777 420
+57	3003402	0.0	2	2864535 130279 8588
+58	16782	0.0	2	11713 4472 597
+59	1722	0.0	2	200 43 1479
+60	71	0.0	2	64 2 5
+61	32	0.0	2	31 1
+62	55	0.0	2	54 1
+63	7	0.0	2	7
+64	8	0.0	2	8
+65	3	0.0	2	3
+66	14	0.0	2	13 0 1
+67	7	0.0	2	6 1
+68	1	0.0	2	0 0 1
+69	41	0.0	2	40 1
+70	2	0.0	2	2
+71	2	0.0	2	1 1
+72	2	0.0	2	2
+73	38	0.0	2	38
+75	9	0.0	2	8 1
+76	46	0.0	2	35 9 2
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+No barcode: 48, No unique_17: 50449
+Number of rows without empty cells is: 3001988
+Number of rows without duplicated rows (set of unique_17 and barcode) is: 360709
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_15_S28_R1_001.fastq/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_15_S28_R1_001.fastq/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_15_S28_R1_001.fastq/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_15_S28_R1_001.fastq/17_unique/cutadapt/too_long_17_unique_output.fastq pyscripts
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_15_S28_R1_001.fastq/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_15_S28_R1_001.fastq/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_15_S28_R1_001.fastq/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_15_S28_R1_001.fastq/barcodes/too_long_clipped_barcodes_output.fastq pyscripts
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_16_S29_R1_001.fastq/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_16_S29_R1_001.fastq/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_16_S29_R1_001.fastq/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_16_S29_R1_001.fastq/17_unique/cutadapt/too_long_17_unique_output.fastq pyscripts
+This is cutadapt 3.4 with Python 3.9.6
+Command line parameters: -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_16_S29_R1_001.fastq/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_16_S29_R1_001.fastq/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_16_S29_R1_001.fastq/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output /ALAA_787//viral_A_PCR2//cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_16_S29_R1_001.fastq/barcodes/too_long_clipped_barcodes_output.fastq pyscripts
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: pandas in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (1.3.4)
+Requirement already satisfied: numpy>=1.17.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (1.21.2)
+Requirement already satisfied: python-dateutil>=2.7.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2.8.2)
+Requirement already satisfied: pytz>=2017.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pandas) (2021.3)
+Requirement already satisfied: six>=1.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from python-dateutil>=2.7.3->pandas) (1.16.0)
+Defaulting to user installation because normal site-packages is not writeable
+Requirement already satisfied: ipdb in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (0.13.9)
+Requirement already satisfied: setuptools in /usr/local/hurcs/miniconda3/envs/cutadapt-3.4/lib/python3.9/site-packages (from ipdb) (52.0.0.post20210125)
+Requirement already satisfied: decorator in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (5.1.0)
+Requirement already satisfied: toml>=0.10.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (0.10.2)
+Requirement already satisfied: ipython>=7.17.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipdb) (7.28.0)
+Requirement already satisfied: jedi>=0.16 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.18.0)
+Requirement already satisfied: pexpect>4.3 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (4.8.0)
+Requirement already satisfied: pickleshare in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.7.5)
+Requirement already satisfied: matplotlib-inline in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.1.3)
+Requirement already satisfied: backcall in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (0.2.0)
+Requirement already satisfied: prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (3.0.20)
+Requirement already satisfied: traitlets>=4.2 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (5.1.0)
+Requirement already satisfied: pygments in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from ipython>=7.17.0->ipdb) (2.10.0)
+Requirement already satisfied: parso<0.9.0,>=0.8.0 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from jedi>=0.16->ipython>=7.17.0->ipdb) (0.8.2)
+Requirement already satisfied: ptyprocess>=0.5 in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from pexpect>4.3->ipython>=7.17.0->ipdb) (0.7.0)
+Requirement already satisfied: wcwidth in /cs/icore/tzlil.yair/.local/lib/python3.9/site-packages (from prompt-toolkit!=3.0.0,!=3.0.1,<3.1.0,>=2.0.0->ipython>=7.17.0->ipdb) (0.2.5)

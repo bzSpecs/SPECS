@@ -241,19 +241,19 @@
 # python pyscripts/extract_distinct_pairing_and_number_of_barcodes_per_unique_17.py output/LUNG_CANCER/LLC_2/bio_1/paired_combined.csv output/LUNG_CANCER/LLC_2/bio_1/distinct_paired.csv output/LUNG_CANCER/LLC_2/bio_1/number_of_BC_per_unique_17.csv
 
 
-./C1_lib_construction.sh ALAA_787 s bio_A s_A_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_1_S14_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 s bio_B s_B_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_2_S15_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 s bio_C s_C_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_3_S16_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 k bio_A k_A_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_4_S17_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 k bio_B k_B_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_5_S18_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 k bio_C k_C_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_6_S19_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 "" viral_A_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_7_S20_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 "" viral_B_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_8_S21_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 s bio_A s_A_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_9_S22_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 s bio_B s_B_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_10_S23_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 s bio_C s_C_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_11_S24_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 k bio_A k_A_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_12_S25_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 k bio_B k_B_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_13_S26_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 k bio_C k_C_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_14_S27_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 "" viral_A_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_15_S28_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
-./C1_lib_construction.sh ALAA_787 "" viral_A_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_16_S29_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 s bio_A s_A_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_1_S14_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 s bio_B s_B_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_2_S15_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 s bio_C s_C_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_3_S16_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 k bio_A k_A_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_4_S17_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 k bio_B k_B_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_5_S18_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 k bio_C k_C_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_6_S19_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 viralA "" viral_A_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_7_S20_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 viralB "" viral_B_PCR1 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_8_S21_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 s bio_A s_A_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_9_S22_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 s bio_B s_B_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_10_S23_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 s bio_C s_C_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_11_S24_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 k bio_A k_A_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_12_S25_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 k bio_B k_B_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_13_S26_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 k bio_C k_C_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_14_S27_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 viralA "" viral_A_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_15_S28_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787
+#./C1_lib_construction.sh ALAA_787 viralB "" viral_B_PCR2 /cs/icore/tzlil.yair/Downloads/ALAA_run787/ALAA_16_S29_R1_001.fastq pyscripts bowtie2_lib_C1/C1 "" /cs/icore/tzlil.yair/results/output_ALAA_run787

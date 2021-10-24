@@ -228,3 +228,22 @@
 # python pyscripts/sum_unique_17_columns.py analysis_results/NIR_748/T47D/bio_2/tech_1/summarized_info_of_unique_17_count.csv,analysis_results/NIR_748/T47D/bio_2/tech_2/summarized_info_of_unique_17_count.csv,analysis_results/NIR_748/T47D/bio_2/tech_3/summarized_info_of_unique_17_count.csv count,avg_count_per_number_of_barcodes,unnormalized_count count False analysis_results/NIR_748/T47D/bio_2/summarized_info_of_unique_17_count.csv
 
 # python pyscripts/sum_unique_17_columns.py analysis_results/NIR_748/T47D/bio_1/summarized_info_of_unique_17_count.csv,analysis_results/NIR_748/T47D/bio_2/summarized_info_of_unique_17_count.csv count,avg_count_per_number_of_barcodes,unnormalized_count count False analysis_results/NIR_748/T47D/summarized_info_of_unique_17_count.csv
+
+
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 s bio_A s_A_PCR1 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR1/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 s bio_B s_B_PCR1 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR1/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 s bio_C s_C_PCR1 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR1/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 k bio_A k_A_PCR1 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR1/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 k bio_B k_B_PCR1 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR1/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 k bio_C k_C_PCR1 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR1/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 s bio_A s_A_PCR1 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_A/s_A_PCR2/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 s bio_B s_B_PCR1 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_B/s_B_PCR2/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 s bio_C s_C_PCR1 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/s/bio_C/s_C_PCR2/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 k bio_A k_A_PCR2 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_A/k_A_PCR2/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 k bio_B k_B_PCR2 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_B/k_B_PCR2/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 k bio_C k_C_PCR2 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/k/bio_C/k_C_PCR2/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 viralA "" viral_A_PCR1 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/viralA/viral_A_PCR1/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 viralB "" viral_B_PCR1 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/viralB/viral_B_PCR1/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 viralA "" viral_A_PCR2 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/viralA/viral_A_PCR2/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
+./analyse_replicate.sh analyse_counts_ALLA ALAA_787 viralB "" viral_A_PCR2 /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/viralB/viral_B_PCR2/paired.csv pyscripts /cs/icore/tzlil.yair/resources/D11_lib_data.csv
