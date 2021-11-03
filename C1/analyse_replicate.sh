@@ -9,6 +9,16 @@ paired_csv_file=$6
 pyscripts_folder=$7
 c1_lib_csv=$8
 
+python -m pip install matplotlib
+python -c "import matplotlib"
+python -m pip install numpy
+python -c "import numpy"
+python -m pip install pandas
+python -c "import pandas"
+python -m pip install ipdb
+python -c "import ipdb"
+
+
 # folder of the sample results
 sample_folder=$root_output_folder/$experiment_name/$cell_line_name/$bio_name/$sample_name
 

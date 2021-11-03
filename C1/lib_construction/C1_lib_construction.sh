@@ -39,11 +39,9 @@ samtools view -F 4 $sample_folder/17_unique/alignment/new_17_unique.sam | cut -f
 # barcodes           
 cutadapt -j 0 -g GTACTGTTGGTAAACCAGCTC -O 3 -n 2 -o $sample_folder/barcodes/cutadapt/clipped_barcodes_output.fastq --untrimmed-output $sample_folder/barcodes/cutadapt/unclipped_barcodes_output.fastq --too-short-output $sample_folder/barcodes/cutadapt/too_short_clipped_barcodes_output.fastq --too-long-output $sample_folder/barcodes/too_long_clipped_barcodes_output.fastq $file
 
-python -m pip install pandas
-python -c "import pandas"
-python -m pip install ipdb
-python -c "import ipdb"
 
 python $pyscripts_folder/r1_to_tsv.py $sample_folder/barcodes/cutadapt/clipped_barcodes_output.fastq $sample_folder/barcodes/barcodes_mapping.tsv
 python $pyscripts_folder/pair_barcodes_to_unique_17.py $sample_folder/17_unique/alignment/new_17_unique.txt $sample_folder/barcodes/barcodes_mapping.tsv $sample_folder/paired.csv
 python $pyscripts_folder/extract_distinct_pairing_and_number_of_barcodes_per_unique_17.py $sample_folder/paired.csv $sample_folder/distinct_paired.csv $sample_folder/number_of_BC_per_unique_17.csv
+
+python pyscripts/pair_barcodes_to_unique_17.py /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/viralA/a/viral_A_PCR2/17_unique/alignment/new_17_unique.txt /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/viralA/a/viral_A_PCR2/barcodes/barcodes_mapping.tsv /cs/icore/tzlil.yair/results/output_ALAA_run787/ALAA_787/viralA/a/viral_A_PCR2/paired.csv
