@@ -16,3 +16,6 @@ rna_seq_results
 analysis_results
 
 C1/*/output
+C30/*/output
+
+notebooks/output

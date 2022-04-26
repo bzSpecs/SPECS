@@ -1,0 +1,51 @@
+{
+  "experiment_name": "abintus_CD4_H7",
+  "output_folder": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output",
+  "lib_csv_path": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/C30_lib_data.csv",
+  "groups": [
+    {
+      "name": "CD4",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_1",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS/CD4/bio_1/tech_1/paired.csv"
+            },
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS/CD4/bio_1/tech_2/paired.csv"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS/CD4/bio_1/tech_3/paired.csv"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "H7",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_1",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS/H7/bio_1/tech_1/paired.csv"
+            },
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS/H7/bio_1/tech_2/paired.csv"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS/H7/bio_1/tech_3/paired.csv"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

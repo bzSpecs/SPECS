@@ -14,9 +14,19 @@ sample_folder=$output_root_dir/$experiment_name/$cell_line_name/$replicate_name/
 
 source $define_local_exec_paths_file
 
+mkdir -p $sample_folder/fastqc
 mkdir -p $sample_folder/17_unique/cutadapt
 mkdir -p $sample_folder/17_unique/alignment
 mkdir -p $sample_folder/barcodes/cutadapt
+
+## Fastqc pre ==> Quality control, done to establish a baseline
+# so that when we run QC again after trimming, we can compare and see the
+# effects of trimming.
+
+$fastqc -o $sample_folder/fastqc -t 4 --extract $file 1> $sample_folder/fastqc/$sample_name.log 2>&1
+# -o output_dir
+# -t = num threads
+# --extract=don't compress (zip) output    
 
 # TGCGATCTAAGTAAGCTTGCCTGCATTAAAGGTCAGGTACTGTTGGTAAACCAGCTCCGTGAGACGGATTTGAGGA
 # adapter 1: TGCGATCTAAGTAAGCTTG
@@ -27,6 +37,8 @@ mkdir -p $sample_folder/barcodes/cutadapt
 
 # 17 unique
 $cutadapt -j 0 -g TGCGATCTAAGTAAGCTTG -a GTACTGTTGGTAAACCAGCTC -m 17 -M 17 -O 3 -n 2 -o $sample_folder/17_unique/cutadapt/clipped_17_unique_output.fastq --untrimmed-output $sample_folder/17_unique/cutadapt/unclipped_17_unique_output.fastq --too-short-output $sample_folder/17_unique/cutadapt/too_short_17_unique_output.fastq --too-long-output  $sample_folder/17_unique/cutadapt/too_long_17_unique_output.fastq $file
+
+$fastqc -o $sample_folder/fastqc -t 4 --extract $sample_folder/17_unique/cutadapt/clipped_17_unique_output.fastq 1> $sample_folder/fastqc/clipped_$sample_name.log 2>&1
 
 $bowtie2 --very-sensitive --norc --met-file $sample_folder/17_unique/alignment/met_17_unique.txt -p 4 -x $bowtie2_referece_folder -U $sample_folder/17_unique/cutadapt/clipped_17_unique_output.fastq -S $sample_folder/17_unique/alignment/new_17_unique.sam &> $sample_folder/17_unique/alignment/new_17_unique.log
 

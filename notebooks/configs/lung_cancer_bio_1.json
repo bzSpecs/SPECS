@@ -1,0 +1,79 @@
+{
+  "experiment_name": "lung_cancer_bio_1",
+  "output_folder": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output",
+  "lib_csv_path": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/C1_lib_data.csv",
+  "groups": [
+    {
+      "name": "MEF",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_1",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C1/lib_construction/output/LUNG_CANCER/MEF/bio_1/tech_1/paired.csv"
+            },
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C1/lib_construction/output/LUNG_CANCER/MEF/bio_1/tech_2/paired.csv"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LET-1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_1",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C1/lib_construction/output/LUNG_CANCER/LET-1/bio_1/tech_1/paired.csv"
+            },
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C1/lib_construction/output/LUNG_CANCER/LET-1/bio_1/tech_2/paired.csv"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "nMuMG",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_1",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C1/lib_construction/output/LUNG_CANCER/nMuMG/bio_1/tech_1/paired.csv"
+            },
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C1/lib_construction/output/LUNG_CANCER/nMuMG/bio_1/tech_2/paired.csv"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LLC",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_1",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C1/lib_construction/output/LUNG_CANCER/LLC/bio_1/tech_1/paired.csv"
+            },
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C1/lib_construction/output/LUNG_CANCER/LLC/bio_1/tech_2/paired.csv"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

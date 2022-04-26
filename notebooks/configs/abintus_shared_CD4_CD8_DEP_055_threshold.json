@@ -1,0 +1,19 @@
+{
+  "experiment_name": "abintus_CD4_CD8_DEP_055_threshold",
+  "output_folder": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output",
+  "lib_csv_path": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/C30_lib_data.csv",
+  "files": [
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD4_DS_DE_055_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD4_H7_DE_055_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD4_HT-1080_DE_055_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD4_MC-CAR_DE_055_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD4_NCI_DE_055_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD4_RL_DE_055_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD8_DS_DE_055_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD8_H7_DE_055_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD8_HT-1080_DE_055_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD8_MC-CAR_DE_055_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD8_NCI_DE_055_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD8_RL_DE_055_threshold.csv"
+  ]
+}

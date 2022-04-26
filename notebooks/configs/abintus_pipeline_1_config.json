@@ -1,0 +1,791 @@
+{
+  "experiment_name": "abintus",
+  "output_folder": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output",
+  "lib_csv_path": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/C30_lib_data.csv",
+  "groups": [
+    {
+      "name": "H7_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H7/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b1_S1_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H7/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H7/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H7/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H7/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H7/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c1_S15_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H7/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H7/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H7/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H7/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RL_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/RL/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b2_S2_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/RL/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/RL/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/RL/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/RL/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/RL/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c2_S16_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/RL/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/RL/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/RL/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/RL/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DS_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/DS/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b3_S3_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/DS/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/DS/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/DS/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/DS/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/DS/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c3_S17_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/DS/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/DS/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/DS/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/DS/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "U2_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/U2/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b4_S4_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/U2/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/U2/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/U2/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/U2/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/U2/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c4_S18_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/U2/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/U2/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/U2/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/U2/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MC_CAR_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MC_CAR/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b5_S5_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MC_CAR/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MC_CAR/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MC_CAR/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MC_CAR/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MC_CAR/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c5_S19_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MC_CAR/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MC_CAR/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MC_CAR/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MC_CAR/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NCI_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/NCI/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b6_S6_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/NCI/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/NCI/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/NCI/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/NCI/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/NCI/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c6_S20_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/NCI/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/NCI/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/NCI/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/NCI/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HT_1080_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/HT_1080/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b7_S7_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/HT_1080/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/HT_1080/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/HT_1080/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/HT_1080/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/HT_1080/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c7_S21_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/HT_1080/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/HT_1080/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/HT_1080/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/HT_1080/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CD4_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD4/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b8_S8_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD4/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD4/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD4/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD4/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD4/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c8_S22_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD4/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD4/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD4/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD4/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CD8_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD8/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b9_S9_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD8/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD8/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD8/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD8/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD8/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c9_S23_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD8/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD8/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD8/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/CD8/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TREGS_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/TREGS/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b10_S10_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/TREGS/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/TREGS/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/TREGS/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/TREGS/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/TREGS/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c10_S24_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/TREGS/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/TREGS/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/TREGS/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/TREGS/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B_CELLS_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/B_CELLS/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b11_S11_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/B_CELLS/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/B_CELLS/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/B_CELLS/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/B_CELLS/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/B_CELLS/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c11_S25_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/B_CELLS/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/B_CELLS/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/B_CELLS/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/B_CELLS/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MONOCYTES_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MONOCYTES/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b12_S12_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MONOCYTES/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MONOCYTES/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MONOCYTES/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MONOCYTES/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MONOCYTES/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c12_S26_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MONOCYTES/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MONOCYTES/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MONOCYTES/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/MONOCYTES/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JURKAT_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/JURKAT/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b13_S13_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/JURKAT/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/JURKAT/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/JURKAT/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/JURKAT/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/JURKAT/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c13_S27_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/JURKAT/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/JURKAT/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/JURKAT/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/JURKAT/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "H1_R1",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H1/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_b15_S29_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H1/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H1/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H1/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H1/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H1/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/Lior2_run839_2/Lior_c15_S30_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H1/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H1/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H1/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R1/H1/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "H7_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H7/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_1b_S15_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H7/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H7/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H7/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H7/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H7/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_1c_S29_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H7/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H7/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H7/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H7/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "RL_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/RL/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_2b_S16_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/RL/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/RL/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/RL/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/RL/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/RL/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_2c_S30_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/RL/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/RL/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/RL/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/RL/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DS_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/DS/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_3b_S17_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/DS/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/DS/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/DS/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/DS/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/DS/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_3c_S31_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/DS/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/DS/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/DS/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/DS/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "U2_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/U2/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_4b_S18_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/U2/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/U2/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/U2/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/U2/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/U2/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_4c_S32_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/U2/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/U2/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/U2/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/U2/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MC_CAR_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MC_CAR/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_5b_S19_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MC_CAR/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MC_CAR/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MC_CAR/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MC_CAR/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MC_CAR/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_5c_S33_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MC_CAR/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MC_CAR/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MC_CAR/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MC_CAR/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "NCI_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/NCI/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_6b_S20_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/NCI/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/NCI/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/NCI/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/NCI/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/NCI/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_6c_S34_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/NCI/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/NCI/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/NCI/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/NCI/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "HT_1080_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/HT_1080/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_7b_S21_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/HT_1080/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/HT_1080/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/HT_1080/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/HT_1080/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/HT_1080/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_7c_S35_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/HT_1080/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/HT_1080/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/HT_1080/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/HT_1080/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CD4_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD4/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_8b_S22_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD4/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD4/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD4/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD4/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD4/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_8c_S36_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD4/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD4/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD4/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD4/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "CD8_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD8/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_9b_S23_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD8/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD8/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD8/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD8/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD8/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_9c_S37_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD8/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD8/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD8/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/CD8/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "TREGS_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/TREGS/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_10b_S24_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/TREGS/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/TREGS/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/TREGS/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/TREGS/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/TREGS/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_10c_S38_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/TREGS/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/TREGS/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/TREGS/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/TREGS/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "B_CELLS_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/B_CELLS/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_11b_S25_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/B_CELLS/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/B_CELLS/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/B_CELLS/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/B_CELLS/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/B_CELLS/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_11c_S39_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/B_CELLS/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/B_CELLS/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/B_CELLS/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/B_CELLS/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "MONOCYTES_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MONOCYTES/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_12b_S26_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MONOCYTES/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MONOCYTES/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MONOCYTES/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MONOCYTES/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MONOCYTES/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_12c_S40_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MONOCYTES/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MONOCYTES/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MONOCYTES/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/MONOCYTES/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "JURKAT_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/JURKAT/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_13b_S27_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/JURKAT/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/JURKAT/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/JURKAT/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/JURKAT/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/JURKAT/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_13c_S41_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/JURKAT/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/JURKAT/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/JURKAT/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/JURKAT/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "H1_R2",
+      "biological_replicates": [
+        {
+          "name": "bio_1",
+          "technical_replicates": [
+            {
+              "name": "tech_2",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H1/bio_1/tech_2/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_15b_S43_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H1/bio_1/tech_2/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H1/bio_1/tech_2/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H1/bio_1/tech_2/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H1/bio_1/tech_2/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            },
+            {
+              "name": "tech_3",
+              "paired_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H1/bio_1/tech_3/paired.csv",
+              "fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/LN/LN_15c_S44_R1_001.fastq",
+              "clipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H1/bio_1/tech_3/17_unique/cutadapt/clipped_17_unique_output.fastq",
+              "unclipped_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H1/bio_1/tech_3/17_unique/cutadapt/unclipped_17_unique_output.fastq",
+              "too_long_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H1/bio_1/tech_3/17_unique/cutadapt/too_long_17_unique_output.fastq",
+              "too_short_fastq_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/C30/RNA_preprocess/output/ABINTUS_R2/H1/bio_1/tech_3/17_unique/cutadapt/too_short_17_unique_output.fastq"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
