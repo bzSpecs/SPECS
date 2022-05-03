@@ -78,7 +78,12 @@ analyse <- function(countData, condition_1, condition_2, threshold) {
   mynoiseq = noiseq(mydata, k = 0.5, norm = "rpkm", factor = "cell_type", replicates = "technical")
   # head(mynoiseq@results[[1]][order(mynoiseq@results[[1]]$ranking, decreasing = TRUE),])
   
-  mynoiseq.deg2 = degenes(mynoiseq, q = threshold, M = "up")
+  m <- "up"
+  if(condition_1 > condition_2) {
+    m <- "down"
+  }
+  
+  mynoiseq.deg2 = degenes(mynoiseq, q = threshold, M = m)
   # head(mynoiseq.deg2)
   # DE.plot(mynoiseq, q = 0.7, graphic = "MD")
   # DE.plot(mynoiseq, q = 0.7, graphic = "expr", log.scale = TRUE)
@@ -89,25 +94,33 @@ analyse <- function(countData, condition_1, condition_2, threshold) {
 run_expirement <- function(countData, condition_1, condition_2, threshold) {
   res = analyse(countData, condition_1, condition_2, threshold)
   output_file <- paste(gsub("\\.", "-", condition_1),gsub("\\.", "-", condition_2),"DE",gsub("\\.", "", threshold),"threshold", sep = "_")
-  write.csv(mynoiseq.deg2, paste(output_file, "csv", sep = "."))
+  write.csv(res, paste(output_file, "csv", sep = "."))
 }
 
 run <- function(countData, threshold) {
-  run_expirement(countData, "CD4", "H7", threshold)
-  run_expirement(countData, "CD4", "RL", threshold)
-  run_expirement(countData, "CD4", "DS", threshold)
-  run_expirement(countData, "CD4", "U2", threshold)
-  run_expirement(countData, "CD4", "MC.CAR", threshold)
-  run_expirement(countData, "CD4", "NCI", threshold)
-  run_expirement(countData, "CD4", "HT.1080", threshold)
-  run_expirement(countData, "CD8", "H7", threshold)
-  run_expirement(countData, "CD8", "RL", threshold)
-  run_expirement(countData, "CD8", "DS", threshold)
-  run_expirement(countData, "CD8", "U2", threshold)
-  run_expirement(countData, "CD8", "MC.CAR", threshold)
-  run_expirement(countData, "CD8", "NCI", threshold)
-  run_expirement(countData, "CD8", "HT.1080", threshold)
+  # run_expirement(countData, "CD4", "H7", threshold)
+  # run_expirement(countData, "CD4", "RL", threshold)
+  # run_expirement(countData, "CD4", "DS", threshold)
+  # run_expirement(countData, "CD4", "U2", threshold)
+  # run_expirement(countData, "CD4", "MC.CAR", threshold)
+  # run_expirement(countData, "CD4", "NCI", threshold)
+  # run_expirement(countData, "CD4", "HT.1080", threshold)
+  # run_expirement(countData, "CD8", "H7", threshold)
+  # run_expirement(countData, "CD8", "RL", threshold)
+  # run_expirement(countData, "CD8", "DS", threshold)
+  # run_expirement(countData, "CD8", "U2", threshold)
+  # run_expirement(countData, "CD8", "MC.CAR", threshold)
+  # run_expirement(countData, "CD8", "NCI", threshold)
+  # run_expirement(countData, "CD8", "HT.1080", threshold)
+  # run_expirement(countData, "CD4", "B.CELLS", threshold)
+  # run_expirement(countData, "CD8", "B.CELLS", threshold)
+  # run_expirement(countData, "CD4", "MONOCYTES", threshold)
+  # run_expirement(countData, "CD8", "MONOCYTES", threshold)
+  run_expirement(countData, "TREGS", "CD4", threshold)
+  run_expirement(countData, "TREGS", "CD8", threshold)
+  run_expirement(countData, "TREGS", "B.CELLS", threshold)
+  run_expirement(countData, "TREGS", "MONOCYTES", threshold)
 }
 
-threshold <- 0.65
+threshold <- 0.6
 run(countData, threshold)

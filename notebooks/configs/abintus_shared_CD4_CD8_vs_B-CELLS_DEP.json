@@ -1,0 +1,11 @@
+{
+  "experiment_name": "abintus",
+  "output_folder": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output",
+  "lib_csv_path": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/C30_lib_data.csv",
+  "output_DEP_file_name": "CD4_CD8_vs_B-CELLS_DEP.csv",
+  "files": [
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD4_B-CELLS_DE_08_threshold.csv",
+    "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD8_B-CELLS_DE_08_threshold.csv"
+  ],
+  "count_data_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/all_replicates_sum.csv"
+}

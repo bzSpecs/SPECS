@@ -1,7 +1,8 @@
 {
-  "experiment_name": "abintus_CD4_CD8_DEP_05_threshold",
+  "experiment_name": "abintus",
   "output_folder": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output",
   "lib_csv_path": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/resources/C30_lib_data.csv",
+  "output_DEP_file_name": "CD4_CD8_vs_Cancer_DEP.csv",
   "files": [
     "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD4_DS_DE_05_threshold.csv",
     "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD4_H7_DE_05_threshold.csv",
@@ -15,5 +16,6 @@
     "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD8_MC-CAR_DE_05_threshold.csv",
     "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD8_NCI_DE_05_threshold.csv",
     "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/CD8_RL_DE_05_threshold.csv"
-  ]
+  ],
+  "count_data_file": "/Users/bzaruk/Documents/Projects/bzaruk/SPECS/notebooks/output/abintus/all_replicates_sum.csv"
 }
